@@ -6923,6 +6923,18 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/single-blog.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-blog.html",
+		"oF": 0
+		},
+	"\/single-work.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-work.html",
+		"oF": 0
+		},
 	"\/template-single.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -6956,7 +6968,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 511702335,
-	"displayValue": "local",
+	"displayValue": "bohemia",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/apple-touch-icon.png"
 	},
@@ -8312,7 +8324,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/localhost:8888\/local\/",
+	"externalServerAddress": "http:\/\/localhost:8888\/bohemia\/",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

@@ -1,12 +1,13 @@
 /* scss/atoms/_typography.scss */
 
+
 h1 {
 	margin-top: 4rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $headline-font;
-	font-weight: $headline-weight;
+	font-weight: $light;
 }
 
 h1, h2, h3 {
@@ -30,21 +31,21 @@ h1 {
 
 .single-blog h2,
 .single-work h2 {
-	font-size: $h2-single;
+	@include fluid-type(font-size, $bp-sm, $bp-lg, $h2-single-min, $h2-single-max);
 	line-height: $small-lh;
 	padding: 4rem 0 2rem 0
 }
 
-.single-blog .title, .single-work h1 {
+.single-blog .title, .single-work h1 {	//the H1 in the work post and the Title in the blogpost
 	
-	font-size: $h1-single-work;
+	@include fluid-type(font-size, $bp-sm, $bp-lg, $h1-single-work-min, $h1-single-work-max);
 	line-height: $small-lh;
 	padding: $h2-single-pad 0;
 }
 
 h3 {
 	
-	font-weight: $headline-weight;
+	font-weight: $light;
 	font-size: $h3-single;
 	line-height: $big-lh;
 }

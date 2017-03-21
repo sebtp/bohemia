@@ -76,14 +76,18 @@ body {
 .relative {
   position: relative; }
 
-.container-fluid, .container {
+.container-fluid, .container, .container-full {
   margin-right: auto;
   margin-left: auto; }
 
 .container-fluid {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   max-width: 143rem; }
+
+.container-full {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
 
 .row {
   box-sizing: border-box;
@@ -709,7 +713,47 @@ body {
     display: table;
     clear: both; }
 
+.blue {
+  color: #0046b4; }
+
+.red {
+  color: #fa5f69; }
+
+.green {
+  color: #46beaf; }
+
+.white {
+  color: #ffffff; }
+
+.blue-bg {
+  background: #0046b4; }
+
+.red-bg {
+  background: #fa5f69; }
+
+.green-bg {
+  background: #46beaf; }
+
+.white-bg {
+  background: #ffffff; }
+
 /* scss/utilities/_mixins.scss */
+/*- Mixin: Fluid Type
+ *
+ * Magic calc + vh to allow text to be fluid between minimum
+ * and maximum breakpoints.
+ *
+ * @group typography
+ * @param {variable} $min-font-size [12px] - Minimum font size 
+ * @param {variable} $max-font-size [24px] - Maximum font size
+ * @param {variable} $lower-range [420px] - Stop scaling font smaller at this screen resolution 
+ * @param {variable} $upper-range [900px] - Stop scaling font larger at this screen resolution 
+ * @example
+ *   h1 {
+ *     @include responsive-type(20px, 48px);
+ *   }
+ * @site http://madebymike.com.au/writing/precise-control-responsive-typography/
+ */
 /* transition syntax
 		<name>
 		<duration>
@@ -724,21 +768,6 @@ body {
 		<direction>
 		<fill-mode> */
 /* scss/utilities/_media_queries.scss */
-@media only screen and (min-width: 48rem) {
-  /* ====================
-      INTERMEDIATE: Menu
-     ==================== */ }
-
-@media only screen and (min-width: 64rem) {
-  /* ====================
-      WIDE: 
-     ==================== */ }
-
-@media only screen and (min-width: 75rem) {
-  /* ===============
-      Maximal Width
-     =============== */ }
-
 /* scss/utilities/_print.scss */
 @media print {
   * {
@@ -787,9 +816,6 @@ img {
 #ham {
   width: 25px;
   height: 23px;
-  position: fixed;
-  top: 0;
-  margin: 30px 0 0 24px;
   z-index: 10000;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -870,14 +896,31 @@ h1 {
 
 .single-blog h2,
 .single-work h2 {
-  font-size: 5.5rem;
   line-height: 0.6;
   padding: 4rem 0 2rem 0; }
+  .single-blog h2,
+  .single-work h2 {
+    font-size: 4rem; }
+    @media screen and (min-width: 48rem) {
+      .single-blog h2,
+      .single-work h2 {
+        font-size: calc(4rem + 1.5 * ((100vw - 76.8rem) / 43.2)); } }
+    @media screen and (min-width: 75rem) {
+      .single-blog h2,
+      .single-work h2 {
+        font-size: 5.5rem; } }
 
 .single-blog .title, .single-work h1 {
-  font-size: 10.8rem;
   line-height: 0.6;
   padding: 2.365rem 0; }
+  .single-blog .title, .single-work h1 {
+    font-size: 9rem; }
+    @media screen and (min-width: 48rem) {
+      .single-blog .title, .single-work h1 {
+        font-size: calc(9rem + 1.8 * ((100vw - 76.8rem) / 43.2)); } }
+    @media screen and (min-width: 75rem) {
+      .single-blog .title, .single-work h1 {
+        font-size: 10.8rem; } }
 
 h3 {
   font-weight: 100;
@@ -919,7 +962,15 @@ h6 {
 }*/
 /* scss/atoms/_hero.scss */
 .hero {
-  height: 66.6666vh; }
+  height: 66.6666vh;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
 
 /* scss/molecules/_gallery.scss */
 .gallery img {
@@ -930,35 +981,35 @@ h6 {
 #header {
   position: fixed;
   z-index: 20000;
-  display: block;
-  -webkit-transition: all, 0.3s, ease;
-  -moz-transition: all, 0.3s, ease;
-  -o-transition: all, 0.3s, ease;
-  transition: all, 0.3s, ease; }
+  width: 100%;
+  padding-top: 1.5rem; }
+  #header .logo, #header .phone {
+    -webkit-transition: all, 0.3s, ease;
+    -moz-transition: all, 0.3s, ease;
+    -o-transition: all, 0.3s, ease;
+    transition: all, 0.3s, ease; }
+    #header .logo, #header .phone {
+      font-size: 1.8rem; }
+      @media screen and (min-width: 48rem) {
+        #header .logo, #header .phone {
+          font-size: calc(1.8rem + 0.3 * ((100vw - 76.8rem) / 43.2)); } }
+      @media screen and (min-width: 75rem) {
+        #header .logo, #header .phone {
+          font-size: 2.1rem; } }
 
-.blue {
-  color: #0046b4; }
+#header div > div:nth-child(1) {
+  text-align: left; }
 
-.red {
-  color: #fa5f69; }
+#header div > div:nth-of-type(2) {
+  text-align: center;
+  display: none; }
 
-.green {
-  color: #46beaf; }
+#header div > div:nth-of-type(3) {
+  text-align: right; }
 
-.white {
-  color: #ffffff; }
-
-.blue-bg {
-  background: #0046b4; }
-
-.red-bg {
-  background: #fa5f69; }
-
-.green-bg {
-  background: #46beaf; }
-
-.white-bg {
-  background: #ffffff; }
+@media only screen and (min-width: 64rem) {
+  #header div > div:nth-child(2) {
+    display: block; } }
 
 /* scss/molecules/_menu.scss */
 /* slideout menu */
@@ -1022,7 +1073,7 @@ h6 {
   -moz-transition-delay: 0s;
   transition-delay: 0s; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48rem) {
   .menu-container {
     width: 440px; } }
 
@@ -1044,7 +1095,6 @@ h6 {
     .menu-content li a {
       font-family: "brandon-grotesque", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 100;
-      font-size: 5.5rem;
       color: #46beaf;
       text-decoration: none;
       text-transform: lowercase;
@@ -1052,33 +1102,93 @@ h6 {
       -moz-transition: all, 0.3s, ease;
       -o-transition: all, 0.3s, ease;
       transition: all, 0.3s, ease; }
+      .menu-content li a {
+        font-size: 4rem; }
+        @media screen and (min-width: 48rem) {
+          .menu-content li a {
+            font-size: calc(4rem + 1.5 * ((100vw - 76.8rem) / 43.2)); } }
+        @media screen and (min-width: 75rem) {
+          .menu-content li a {
+            font-size: 5.5rem; } }
       .menu-content li a:hover {
         color: #0046b4; }
     .menu-content li:first-of-type {
       margin-top: 0; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48rem) {
   .menu-content p {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.6; } }
 
 /* scss/molecules/_post-item.scss */
+.post-item {
+  display: block;
+  height: 60vw;
+  padding: 0;
+  margin: 0; }
+  .post-item:nth-child(even) {
+    margin-top: -6vw;
+    display: none; }
+
+@media only screen and (min-width: 64rem) {
+  .post-item {
+    height: 40vw; }
+    .post-item:nth-child(even) {
+      display: block; } }
+
+.clip-svg {
+  width: 0;
+  height: 0; }
+
+.clip-svg-inline {
+  -webkit-clip-path: url("#clip-polygon");
+  clip-path: url("#clip-polygon"); }
+
 /* scss/molecules/_quotes.scss */
+blockquote {
+  font-family: "brandon-grotesque", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 5.5rem;
+  line-height: 0.8;
+  padding: 5rem 0; }
+  blockquote .author-wrapper {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 3rem; }
+    blockquote .author-wrapper img {
+      border-radius: 50%; }
+  blockquote .author-inner {
+    padding-left: 3rem;
+    width: 70%; }
+  blockquote .author-inner > div:first-child {
+    font-weight: 700;
+    margin-bottom: 0.75rem; }
+
+blockquote > div.row {
+  margin-left: 0;
+  margin-right: 0; }
+
 /* scss/molecules/_share-widget.scss */
 /* scss/organisms/_footer.scss */
 /* scss/organisms/_header.scss */
 /* scss/organisms/_next_prev.scss */
 /* scss/organisms/_sidebar.scss */
+aside {
+  position: relative; }
+
 @media only screen and (min-width: 48rem) {
   aside {
-    position: relative; } }
+    position: absolute;
+    margin-top: 138px;
+    padding: 0;
+    right: 0; } }
 
 @media only screen and (min-width: 64rem) {
   aside {
     position: absolute;
     margin-top: 138px;
-    right: 0; } }
+    right: 8.33333333%; } }
 
 /* scss/templates/_single-green.scss */
 /* scss/templates/_single-work.scss */
@@ -1086,23 +1196,27 @@ h6 {
  * molecules/_gallery.scss
  
  */
+.content h2, .content h3, .content p, .content blockquote {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem; }
+
 @media only screen and (min-width: 48rem) {
-  .content *:not(.gallery):not(img):not(figure):not(figcaption) {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem; } }
+  .content h2, .content h3, .content p, .content blockquote {
+    padding-left: 0;
+    padding-right: 33.33333333%; } }
 
 @media only screen and (min-width: 64rem) {
-  .content *:not(.gallery):not(img):not(figure):not(figcaption) {
+  .content h2, .content h3, .content p, .content blockquote {
     padding-right: 33.33333333%;
     padding-left: 8.33333333%;
-    margin-left: 1.5rem; } }
+    margin-right: 1.5rem; } }
 
 figure {
   padding-top: 5rem;
   padding-bottom: 5rem; }
 
-.content img {
-  width: 66.66666667%; }
+.content figure img {
+  width: 65%; }
 
 .meta {
   margin-bottom: 6rem; }

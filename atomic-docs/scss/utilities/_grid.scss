@@ -1,14 +1,19 @@
 // http://flexboxgrid.com/
 
-.container-fluid, .container {
+.container-fluid, .container, .container-full {
   margin-right: auto;
   margin-left: auto;
 }
 
 .container-fluid {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   max-width: 143rem;
+}
+
+.container-full {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .row {

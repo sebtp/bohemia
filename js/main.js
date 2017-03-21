@@ -10,15 +10,17 @@ jQuery(document).ready(function($){
 				vph = $(window).height() / 3 * 2 - 40;
 
 			if (scroll >= vph) {
-				$(".phone,.logo").removeClass("white");
-				$(".phone,.logo").addClass("green");
+				$(".phone").removeClass("white");
+				$(".phone").addClass("green");
+				$("a.logo").css("opacity", "0");
 				$("#ham>span").addClass("green-bg");
 				$("#ham>span").removeClass("white-bg");
 
 
 			} else {
-				$(".phone,.logo").removeClass("green");
-				$(".phone,.logo").addClass("white");
+				$(".phone").removeClass("green");
+				$(".phone").addClass("white");
+				$("a.logo").css("opacity", "1");
 				$("#ham>span").addClass("white-bg");
 				$("#ham>span").removeClass("green-bg");
 			}

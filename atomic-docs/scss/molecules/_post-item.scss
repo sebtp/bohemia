@@ -1,1 +1,33 @@
 /* scss/molecules/_post-item.scss */
+
+.post-item {
+	display: block;
+	height: 60vw;
+	padding: 0;
+	margin: 0;
+	
+	&:nth-child(even) {
+		margin-top: -6vw;
+		display: none;
+	}
+}
+
+@media only screen and (min-width: $bp-md) {
+	.post-item {
+		height: 40vw;
+		
+		&:nth-child(even) {
+			display: block;
+		}
+	}
+}
+
+.clip-svg {
+  width: 0;
+  height: 0;
+}
+
+.clip-svg-inline {
+  -webkit-clip-path: url("#clip-polygon");
+  clip-path: url("#clip-polygon");
+}

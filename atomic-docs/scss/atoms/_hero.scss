@@ -2,4 +2,12 @@
 
 .hero {
 	height: 66.6666vh; 
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-position:center;
+	background-blend-mode: screen;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }

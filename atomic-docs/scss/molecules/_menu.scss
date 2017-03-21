@@ -68,7 +68,7 @@
 	transition-delay: 0s;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $bp-sm) {
 	.menu-container {
 		width: 440px;
 	}
@@ -88,12 +88,13 @@
 	overflow: auto;
 	/* smooth scrolling on touch devices */
 	-webkit-overflow-scrolling: touch;
+	
 	li {
 		margin: 0;
 		a {
+			@include fluid-type(font-size, $bp-sm, $bp-lg, $menu-type-min, $menu-type-max);
 			font-family: $headline-font;
-			font-weight: 100;
-			font-size: 5.5rem;
+			font-weight: 100;			
 			color: #46beaf;
 			text-decoration: none;
 			text-transform: lowercase;
@@ -111,7 +112,7 @@
 	}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $bp-sm) {
 	.menu-content p {
 		font-size: 16px;
 		font-size: 1rem;

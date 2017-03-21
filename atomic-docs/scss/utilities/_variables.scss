@@ -1,55 +1,82 @@
 /* scss/utilities/_variables.scss */
 
-// fonts
-$base-font-size: 62.5%;
+// COLORS
+	$blue: #0046b4;
+	$red: #fa5f69;
+	$green: #46beaf;
+	$white: #ffffff;
 
-$font-family: 'Lato', Helvetica, sans-serif;
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-heavy: 700;
-$font-height: 1.5;
+// GRID - the media queries take only 16px as base font (from the browser)
+	$bp-sm: 48rem; // 48 * 16 = 768px 
+	$bp-md: 64rem; // 64 * 16 = 1024px
+	$bp-lg: 75rem; // 65 * 16 = 1200px
 
-// colors
-$blue: #0046b4;
-$red: #fa5f69;
-$green: #46beaf;
-$white: #ffffff;
+// FONTS
+	$base-font-size: 62.5%;
 
+	// Family
+	$headline-font: "brandon-grotesque", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	$body-font: "livory", Times, "Times New Roman", serif;
 
-$headline-font: "brandon-grotesque", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$headline-weight: 100;
+	// Weight
+	$light: 100;
+	$regular: 300;
+	$bold: 700;
 
-$body-font: "livory", Times, "Times New Roman", serif;
-$body-size: 2.1rem;
+	// Line-heights 
+	$big-lh: 0.8;					// 
+	$small-lh: 0.6;					// 
+	$intro-lh: 1.4;					// 
+	$body-lh: 1.5;					// 
+	$pad-multiplier: 0.43;			// 
 
-// grid - the media queries take only 16px as base font (from the borwser)
-$bp-sm: 48rem; // 48 * 16 = 768px 
-$bp-md: 64rem; // 64 * 16 = 1024px
-$bp-lg: 75rem; // 65 * 16 = 1200px
+	// Sizes
+	$size1: 1.6rem;
+	$size2: 1.8rem;
+	$size3: 2.1rem;
+	$size4: 2.8rem;
+	$size5: 4.0rem;
+	$size6: 5.5rem;
+	$size7: 9.0rem;
+	$size8: 10.8rem;
+	$size9: 18rem;
 
-// Line-heights 
-$big-lh: 0.8;
-$small-lh: 0.6;
-$intro-lh: 1.4;
-$body-lh: 1.5;
-$pad-multiplier: 0.43;
+		// header
+		$header-type-min: 		$size2;
+		$header-type-max: 		$size3;
 
-// Sizes
-$h1-single-blog: 2.8rem;
-$h1-single-work: 10.8rem;
-$h2-single: 5.5rem;
-$h3-single: 4rem;
-$h4-single: 4rem;
-$intro-single: 2.8rem;
+		//menu
+		$menu-type-min: 		$size5;
+		$menu-type-max: 		$size6;
 
-$h1-overview: 18rem;
-$h2-overview: 9rem;
+		//headlines
+		$h1-single-work-min:	$size7;
+		$h1-single-work-max:	$size8;
 
-// Paddings
-$h1-single-blog-pad: $h1-single-blog * $pad-multiplier;
-$h1-single-work-pad: $h1-single-work * $pad-multiplier;
-$h2-single-pad: $h2-single * $pad-multiplier;
-$h3-single-pad: $h3-single * $pad-multiplier;
-$h4-single-pad: $h4-single * $pad-multiplier;
+		//headlines
+		$h2-single-min:			$size5;
+		$h2-single-max:			$size6;
+		
 
-$h1-overview-pad: $h1-overview * $pad-multiplier
+	$small-type: 1.6rem;			// blockquote author,
+	$sidebar-body: 1.8rem;			// blockquote author, sidebar
+	$header-type-lg: 2.8rem;
+	$body-size: 2.1rem;				// 
+	$h1-single-blog: 2.8rem;		// logo, phone
+	$h1-single-work: 10.8rem;		// 
+	$h2-single: 5.5rem; 			// H2, blockquote, 
+	$h3-single: 4rem;				// 
+	$h4-single: 4rem;				// 
+	$intro-single: 2.8rem;			// 
+
+	$h1-overview: 18rem;
+	$h2-overview: 9rem;
+
+	// Paddings
+	$h1-single-blog-pad: $h1-single-blog * $pad-multiplier;
+	$h1-single-work-pad: $h1-single-work * $pad-multiplier;
+	$h2-single-pad: $h2-single * $pad-multiplier;
+	$h3-single-pad: $h3-single * $pad-multiplier;
+	$h4-single-pad: $h4-single * $pad-multiplier;
+
+	$h1-overview-pad: $h1-overview * $pad-multiplier
