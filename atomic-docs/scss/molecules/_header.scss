@@ -1,0 +1,35 @@
+/* scss/molecules/_header.scss */
+
+#header {
+  position: fixed;
+  z-index: 20000;
+  display: block;
+  -webkit-transition: all, 0.3s, ease;
+  -moz-transition: all, 0.3s, ease;
+  -o-transition: all, 0.3s, ease;
+  transition: all, 0.3s, ease; 
+}
+
+.blue {
+  color: $blue; }
+
+.red {
+  color: $red; }
+
+.green {
+  color: $green; }
+
+.white {
+  color: $white; }
+
+.blue-bg {
+  background: $blue; }
+
+.red-bg {
+  background: $red; }
+
+.green-bg {
+  background: $green; }
+
+.white-bg {
+  background: $white; }

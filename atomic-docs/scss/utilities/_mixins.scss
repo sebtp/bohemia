@@ -1,0 +1,42 @@
+/* scss/utilities/_mixins.scss */
+
+// MIXINS
+@mixin linear-gradient($direction, $colors...) {
+	background: -webkit-linear-gradient($direction, $colors);
+	background: -moz-linear-gradient($direction, $colors);
+	background: -o-linear-gradient($direction, $colors);
+	background: -ms-linear-gradient($direction, $colors);
+	background: linear-gradient($direction, $colors);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+}
+
+/* transition syntax
+		<name>
+		<duration>
+		<timing-function>
+		<delay> */
+
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+/* animation: 
+		<name> 
+		<duration>
+		<timing-function>
+		<delay>
+		<iteration-count>
+		<direction>
+		<fill-mode> */
+	
+@mixin animation ($args...) {
+	-webkit-animation: $args;
+	-moz-animation: $args;
+	-o-animation: $args;
+	animation: $args;
+}

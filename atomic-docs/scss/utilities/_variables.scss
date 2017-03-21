@@ -1,0 +1,55 @@
+/* scss/utilities/_variables.scss */
+
+// fonts
+$base-font-size: 62.5%;
+
+$font-family: 'Lato', Helvetica, sans-serif;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-heavy: 700;
+$font-height: 1.5;
+
+// colors
+$blue: #0046b4;
+$red: #fa5f69;
+$green: #46beaf;
+$white: #ffffff;
+
+
+$headline-font: "brandon-grotesque", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headline-weight: 100;
+
+$body-font: "livory", Times, "Times New Roman", serif;
+$body-size: 2.1rem;
+
+// grid - the media queries take only 16px as base font (from the borwser)
+$bp-sm: 48rem; // 48 * 16 = 768px 
+$bp-md: 64rem; // 64 * 16 = 1024px
+$bp-lg: 75rem; // 65 * 16 = 1200px
+
+// Line-heights 
+$big-lh: 0.8;
+$small-lh: 0.6;
+$intro-lh: 1.4;
+$body-lh: 1.5;
+$pad-multiplier: 0.43;
+
+// Sizes
+$h1-single-blog: 2.8rem;
+$h1-single-work: 10.8rem;
+$h2-single: 5.5rem;
+$h3-single: 4rem;
+$h4-single: 4rem;
+$intro-single: 2.8rem;
+
+$h1-overview: 18rem;
+$h2-overview: 9rem;
+
+// Paddings
+$h1-single-blog-pad: $h1-single-blog * $pad-multiplier;
+$h1-single-work-pad: $h1-single-work * $pad-multiplier;
+$h2-single-pad: $h2-single * $pad-multiplier;
+$h3-single-pad: $h3-single * $pad-multiplier;
+$h4-single-pad: $h4-single * $pad-multiplier;
+
+$h1-overview-pad: $h1-overview * $pad-multiplier

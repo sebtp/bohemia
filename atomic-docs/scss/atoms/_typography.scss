@@ -1,0 +1,84 @@
+/* scss/atoms/_typography.scss */
+
+h1 {
+	margin-top: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headline-font;
+	font-weight: $headline-weight;
+}
+
+h1, h2, h3 {
+	line-height: $small-lh;;
+}
+
+h1 {
+	
+	line-height: $small-lh;
+	padding: $h1-overview-pad 0;
+}
+
+.single-blog h1 { 					//the small SEO title in the blogpost
+	
+	font-weight: 700;
+	font-size: $h1-single-blog;
+	line-height: $intro-lh;
+	padding: 0;
+	margin: 0 0 100px 0;
+}
+
+.single-blog h2,
+.single-work h2 {
+	font-size: $h2-single;
+	line-height: $small-lh;
+	padding: 4rem 0 2rem 0
+}
+
+.single-blog .title, .single-work h1 {
+	
+	font-size: $h1-single-work;
+	line-height: $small-lh;
+	padding: $h2-single-pad 0;
+}
+
+h3 {
+	
+	font-weight: $headline-weight;
+	font-size: $h3-single;
+	line-height: $big-lh;
+}
+
+h4 {
+	font-size: $h4-single;
+}
+/*
+.content h4 {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+article.project h2, h5 {
+	font-family: $headline-font;
+	font-weight: $h-weight;
+	font-size: $h3-single;
+	line-height: $body-lh;
+	@include linear-gradient(45deg,$blue,$red);
+}
+
+article.story h3 {
+	font-family: $headline-font;
+	font-weight: $h-weight;
+	font-size: $h3-single;
+	line-height: $big-lh;
+	padding: $h3-single-pad 0;
+	@include linear-gradient(45deg,$blue,$green);
+	margin-left: -3px;
+}
+
+h6 {
+	font-family: $headline-font;
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 3.5rem;
+}*/

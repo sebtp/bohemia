@@ -1,0 +1,11 @@
+/* scss/molecules/_gallery.scss */
+
+//.gallery img:nth-child(n+3) { //select all but first 3
+//	padding: 0;
+//	width: 100%;
+//}
+
+.gallery img {
+	padding: 0; 
+	width: 100% !important;
+}

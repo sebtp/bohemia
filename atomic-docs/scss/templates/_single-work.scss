@@ -1,0 +1,35 @@
+/* scss/templates/_single-work.scss */
+
+/* LINKED SCSS
+ * molecules/_gallery.scss
+ 
+ */
+
+@media only screen and (min-width: $bp-sm) {
+	.content *:not(.gallery):not(img):not(figure):not(figcaption) {
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
+	}
+}
+
+@media only screen and (min-width: $bp-md) {
+	.content *:not(.gallery):not(img):not(figure):not(figcaption) {
+		padding-right: 33.33333333%;
+		padding-left: 8.33333333%;
+		margin-left: 1.5rem;
+	}
+}
+
+figure {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.content img {
+	width: 66.66666667%;
+}
+
+.meta {
+	margin-bottom: 6rem;
+}
+
