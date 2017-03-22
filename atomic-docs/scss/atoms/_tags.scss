@@ -1,0 +1,12 @@
+/* scss/atoms/_tags.scss */
+
+.tags {
+	li {
+		font-family: $body-font;
+		font-style: italic;
+		color: $white;
+		
+		display: inline-block;
+		padding-right: 2rem;
+	}
+}

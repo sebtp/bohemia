@@ -1,13 +1,19 @@
 /* scss/atoms/_hero.scss */
 
 .hero {
-	height: 66.6666vh; 
+	height: 60vh; //same height as a post-item
+	overflow: hidden;
 	background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	background-position:center;
-	background-blend-mode: screen;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+	background-position: center;
+}
+
+.single-blog .hero {
+	@include linear-gradient-img (45deg,$blue,$green);
+}
+
+
+
+.clip-svg-hero {
+  -webkit-clip-path: url("#clip-polygon-hero");
+  clip-path: url("#clip-polygon-hero");
 }

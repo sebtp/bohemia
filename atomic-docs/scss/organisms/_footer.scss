@@ -1,1 +1,17 @@
 /* scss/organisms/_footer.scss */
+
+.clip-svg-footer {
+  -webkit-clip-path: url("#clip-polygon-footer");
+  clip-path: url("#clip-polygon-footer");
+}
+
+footer {
+	//position: absolute;
+	width: 100%;
+	background: $white;
+	//margin-top: -16.5rem;
+	.row {
+		padding-top: 10rem;
+		padding-bottom: 5rem;
+	}
+}

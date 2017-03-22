@@ -2,12 +2,13 @@
 
 aside {
 		position: relative;
-	
+
 	}
 
 @media only screen and (min-width: $bp-sm) {
 	aside {
 		position: absolute;
+
 		margin-top:138px;
 		padding: 0;
 		right: 0;

@@ -56,9 +56,9 @@
         "has_js": "false"
     },
     {
-        "component": "typography",
+        "component": "headings",
         "category": "atoms",
-        "description": "All typography",
+        "description": "",
         "backgroundColor": "",
         "order": 4,
         "has_js": "false"
@@ -205,6 +205,30 @@
         "description": "The template for the Single Work posts.",
         "backgroundColor": "",
         "order": -24,
+        "has_js": "false"
+    },
+    {
+        "component": "tags",
+        "category": "atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -25,
+        "has_js": "false"
+    },
+    {
+        "component": "overview-work",
+        "category": "templates",
+        "description": "",
+        "backgroundColor": "",
+        "order": -26,
+        "has_js": "false"
+    },
+    {
+        "component": "tree",
+        "category": "atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -27,
         "has_js": "false"
     }
 ]

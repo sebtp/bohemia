@@ -14,9 +14,10 @@
 		<link rel="stylesheet" href="atomic-docs/css/main.css">
 
 		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		
 	</head>
-	<body class="single-work">
- 		
+	<body class="single-blog">
+ 
  		<!-- Clipping SVG for the post-item -->
 		<svg class="clip-svg">
 		  <defs>
@@ -36,8 +37,8 @@
 			</clippath>
 		  </defs>
 		</svg> 
-  		  		 		 		
-<!-- 	The hidden menu -->
+		
+ 		<!-- 	The hidden menu -->
 	   	<nav class="menu"> 
 			<div class="menu-container">
 				<div class="menu-content">
@@ -72,8 +73,11 @@
 			</div>			
 		</header>
 
+  		
 <!-- 	The hero image. echo the url at PHPHERE-->
-		<div class="hero clip-svg-hero" style="background-image: url('http://lorempixel.com/1920/1080');"></div>
+		<div class="hero clip-svg-hero">
+			<img src="http://lorempixel.com/1920/1080" alt="">
+		</div>
   		
 <!-- 	The main content -->
 		<main class="container-fluid relative">
@@ -125,12 +129,6 @@
 						</blockquote>
 						<p>Numquam iure temporibus architecto eveniet, quasi rerum commodi natus ab amet perferendis totam suscipit necessitatibus repudiandae ipsum neque, est accusamus facere quis ex illo magnam? Error animi nam accusamus nostrum.</p>
 						
-				<!-- 	Gallery -->		
-						<section class="gallery">
-							<img src="http://lorempixel.com/1920/1080" alt="">
-							<img src="http://lorempixel.com/1920/1080" alt="">
-							<img src="http://lorempixel.com/1920/1080" alt="">
-						</section>
 					</section>							
 
 				<!-- Content Footer -->
@@ -215,11 +213,20 @@
 			</div>
 			
 		</footer>
-		
-
+	
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+		
+		<!-- just for development START -->
+		<script> 
+			jQuery(document).ready(function($){ 
+				$(function(){
+					$("#includedContent").load("header.html"); 
+				});
+			});				
+		</script>
+		<!-- just for development END -->
 
 		<script src="js/main.js"></script>
 

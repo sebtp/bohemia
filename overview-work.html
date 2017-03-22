@@ -15,13 +15,23 @@
 
 		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	</head>
-	<body class="single-work">
+	<body class="overview-work">
  		
  		<!-- Clipping SVG for the post-item -->
 		<svg class="clip-svg">
 		  <defs>
 			<clippath id="clip-polygon-post" clipPathUnits="objectBoundingBox">
-			  <polygon points="0 1, 0 0.15, 1 0, 1 0.85" />
+			  <polygon points="0 1, 0 0.105, 1 0, 1 0.895" />
+			  <!-- When changing these, also change the _post-item.scss -->
+			</clippath>
+		  </defs>
+		</svg> 
+		
+		<!-- Clipping SVG for the post-item for $bp-sm and up -->
+		<svg class="clip-svg">
+		  <defs>
+			<clippath id="clip-polygon-post-sm" clipPathUnits="objectBoundingBox">
+			  <polygon points="0 1, 0 0.2, 1 0, 1 0.8" />
 			  <!-- When changing these, also change the _post-item.scss -->
 			</clippath>
 		  </defs>
@@ -31,7 +41,17 @@
 		<svg class="clip-svg">
 		  <defs>
 			<clippath id="clip-polygon-hero" clipPathUnits="objectBoundingBox">
-			  <polygon points="0 1, 0 0, 1 0, 1 0.85" />
+			  <polygon points="0 1, 0 0, 1 0, 1 0.8" />
+			  <!-- When changing these, also change the _post-item.scss -->
+			</clippath>
+		  </defs>
+		</svg> 
+ 		  		 		 		
+ 		<!-- Clipping SVG for the Footer -->
+		<svg class="clip-svg" preserveAspectRatio="xMaxYMax meet">
+		  <defs>
+			<clippath id="clip-polygon-footer" clipPathUnits="objectBoundingBox">
+			  <polygon points="0 1, 0 0.55, 1 0, 1 1" />
 			  <!-- When changing these, also change the _post-item.scss -->
 			</clippath>
 		  </defs>
@@ -73,96 +93,12 @@
 		</header>
 
 <!-- 	The hero image. echo the url at PHPHERE-->
-		<div class="hero clip-svg-hero" style="background-image: url('http://lorempixel.com/1920/1080');"></div>
+		<div class="hero clip-svg-hero" style="background-image: url(http://lorempixel.com/1920/1080)"></div>
   		
 <!-- 	The main content -->
-		<main class="container-fluid relative">
-			<div class="row">
-				<article class="col-xs-12 col-md-12"> 
-					
-				<!-- Header -->
-					<header class="col-xs-8 col-md-offset-1 col-md-7">
-						<div class="row">
-							<h1>Heading 1</h1>
-						</div>
-						<div class="row">
-							<div class="meta">
-								<a href="#" class="client">client</a>
-								<time class="year">2010</time>
-							</div>
-						</div>						
-					</header>
-
-				<!-- Intro -->
-					<section class="col-xs-8 col-md-offset-1 col-md-7">
-						<div class="row">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-						</div>
-						
-					</section>
-
-				<!-- Content -->
-					<section class="content">
-						<h2>Heading 2</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-						<figure>
-							<img src="http://lorempixel.com/940/530" alt="">
-							<figcaption>Caption here</figcaption>
-						</figure>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sunt consectetur voluptatibus veritatis atque odio, architecto velit nulla modi rerum corporis vitae sapiente optio ea autem dignissimos facilis. Error, ullam!</p>
-						<h3>Heading 3</h3>
-						<p>Sit praesentium, aut! Amet obcaecati fugit recusandae commodi dignissimos nam ullam consequatur ut eveniet voluptates quae tempore, id natus facilis, iusto delectus eius quo harum, laboriosam est voluptas at quas?</p>
-						<blockquote cite="http://source-site.com" class="col-lg-10 red">
-							<div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>						
-							<div class="author-wrapper row middle-xs">
-								<img src="http://lorempixel.com/54/54" alt="author">						
-								<div class="author-inner">
-									<div class="row">Guy van Everdingen</div>
-									<div class="row">Sales & Marketing Manager at Sasma BV</div>
-								</div>
-							</div>
-							
-						</blockquote>
-						<p>Numquam iure temporibus architecto eveniet, quasi rerum commodi natus ab amet perferendis totam suscipit necessitatibus repudiandae ipsum neque, est accusamus facere quis ex illo magnam? Error animi nam accusamus nostrum.</p>
-						
-				<!-- 	Gallery -->		
-						<section class="gallery">
-							<img src="http://lorempixel.com/1920/1080" alt="">
-							<img src="http://lorempixel.com/1920/1080" alt="">
-							<img src="http://lorempixel.com/1920/1080" alt="">
-						</section>
-					</section>							
-
-				<!-- Content Footer -->
-					<footer class="tags">
-						<ul>
-							<li><a href="#">#Article Tag</a></li>
-							<li><a href="#">#Article Tag</a></li>
-							<li><a href="#">#Article Tag</a></li>
-							<li><a href="#">#Article Tag</a></li>
-						</ul>
-					</footer>
-				</article>
-			
-				
-		<!-- 	Sidebar -->
-
-				<aside class="col-xs-4 col-md-3">
-					<div>
-						<h4>Free download</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-					</div>
-					
-				</aside>
-
-
-			</div>
-		</main>
-		
-<!-- 	Prev/Next -->
-		<section class="container-full">
-			<div class="row">
-				<a href="" class="col-xs-12 col-md-6 post-item clip-svg-post">
+		<main class="container-full">
+			<div class="row clip-svg-post">
+				<a href="" class="col-xs-12 col-md-6 post-item">
 					<img src="http://lorempixel.com/1920/1080" alt="">	
 					<div class="row post-item-inner">
 						<div class="col-xs-11">
@@ -179,7 +115,7 @@
 						</div>
 					</div>
 				</a>					
-				<a href="" class="col-xs-12 col-md-6 post-item clip-svg-post">
+				<a href="" class="col-xs-12 col-md-6 post-item">
 					<img src="http://lorempixel.com/1920/1080" alt="">	
 					<div class="row post-item-inner">
 						<div class="col-xs-12">
@@ -197,10 +133,89 @@
 					</div>
 				</a>
 			</div>
-		</section> 
+			<div class="row clip-svg-post">
+				<a href="" class="col-xs-12 col-md-6 post-item">
+					<img src="http://lorempixel.com/1920/1080" alt="">	
+					<div class="row post-item-inner">
+						<div class="col-xs-11">
+							<h3 class="col-xs" >Previous project</h3>
+							<div class="col-xs-9 tags">
+								<ul>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+								</ul>
+							</div>
+							<div class="col-xs-9">client</div>
+						</div>
+					</div>
+				</a>					
+				<a href="" class="col-xs-12 col-md-6 post-item">
+					<img src="http://lorempixel.com/1920/1080" alt="">	
+					<div class="row post-item-inner">
+						<div class="col-xs-12">
+							<h3 class="col-xs">Next project</h3>
+							<div class="col-xs-9 tags">
+								<ul>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+								</ul>
+							</div>
+							<div class="col-xs-9">client</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="row clip-svg-post">
+				<a href="" class="col-xs-12 col-md-6 post-item">
+					<img src="http://lorempixel.com/1920/1080" alt="">	
+					<div class="row post-item-inner">
+						<div class="col-xs-11">
+							<h3 class="col-xs" >Previous project</h3>
+							<div class="col-xs-9 tags">
+								<ul>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+								</ul>
+							</div>
+							<div class="col-xs-9">client</div>
+						</div>
+					</div>
+				</a>					
+				<a href="" class="col-xs-12 col-md-6 post-item">
+					<img src="http://lorempixel.com/1920/1080" alt="">	
+					<div class="row post-item-inner">
+						<div class="col-xs-12">
+							<h3 class="col-xs">Next project</h3>
+							<div class="col-xs-9 tags">
+								<ul>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+									<li>#Article Tag</li>
+								</ul>
+							</div>
+							<div class="col-xs-9">client</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="tree">
+				<img src="../../../../img/lake.jpg" alt="">
+			</div>
+		</main>
+		
+<!-- 	Prev/Next -->
+		
 		
 <!-- 	Footer -->
-		<footer class="container-fluid">
+		<footer class="container-full clip-svg-footer">
 			<div class="row">
 				<div class="col-md-4 col-md-offset-8">
 					<div><strong>Bohemia Amsterdam</strong></div>

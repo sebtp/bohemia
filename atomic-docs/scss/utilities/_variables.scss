@@ -1,9 +1,9 @@
 /* scss/utilities/_variables.scss */
 
 // COLORS
-	$blue: #0046b4;
-	$red: #fa5f69;
-	$green: #46beaf;
+	$blue: 	#0046b4; 	$blue-trans: 	rgba(0,70,180,0.7);
+	$red: 	#fa5f69;	$red-trans: 	rgba(250,95,105,0.7);
+	$green: #46beaf;	$green-trans: 	rgba(70,190,175,0.7);
 	$white: #ffffff;
 
 // GRID - the media queries take only 16px as base font (from the browser)
@@ -56,6 +56,11 @@
 		//headlines
 		$h2-single-min:			$size5;
 		$h2-single-max:			$size6;
+
+		//post-item-title
+		$post-title-min:		$size5;
+		$post-title-max:		$size7;
+
 		
 
 	$small-type: 1.6rem;			// blockquote author,

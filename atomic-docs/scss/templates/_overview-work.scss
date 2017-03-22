@@ -1,0 +1,22 @@
+/* scss/templates/_overview-work.scss */
+
+.overview-work main {
+	@include linear-gradient-img (45deg,$blue,$red);
+	padding-top: 12vh;
+    margin-top: -12vh;
+	overflow: hidden;
+	
+}
+
+.overview-work main .row {
+	margin-top: -12vh;
+}
+
+@media only screen and (min-width: $bp-md) {
+	.overview-work main {
+		//padding-top: 12vw;
+		//margin-top: -12vw;
+	}
+}
+    
+

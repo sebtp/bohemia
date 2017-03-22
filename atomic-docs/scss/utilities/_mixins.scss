@@ -1,26 +1,10 @@
 /* scss/utilities/_mixins.scss */
 
 
-/*- Mixin: Fluid Type
- *
- * Magic calc + vh to allow text to be fluid between minimum
- * and maximum breakpoints.
- *
- * @group typography
- * @param {variable} $min-font-size [12px] - Minimum font size 
- * @param {variable} $max-font-size [24px] - Maximum font size
- * @param {variable} $lower-range [420px] - Stop scaling font smaller at this screen resolution 
- * @param {variable} $upper-range [900px] - Stop scaling font larger at this screen resolution 
- * @example
- *   h1 {
- *     @include responsive-type(20px, 48px);
- *   }
- * @site http://madebymike.com.au/writing/precise-control-responsive-typography/
- */
-
+// Mixin: Fluid Type
 @mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
-  $min-vw-adj: $min-vw * 1.6;
-  $max-vw-adj: $max-vw * 1.6;
+  $min-vw-adj: $min-vw * 1.6; //fix for the 16px base font issue
+  $max-vw-adj: $max-vw * 1.6; //fix for the 16px base font issue
   & {
     @each $property in $properties {
       #{$property}: $min-value;
@@ -40,13 +24,12 @@
   }
 }
 
-
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
 }
 
-// liner gradient
-@mixin linear-gradient($direction, $colors...) {
+// liner gradient - text
+@mixin linear-gradient-text($direction, $colors...) {
 	background: -webkit-linear-gradient($direction, $colors);
 	background: -moz-linear-gradient($direction, $colors);
 	background: -o-linear-gradient($direction, $colors);
@@ -55,6 +38,15 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	display: inline-block;
+}
+
+// liner gradient - img
+@mixin linear-gradient-img($direction, $colors...) {
+	background: -webkit-linear-gradient($direction, $colors);
+	background: -moz-linear-gradient($direction, $colors);
+	background: -o-linear-gradient($direction, $colors);
+	background: -ms-linear-gradient($direction, $colors);
+	background: linear-gradient($direction, $colors);
 }
 
 /* transition syntax
