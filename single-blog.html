@@ -64,7 +64,7 @@
 						<button id="ham"><span></span><span></span><span></span><span></span></button>
 					</div>
 					<div class="col-md-4">
-						<a class="logo" href="#">Bohemia Amsterdam</a>
+						<a class="logo" href="#"><strong>Bohemia</strong> Amsterdam</a>
 					</div>
 					<div class="col-xs-8 col-md-4">
 						<a class="phone">&#43;31 (0)20 42 33 555</a>
@@ -75,9 +75,14 @@
 
   		
 <!-- 	The hero image. echo the url at PHPHERE-->
-		<div class="hero clip-svg-hero">
-			<img src="http://lorempixel.com/1920/1080" alt="">
-		</div>
+		<div class="hero clip-svg-hero" style="
+			background-image: url('http://lorempixel.com/1920/1080');
+			background-image: url('http://lorempixel.com/1920/1080'), -webkit-linear-gradient(45deg,#0046b4,#46beaf);
+			background-image: url('http://lorempixel.com/1920/1080'), -moz-linear-gradient(45deg,#0046b4,#46beaf);
+			background-image: url('http://lorempixel.com/1920/1080'), -o-linear-gradient(45deg,#0046b4,#46beaf);
+			background-image: url('http://lorempixel.com/1920/1080'), -ms-linear-gradient(45deg,#0046b4,#46beaf);
+			background-image: url('http://lorempixel.com/1920/1080'), linear-gradient(45deg,#0046b4,#46beaf);
+			"></div>
   		
 <!-- 	The main content -->
 		<main class="container-fluid relative">
@@ -87,12 +92,12 @@
 				<!-- Header -->
 					<header class="col-xs-8 col-md-offset-1 col-md-7">
 						<div class="row">
-							<h1>Heading 1</h1>
+							<div class="title">Heading 1 and something</div>
 						</div>
 						<div class="row">
 							<div class="meta">
-								<a href="#" class="client">client</a>
-								<time class="year">2010</time>
+								<h1>SEO proof title</h1>
+								<time>15 JAN 2017</time>
 							</div>
 						</div>						
 					</header>
@@ -132,13 +137,15 @@
 					</section>							
 
 				<!-- Content Footer -->
-					<footer class="tags">
-						<ul>
-							<li><a href="#">#Article Tag</a></li>
-							<li><a href="#">#Article Tag</a></li>
-							<li><a href="#">#Article Tag</a></li>
-							<li><a href="#">#Article Tag</a></li>
-						</ul>
+					<footer class="tags col-xs-8 col-md-offset-1 col-md-7">
+						<div class="row">
+							<ul>
+								<li><a href="#">#Article Tag</a></li>
+								<li><a href="#">#Article Tag</a></li>
+								<li><a href="#">#Article Tag</a></li>
+								<li><a href="#">#Article Tag</a></li>
+							</ul>
+						</div>						
 					</footer>
 				</article>
 			
@@ -160,12 +167,12 @@
 <!-- 	Prev/Next -->
 		<section class="container-full">
 			<div class="row">
-				<a href="" class="col-xs-12 col-md-6 post-item clip-svg-post">
+				<a href="" class="post-item col-xs-12 col-md-6">
 					<img src="http://lorempixel.com/1920/1080" alt="">	
 					<div class="row post-item-inner">
 						<div class="col-xs-11">
 							<h3 class="col-xs" >Previous project</h3>
-							<div class="col-xs-9 tags">
+							<div class="tags col-xs-9">
 								<ul>
 									<li>#Article Tag</li>
 									<li>#Article Tag</li>
@@ -173,16 +180,16 @@
 									<li>#Article Tag</li>
 								</ul>
 							</div>
-							<div class="col-xs-9">client</div>
+							<div class="client col-xs-9">client</div>
 						</div>
 					</div>
 				</a>					
-				<a href="" class="col-xs-12 col-md-6 post-item clip-svg-post">
+				<a href="" class="post-item col-xs-12 col-md-6 post-item">
 					<img src="http://lorempixel.com/1920/1080" alt="">	
 					<div class="row post-item-inner">
 						<div class="col-xs-12">
 							<h3 class="col-xs">Next project</h3>
-							<div class="col-xs-9 tags">
+							<div class="tags col-xs-9">
 								<ul>
 									<li>#Article Tag</li>
 									<li>#Article Tag</li>
@@ -190,7 +197,7 @@
 									<li>#Article Tag</li>
 								</ul>
 							</div>
-							<div class="col-xs-9">client</div>
+							<div class="client col-xs-9">client</div>
 						</div>
 					</div>
 				</a>
@@ -217,16 +224,6 @@
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
-		
-		<!-- just for development START -->
-		<script> 
-			jQuery(document).ready(function($){ 
-				$(function(){
-					$("#includedContent").load("header.html"); 
-				});
-			});				
-		</script>
-		<!-- just for development END -->
 
 		<script src="js/main.js"></script>
 

@@ -104,14 +104,6 @@
         "has_js": "false"
     },
     {
-        "component": "header",
-        "category": "organisms",
-        "description": "All the headers from all the templates",
-        "backgroundColor": "",
-        "order": 1,
-        "has_js": "false"
-    },
-    {
         "component": "footer",
         "category": "organisms",
         "description": "The footer style, without the next\/previous",
@@ -144,19 +136,11 @@
         "has_js": "false"
     },
     {
-        "component": "single-green",
+        "component": "single-blog",
         "category": "templates",
         "description": "",
         "backgroundColor": "#78b9aa",
         "order": -17,
-        "has_js": "false"
-    },
-    {
-        "component": "header",
-        "category": "molecules",
-        "description": "The header bar: Menu, Logo, Phone",
-        "backgroundColor": "",
-        "order": 1,
         "has_js": "false"
     },
     {
@@ -229,6 +213,22 @@
         "description": "",
         "backgroundColor": "",
         "order": -27,
+        "has_js": "false"
+    },
+    {
+        "component": "client",
+        "category": "atoms",
+        "description": "The client's name",
+        "backgroundColor": "",
+        "order": -28,
+        "has_js": "false"
+    },
+    {
+        "component": "date",
+        "category": "atoms",
+        "description": "The date in the single pages",
+        "backgroundColor": "",
+        "order": -29,
         "has_js": "false"
     }
 ]

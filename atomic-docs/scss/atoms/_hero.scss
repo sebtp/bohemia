@@ -5,10 +5,12 @@
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
+	background-blend-mode: screen;
+	
 }
 
 .single-blog .hero {
-	@include linear-gradient-img (45deg,$blue,$green);
+	//@include linear-gradient-img (45deg,$blue,$green);
 }
 
 

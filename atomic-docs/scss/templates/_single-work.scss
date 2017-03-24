@@ -4,6 +4,19 @@
  * molecules/_gallery.scss
  
  */
+.single-work {
+	time {
+		color: $red;
+		background-image: url(../../../../img/dot-red.svg);
+	}
+	.client {
+		color: $red;
+	}
+	
+	a {
+		color: $red;
+	}
+}
 
 .content h2, .content h3, .content p, .content blockquote {
 		padding-right: 0.5rem;
@@ -14,19 +27,28 @@
 @media only screen and (min-width: $bp-sm) {
 	.content h2, .content h3, .content p, .content blockquote {
 		padding-left: 0;
-		padding-right: 33.33333333%;
+		margin-right: 33.33333333%;
 		
 	}
 }
 
 
 @media only screen and (min-width: $bp-md) {
-	.content h2, .content h3, .content p, .content blockquote {
-		padding-right: 33.33333333%;
+	.content h2, .content h3, .content p {
+		padding-right: 1.5rem;
 		padding-left: 8.33333333%;
-		margin-right: 1.5rem;
+		margin-right: 33.33333333%;
 	}
 }
+
+@media only screen and (min-width: $bp-md) {
+	.content blockquote {
+		padding-right: 1.5rem;
+		padding-left: 8.33333333%;
+		margin-right: 50%;
+	}
+}
+
 
 figure {
 	padding-top: 5rem;

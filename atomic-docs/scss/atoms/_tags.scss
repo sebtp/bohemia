@@ -8,5 +8,14 @@
 		
 		display: inline-block;
 		padding-right: 2rem;
+		
+		a {
+			text-decoration: none;
+			@include transition(all,0.3s,ease);
+			
+			&:hover {
+				color: $blue;
+			}
+		}
 	}
 }

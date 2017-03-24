@@ -7,8 +7,7 @@ blockquote {
 	font-weight: $light;
 	font-size: $h2-single;
 	line-height: $big-lh;
-	
-	padding: 5rem 0;
+	margin: 6rem auto;
 	
 	.author-wrapper {
 		font-size: $small-type;
@@ -33,7 +32,7 @@ blockquote {
 }
 
 blockquote > div.row  {
-		margin-left: 0;
-		margin-right: 0;
-	}
+	margin-left: 0;
+	margin-right: 0;
+}
 

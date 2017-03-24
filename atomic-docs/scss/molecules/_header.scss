@@ -21,7 +21,21 @@
 	.logo, .phone {
 		@include fluid-type(font-size, $bp-sm, $bp-lg, $header-type-min, $header-type-max);
 		@include transition (all, 0.3s, ease);
+		text-decoration: none;
 	}
+	.phone {
+		font-family: $headline-font;
+		font-weight: $bold;
+	}
+	
+	.logo {
+		font-size: $header-type;
+		strong {
+			font-weight: $bold;
+		}
+	}
+	
+	
 }
 
 	#header div > div:nth-child(1) {

@@ -5968,6 +5968,18 @@
 		"oAP": "\/atomic-docs\/components\/atoms\/buttons.php",
 		"oF": 0
 		},
+	"\/atomic-docs\/components\/atoms\/client.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/atomic-docs\/components\/atoms\/client.php",
+		"oF": 0
+		},
+	"\/atomic-docs\/components\/atoms\/date.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/atomic-docs\/components\/atoms\/date.php",
+		"oF": 0
+		},
 	"\/atomic-docs\/components\/atoms\/hamburger.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -6052,12 +6064,6 @@
 		"oAP": "\/atomic-docs\/components\/organisms\/footer.php",
 		"oF": 0
 		},
-	"\/atomic-docs\/components\/organisms\/header.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/atomic-docs\/components\/organisms\/header.php",
-		"oF": 0
-		},
 	"\/atomic-docs\/components\/organisms\/next_prev.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -6076,10 +6082,10 @@
 		"oAP": "\/atomic-docs\/components\/templates\/overview-work.php",
 		"oF": 0
 		},
-	"\/atomic-docs\/components\/templates\/single-green.php": {
+	"\/atomic-docs\/components\/templates\/single-blog.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/atomic-docs\/components\/templates\/single-green.php",
+		"oAP": "\/atomic-docs\/components\/templates\/single-blog.php",
 		"oF": 0
 		},
 	"\/atomic-docs\/components\/templates\/single-work.php": {
@@ -6285,6 +6291,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/atomic-docs\/css\/_buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/atomic-docs\/scss\/atoms\/_client.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/atomic-docs\/css\/_client.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/atomic-docs\/scss\/atoms\/_date.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/atomic-docs\/css\/_date.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -6497,19 +6529,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/atomic-docs\/scss\/organisms\/_header.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/atomic-docs\/css\/_header.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/atomic-docs\/scss\/organisms\/_next_prev.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -6562,7 +6581,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/atomic-docs\/scss\/templates\/_single-green.scss": {
+	"\/atomic-docs\/scss\/templates\/_single-blog.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -6570,7 +6589,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/atomic-docs\/css\/_single-green.css",
+		"oAP": "\/atomic-docs\/css\/_single-blog.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -6931,6 +6950,46 @@
 		"oA": 2,
 		"oAP": "\/grid-test.html",
 		"oF": 0
+		},
+	"\/img\/dot-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/dot-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/dot-green.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/dot-green.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/dot-red.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/dot-red.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/dot-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/dot-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/lake.jpg": {
 		"ft": 16384,

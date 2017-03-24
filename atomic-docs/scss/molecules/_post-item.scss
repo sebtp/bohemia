@@ -1,18 +1,34 @@
 /* scss/molecules/_post-item.scss */
 
-.single-work .post-item, 
-.overview-work .post-item {
-	//@include linear-gradient-img (45deg,$blue,$red);
-}
-
 .single-blog .post-item,
 .overview-blog .post-item{
 	@include linear-gradient-img (45deg,$blue,$green);
+	
+ 	color:$white;
+	
+	.client {
+		color:$white;
+	}
+}
+
+.single-about .post-item,
+.overview-about .post-item {
+	@include linear-gradient-img (45deg,$blue,$red);
+}
+
+.single-work .post-item,
+.overview-work .post-item {
+	
+	color:$white;
+	
+	.client {
+		color:$white;
+	}
 }
 
 .post-item {
 	display: block;
-	height: 60vh; //same height as the header
+	height: 60vw;
 	padding: 0;
 	margin: 0;
 	color: $white;
@@ -33,64 +49,66 @@
 		height: 100%;
 		display: block;
 		object-fit: cover;
-		opacity: .5;
+		opacity: 0;
 		transition: all .5s ease-in-out;
 	}
 	
-	&:nth-child(even) {
+	/*&:nth-child(even) {
 		margin-top: -6vh;
-	}
-	
-	h3 {
-		@include fluid-type(font-size, $bp-sm, $bp-lg, $post-title-min, $post-title-max);
-	}
+	}*/
 	
 	.post-item-inner {
 		@include fluid-type(margin-left, $bp-sm, $bp-lg, 1rem, 2rem);
-		@include fluid-type(bottom, $bp-sm, $bp-lg, 4rem, 7rem);
+		@include fluid-type(bottom, $bp-sm, $bp-lg, 2rem, 4rem);
 		position: absolute;
+		
+		h3 {
+			@include fluid-type(font-size, $bp-md, 192rem, $h1-overview-min, $h1-overview-max);
+			@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 2rem, 3rem); 
+		}
+		.tags {
+			 @include fluid-type(margin-bottom, $bp-sm, $bp-lg, 2rem, 3rem); 
+		}
+	
 	}
 	
 }
 
 .single-work .post-item,
-.single-blog .post-item {
+.single-blog .post-item,
+.single-about .post-item,
+{
 	&:first-child {
 		display: none; // display only the NEXT PROJECT in the Single pages - MOBILE
 	}
 }
 
-.clip-svg {
-  width: 0;
-  height: 0;
-	position: absolute;
-}
 
-.clip-svg-post {
-  -webkit-clip-path: url("#clip-polygon-post");
-  clip-path: url("#clip-polygon-post");
-  overflow: hidden;
-}
-
-@media only screen and (min-width: $bp-sm) {
-	/*.post-item {
-		height: 60vh;
-	}*/
+@media only screen and (min-width: $bp-md) {
+	.post-item {
+		height: 30vw;
+	}
 	
 	.single-work .post-item,
-	.single-blog .post-item {
+	.single-blog .post-item,
+	.single-about .post-item {
 		&:first-child {
 			display: block;
 		}
 	}
 	
-	.clip-svg-post {
-	  -webkit-clip-path: url("#clip-polygon-post-sm");
-	  clip-path: url("#clip-polygon-post-sm");
-	}
-
 }
 
 
+.clip-svg {
+	width: 0;
+	height: 0;
+	position: absolute;
+}
 
+.clip-svg-post {
+	-webkit-clip-path: url("#clip-polygon-post");
+	clip-path: url("#clip-polygon-post");
+	overflow: hidden;
+}
 
