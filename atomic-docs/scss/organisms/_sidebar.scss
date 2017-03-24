@@ -1,13 +1,25 @@
 /* scss/organisms/_sidebar.scss */
 
 aside {
-		position: relative;
-
+	position: relative; //on mobile let the aside go to it's correct place
+		
+	p {
+		font-family: $headline-font;
+		font-size: $small-type;
 	}
+}
+
+.single-work aside p,
+.single-about aside p {
+	color: $red;
+}
+.single-blog aside p {
+	color: $green;
+}
 
 @media only screen and (min-width: $bp-sm) {
 	aside {
-		position: absolute;
+		position: absolute; //on tablet and up get the sidebar on the side
 
 		margin-top:269px;
 		padding: 0;

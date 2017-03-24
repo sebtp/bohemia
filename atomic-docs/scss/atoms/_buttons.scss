@@ -11,15 +11,26 @@ button {
 	border-width: 3px;
 	border-style: solid;
 	color: $white;
+	margin: 2rem 0;
 }
 
-button.outline {
+button.outline-white {
 	border-color: $white;
 	margin: 6rem auto 2rem;
 }
-
+button.outline-green {
+	@include linear-gradient-border(45deg,$blue,$green);
+	@include linear-gradient-text(45deg,$blue,$green);
+	margin: 6rem auto 2rem;
+}
 button.red-btn {
-	border-color: $red;
+	border-color: transparent;
+	@include linear-gradient-border(90deg,$blue,$red);
 	@include linear-gradient-img(45deg,$blue,$red);
-	margin: 2rem 0;
+}
+
+button.green-btn {
+	border-color: transparent;
+	@include linear-gradient-border(90deg,$blue,$green);
+	@include linear-gradient-img(45deg,$blue,$green);
 }

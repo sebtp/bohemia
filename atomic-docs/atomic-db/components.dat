@@ -230,5 +230,21 @@
         "backgroundColor": "",
         "order": -29,
         "has_js": "false"
+    },
+    {
+        "component": "caption",
+        "category": "atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -28,
+        "has_js": "false"
+    },
+    {
+        "component": "load-button",
+        "category": "atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -29,
+        "has_js": "false"
     }
 ]

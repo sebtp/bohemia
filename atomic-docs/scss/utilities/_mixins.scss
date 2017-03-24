@@ -24,11 +24,34 @@
   }
 }
 
+// Mixin: Fluid Type REVERSE - Where the first value is bigger than the second one
+@mixin fluid-type-reverse($properties, $min-vw, $max-vw, $min-value, $max-value) {
+  $min-vw-adj: $min-vw * 1.6; //fix for the 16px base font issue
+  $max-vw-adj: $max-vw * 1.6; //fix for the 16px base font issue
+  & {
+    @each $property in $properties {
+      #{$property}: $max-value;
+    }
+
+    @media screen and (min-width: $min-vw) {
+      @each $property in $properties {
+        #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw-adj}) / #{strip-unit($max-vw-adj - $min-vw-adj)}));
+      }
+    }
+
+    @media screen and (min-width: $max-vw) {
+      @each $property in $properties {
+        #{$property}: $min-value;
+      }
+    }
+  }
+}
+
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
 }
 
-// liner gradient - text
+// linear gradient - text
 @mixin linear-gradient-text($direction, $colors...) {
 	background: -webkit-linear-gradient($direction, $colors);
 	background: -moz-linear-gradient($direction, $colors);
@@ -40,13 +63,22 @@
 	display: inline-block;
 }
 
-// liner gradient - img
+// linear gradient - img
 @mixin linear-gradient-img($direction, $colors...) {
 	background-image: -webkit-linear-gradient($direction, $colors);
 	background-image: -moz-linear-gradient($direction, $colors);
 	background-image: -o-linear-gradient($direction, $colors);
 	background-image: -ms-linear-gradient($direction, $colors);
 	background-image: linear-gradient($direction, $colors);
+}
+
+// linear gradient - border
+@mixin linear-gradient-border($direction, $colors...) {
+    -webkit-border-image: -webkit-linear-gradient($direction, $colors);
+    -moz-border-image: -moz-linear-gradient($direction, $colors);  
+    -o-border-image: -o-linear-gradient($direction, $colors);
+    border-image: linear-gradient($direction, $colors);
+	border-image-slice: 1
 }
 
 /* transition syntax

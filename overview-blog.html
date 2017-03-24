@@ -14,15 +14,14 @@
 		<link rel="stylesheet" href="atomic-docs/css/main.css">
 
 		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-		
 	</head>
-	<body class="single-blog">
- 
+	<body class="overview-blog">
+ 		
  		<!-- Clipping SVG for the post-item -->
 		<svg class="clip-svg">
 		  <defs>
 			<clippath id="clip-polygon-post" clipPathUnits="objectBoundingBox">
-			  <polygon points="0 1, 0 0.15, 1 0, 1 0.85" />
+			  <polygon points="0 1, 0 0.105, 1 0, 1 0.895" />
 			  <!-- When changing these, also change the _post-item.scss -->
 			</clippath>
 		  </defs>
@@ -32,13 +31,23 @@
 		<svg class="clip-svg">
 		  <defs>
 			<clippath id="clip-polygon-hero" clipPathUnits="objectBoundingBox">
-			  <polygon points="0 1, 0 0, 1 0, 1 0.85" />
+			  <polygon points="0 1, 0 0, 1 0, 1 0.8" />
 			  <!-- When changing these, also change the _post-item.scss -->
 			</clippath>
 		  </defs>
 		</svg> 
-		
- 		<!-- 	The hidden menu -->
+ 		  		 		 		
+ 		<!-- Clipping SVG for the Footer -->
+		<svg class="clip-svg" preserveAspectRatio="xMaxYMax meet">
+		  <defs>
+			<clippath id="clip-polygon-footer" clipPathUnits="objectBoundingBox">
+			  <polygon points="0 1, 0 0.55, 1 0, 1 1" />
+			  <!-- When changing these, also change the _post-item.scss -->
+			</clippath>
+		  </defs>
+		</svg> 
+  		  		 		 		
+<!-- 	The hidden menu -->
 	   	<nav class="menu"> 
 			<div class="menu-container">
 				<div class="menu-content">
@@ -64,7 +73,7 @@
 						<button id="ham"><span></span><span></span><span></span><span></span></button>
 					</div>
 					<div class="col-md-4">
-						<a class="logo" href="#"><strong>Bohemia</strong> Amsterdam</a>
+						<a class="logo" href="#"><strong>Bohemia</strong> Amsterdam</a> 
 					</div>
 					<div class="col-xs-8 col-md-4">
 						<a class="phone">&#43;31 (0)20 42 33 555</a>
@@ -73,97 +82,18 @@
 			</div>			
 		</header>
 
-  		
-<!-- 	The hero image. echo the url at PHPHERE-->
-		<div class="hero clip-svg-hero" style="
-			background-image: url('http://lorempixel.com/1920/1080');
-			background-image: url('http://lorempixel.com/1920/1080'), -webkit-linear-gradient(45deg,#0046b4,#46beaf);
-			background-image: url('http://lorempixel.com/1920/1080'), -moz-linear-gradient(45deg,#0046b4,#46beaf);
-			background-image: url('http://lorempixel.com/1920/1080'), -o-linear-gradient(45deg,#0046b4,#46beaf);
-			background-image: url('http://lorempixel.com/1920/1080'), -ms-linear-gradient(45deg,#0046b4,#46beaf);
-			background-image: url('http://lorempixel.com/1920/1080'), linear-gradient(45deg,#0046b4,#46beaf);
-			"></div>
+<!-- 	The hero image. echo the url instead of: http://lorempixel.com/1920/1080-->
+		<div class="hero container-full" style="background-image: url(http://lorempixel.com/1920/1080)">
+			<div class="row">
+				<div class="col-xs col-sm-6 col-md-5 col-md-offset-1 col-lg-4">
+					<h1>Blog</h1>
+					<div class="white-bg">Our aim is to make sure you reach your target group constantly and consistently. Meticulous strategy, smart branding, clever campaigns and top notch design are always found in our toolbox.</div>
+				</div>
+			</div>
+		</div>
   		
 <!-- 	The main content -->
-		<main class="container-fluid relative">
-			<div class="row">
-				<article class="col-xs-12"> 
-					
-				<!-- Header -->
-					<header class="col-xs col-sm-7 col-md-offset-1">
-						<div class="row">
-							<div class="title">Heading 1 and something</div>
-						</div>
-						<div class="row">
-							<div class="meta">
-								<h1>SEO proof title</h1>
-								<time>15 JAN 2017</time>
-							</div>
-						</div>						
-					</header>
-
-				<!-- Intro -->
-					<section class="col-xs col-sm-7 col-md-offset-1">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-					</section>
-
-				<!-- Content -->
-					<section class="content">
-						<h2>Heading 2</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-						<figure>
-							<img src="http://lorempixel.com/940/530" alt="">
-							<figcaption>Caption here</figcaption>
-						</figure>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus sunt consectetur voluptatibus veritatis atque odio, architecto velit nulla modi rerum corporis vitae sapiente optio ea autem dignissimos facilis. Error, ullam!</p>
-						<h3>Heading 3</h3>
-						<p>Sit praesentium, aut! Amet obcaecati fugit recusandae commodi dignissimos nam ullam consequatur ut eveniet voluptates quae tempore, id natus facilis, iusto delectus eius quo harum, laboriosam est voluptas at quas?</p>
-						<blockquote cite="http://source-site.com" class="col-lg-10 green">
-							<div class="row">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>						
-							<div class="author-wrapper row middle-xs">
-								<img src="http://lorempixel.com/54/54" alt="author">						
-								<div class="author-inner">
-									<div class="row">Guy van Everdingen</div>
-									<div class="row">Sales & Marketing Manager at Sasma BV</div>
-								</div>
-							</div>
-							
-						</blockquote>
-						<p>Numquam iure temporibus architecto eveniet, quasi rerum commodi natus ab amet perferendis totam suscipit necessitatibus repudiandae ipsum neque, est accusamus facere quis ex illo magnam? Error animi nam accusamus nostrum.</p>
-						
-					</section>							
-
-				<!-- Content Footer -->
-					<footer class="tags col-xs-8 col-md-offset-1 col-md-7">
-						<div class="row">
-							<ul>
-								<li><a href="#">#Article Tag</a></li>
-								<li><a href="#">#Article Tag</a></li>
-								<li><a href="#">#Article Tag</a></li>
-								<li><a href="#">#Article Tag</a></li>
-							</ul>
-						</div>						
-					</footer>
-				</article>
-			
-				
-		<!-- 	Sidebar -->
-
-				<aside class="col-xs col-sm-4 col-md-3">
-					<div>
-						<h4>Free download</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-						<button class="green-btn">Download Case-study</button>
-					</div>
-					
-				</aside>
-
-
-			</div>
-		</main>
-		
-<!-- 	Prev/Next -->
-		<section class="container-full">
+		<main class="container-full">
 			<div class="row">
 				<a href="" class="col-xs-12 col-md-6 post-item">
 					<span></span>
@@ -196,7 +126,111 @@
 					<img src="http://lorempixel.com/1920/1080" alt="">						
 					<div class="row post-item-inner">
 						<div class="col-xs col-sm-11">
-							<h2>BREAKING NEWS: Persbericht is goud waard</h2>
+							<h2>Persbericht is goud waard</h2>
+							<div class="tags">
+								<ul>
+									<li>#Inbound Marketing</li>
+									<li>#Communication Strategies</li>
+									<li>#Content Development</li>
+									<li>#Customer & Sales Journeys</li>
+								</ul>
+							</div>
+							
+							<div class="author col-xs">
+								<div class="author-wrapper row middle-xs">
+									<img src="http://lorempixel.com/54/54" alt="author">			
+									<div class="author-inner">
+										<div class="row">Guy van Everdingen</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>		
+				<a href="" class="col-xs-12 col-md-6 post-item">
+					<span></span>
+					<img src="http://lorempixel.com/1920/1080" alt="">						
+					<div class="row post-item-inner">
+						<div class="col-xs col-sm-11">
+							<h2>Persbericht is goud waard</h2>
+							<div class="tags">
+								<ul>
+									<li>#Inbound Marketing</li>
+									<li>#Communication Strategies</li>
+									<li>#Content Development</li>
+									<li>#Customer & Sales Journeys</li>
+								</ul>
+							</div>
+							
+							<div class="author col-xs">
+								<div class="author-wrapper row middle-xs">
+									<img src="http://lorempixel.com/54/54" alt="author">			
+									<div class="author-inner">
+										<div class="row">Guy van Everdingen</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="" class="col-xs-12 col-md-6 post-item">
+					<span></span>
+					<img src="http://lorempixel.com/1920/1080" alt="">						
+					<div class="row post-item-inner">
+						<div class="col-xs col-sm-11">
+							<h2>Persbericht is goud waard</h2>
+							<div class="tags">
+								<ul>
+									<li>#Inbound Marketing</li>
+									<li>#Communication Strategies</li>
+									<li>#Content Development</li>
+									<li>#Customer & Sales Journeys</li>
+								</ul>
+							</div>
+							
+							<div class="author col-xs">
+								<div class="author-wrapper row middle-xs">
+									<img src="http://lorempixel.com/54/54" alt="author">			
+									<div class="author-inner">
+										<div class="row">Guy van Everdingen</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="" class="col-xs-12 col-md-6 post-item">
+					<span></span>
+					<img src="http://lorempixel.com/1920/1080" alt="">						
+					<div class="row post-item-inner">
+						<div class="col-xs col-sm-11">
+							<h2>Persbericht is goud waard</h2>
+							<div class="tags">
+								<ul>
+									<li>#Inbound Marketing</li>
+									<li>#Communication Strategies</li>
+									<li>#Content Development</li>
+									<li>#Customer & Sales Journeys</li>
+								</ul>
+							</div>
+							
+							<div class="author col-xs">
+								<div class="author-wrapper row middle-xs">
+									<img src="http://lorempixel.com/54/54" alt="author">			
+									<div class="author-inner">
+										<div class="row">Guy van Everdingen</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="" class="col-xs-12 col-md-6 post-item">
+					<span></span>
+					<img src="http://lorempixel.com/1920/1080" alt="">						
+					<div class="row post-item-inner">
+						<div class="col-xs col-sm-11">
+							<h2>Persbericht is goud waard</h2>
 							<div class="tags">
 								<ul>
 									<li>#Inbound Marketing</li>
@@ -218,8 +252,16 @@
 					</div>
 				</a>
 			</div>
-		</section> 
-		
+			<div class="row center-xs">
+				<div class="col-xs">
+					<button class="outline-green">Load more</button>
+				</div>
+			</div>
+			<div class="tree">
+				<img src="../../../../img/lake.jpg" alt="">
+			</div>
+		</main>
+				
 <!-- 	Footer -->
 		<footer class="container-fluid">
 			<div class="row center-xs end-md">
@@ -240,7 +282,9 @@
 					</div>
 				</div>
 			</div>
+			
 		</footer>
+		
 
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>

@@ -5,6 +5,7 @@
 	$red: 	#fa5f69;	$red-trans: 	rgba(250,95,105,0.7);
 	$green: #46beaf;	$green-trans: 	rgba(70,190,175,0.7);
 	$white: #ffffff;
+	$grey:  #9ca8b7;
 
 // GRID - the media queries take only 16px as base font (from the browser)
 	$bp-sm: 48rem; // 48 * 16 = 768px 
@@ -82,10 +83,13 @@
 		$intro-single: $size4;		// intro
 
 	// Paddings
-	$h1-single-pad: $h1-single-max * $pad-multiplier;
-	//$h1-single-work-pad: $h1-single-work * $pad-multiplier;
+	$h1-single-pad-min: $h1-single-min * $pad-multiplier;
+	$h1-single-pad-max: $h1-single-max * $pad-multiplier;
+
+	$h1-overview-pad-min: $h1-overview-min * $pad-multiplier;
+	$h1-overview-pad-max: $h1-overview-max * $pad-multiplier;
+
 	$h2-pad: $h2-single * $pad-multiplier;
 	$h3-pad: $h3-single * $pad-multiplier;
 	$h4-pad: $h4-single * $pad-multiplier;
 
-	$h1-overview-pad: $h1-overview-max * $pad-multiplier
