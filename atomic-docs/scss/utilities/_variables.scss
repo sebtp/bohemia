@@ -59,14 +59,22 @@
 		$h2-single-max:			$size6;
 
 		//post-item-title
-		$h1-overview-min:		$size6;
-		$h1-overview-max:		$size8;
+		$h1-overview-min:		$size8;
+		$h1-overview-max:		$size9;
 
-		$client-type: $size4;
-
+		//post-item-title
+		$h2-overview-min:		$size6;
+		$h2-overview-max:		$size7;
+		
+		// hero
+		$hero-type-min: $size3;
+		$hero-type-max: $size4;	
+		
+		
 		$small-type: $size1;		// blockquote author,
 		$sidebar-type: $size2;		// sidebar, date
 		$header-type: $size4;		// phone, logo
+		$footer-type: $size2;		// footer
 		$body-size: $size3;			// body
 		$h2-single: $size6; 		// H2, blockquote, 
 		$h3-single: $size5;			// H3

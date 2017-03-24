@@ -72,6 +72,18 @@ h1, h2, h3, h4, h5, h6, .title {
 	@include fluid-type(font-size, $bp-sm, $bp-lg, $h1-single-min, $h1-single-max);
 }
 
+.overview-work h1,
+.overview-blog h1,
+.overview-about h1 {
+	@include fluid-type(font-size, $bp-sm, $bp-lg, $h1-overview-min, $h1-overview-max);
+}
+
+.overview-work h2,
+.overview-blog h2,
+.overview-about h2 {
+	@include fluid-type(font-size, $bp-sm, $bp-lg, $h2-overview-min, $h2-overview-max);
+}
+
 h3 {
 	
 	font-weight: $light;

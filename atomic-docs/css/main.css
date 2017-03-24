@@ -76,6 +76,9 @@ body {
 .relative {
   position: relative; }
 
+strong {
+  font-weight: 700; }
+
 .container-fluid, .container, .container-full {
   margin-right: auto;
   margin-left: auto; }
@@ -117,6 +120,10 @@ body {
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse; }
 
+/* 
+ * Name: xs
+ * Desc: Vertical mobile
+ */
 .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-offset-0, .col-xs-offset-1, .col-xs-offset-2, .col-xs-offset-3, .col-xs-offset-4, .col-xs-offset-5, .col-xs-offset-6, .col-xs-offset-7, .col-xs-offset-8, .col-xs-offset-9, .col-xs-offset-10, .col-xs-offset-11, .col-xs-offset-12 {
   box-sizing: border-box;
   -webkit-box-flex: 0;
@@ -281,6 +288,10 @@ body {
   -ms-flex-order: 1;
   order: 1; }
 
+/* 
+ * Name: sm
+ * Desc: Vertical tablets or landscape mobile
+ */
 @media only screen and (min-width: 48rem) {
   .container {
     width: 49rem; }
@@ -413,6 +424,10 @@ body {
     -ms-flex-order: 1;
     order: 1; } }
 
+/* 
+ * Name: md
+ * Desc: Lanscape tablets and small desktop
+ */
 @media only screen and (min-width: 64rem) {
   .container {
     width: 65rem; }
@@ -545,6 +560,10 @@ body {
     -ms-flex-order: 1;
     order: 1; } }
 
+/* 
+ * Name: lg
+ * Desc: Large desktop
+ */
 @media only screen and (min-width: 75rem) {
   .container {
     width: 96%;
@@ -804,14 +823,25 @@ button {
   font-size: 2.1rem;
   font-style: italic;
   font-weight: 700;
-  line-height: 0.8; }
-
-button.outline {
+  line-height: 0.8;
   height: 6.4rem;
   padding: 0 6rem;
-  margin: 6rem auto 2rem;
-  border: 3px solid #ffffff;
+  border-width: 3px;
+  border-style: solid;
   color: #ffffff; }
+
+button.outline {
+  border-color: #ffffff;
+  margin: 6rem auto 2rem; }
+
+button.red-btn {
+  border-color: #fa5f69;
+  background-image: -webkit-linear-gradient(45deg, #0046b4, #fa5f69);
+  background-image: -moz-linear-gradient(45deg, #0046b4, #fa5f69);
+  background-image: -o-linear-gradient(45deg, #0046b4, #fa5f69);
+  background-image: -ms-linear-gradient(45deg, #0046b4, #fa5f69);
+  background-image: linear-gradient(45deg, #0046b4, #fa5f69);
+  margin: 2rem 0; }
 
 /* scss/atoms/_hamburger.scss */
 /* hamburger button */
@@ -883,7 +913,7 @@ button.outline {
 
 .overview-work h1,
 .overview-blog h1 {
-  padding: 4.644rem 0;
+  padding: 7.74rem 0;
   line-height: 0.6; }
 
 h2 {
@@ -958,6 +988,36 @@ h1, h2, h3, h4, h5, h6, .title {
     .single-work h1 {
       font-size: 10.8rem; } }
 
+.overview-work h1,
+.overview-blog h1,
+.overview-about h1 {
+  font-size: 10.8rem; }
+  @media screen and (min-width: 48rem) {
+    .overview-work h1,
+    .overview-blog h1,
+    .overview-about h1 {
+      font-size: calc(10.8rem + 7.2 * ((100vw - 76.8rem) / 43.2)); } }
+  @media screen and (min-width: 75rem) {
+    .overview-work h1,
+    .overview-blog h1,
+    .overview-about h1 {
+      font-size: 18rem; } }
+
+.overview-work h2,
+.overview-blog h2,
+.overview-about h2 {
+  font-size: 5.5rem; }
+  @media screen and (min-width: 48rem) {
+    .overview-work h2,
+    .overview-blog h2,
+    .overview-about h2 {
+      font-size: calc(5.5rem + 3.5 * ((100vw - 76.8rem) / 43.2)); } }
+  @media screen and (min-width: 75rem) {
+    .overview-work h2,
+    .overview-blog h2,
+    .overview-about h2 {
+      font-size: 9rem; } }
+
 h3 {
   font-weight: 100;
   font-size: 4rem;
@@ -998,11 +1058,23 @@ h6 {
 }*/
 /* scss/atoms/_hero.scss */
 .hero {
-  height: 60vh;
+  min-height: 66.66666vh;
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-blend-mode: screen; }
+  .hero .white-bg {
+    padding: 2rem;
+    font-family: "brandon-grotesque", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100; }
+    .hero .white-bg {
+      font-size: 2.1rem; }
+      @media screen and (min-width: 48rem) {
+        .hero .white-bg {
+          font-size: calc(2.1rem + 0.7 * ((100vw - 76.8rem) / 43.2)); } }
+      @media screen and (min-width: 75rem) {
+        .hero .white-bg {
+          font-size: 2.8rem; } }
 
 .clip-svg-hero {
   -webkit-clip-path: url("#clip-polygon-hero");
@@ -1101,8 +1173,6 @@ time {
     font-weight: 700; }
   #header .logo {
     font-size: 2.8rem; }
-    #header .logo strong {
-      font-weight: 700; }
 
 #header div > div:nth-child(1) {
   text-align: left; }
@@ -1298,13 +1368,13 @@ time {
         .post-item .post-item-inner {
           bottom: 4rem; } }
     .post-item .post-item-inner h3 {
-      font-size: 5.5rem; }
+      font-size: 10.8rem; }
       @media screen and (min-width: 64rem) {
         .post-item .post-item-inner h3 {
-          font-size: calc(5.5rem + 5.3 * ((100vw - 102.4rem) / 204.8)); } }
+          font-size: calc(10.8rem + 7.2 * ((100vw - 102.4rem) / 204.8)); } }
       @media screen and (min-width: 192rem) {
         .post-item .post-item-inner h3 {
-          font-size: 10.8rem; } }
+          font-size: 18rem; } }
     .post-item .post-item-inner h3 {
       margin-bottom: 2rem; }
       @media screen and (min-width: 48rem) {
@@ -1376,9 +1446,10 @@ blockquote > div.row {
   clip-path: url("#clip-polygon-footer"); }
 
 footer {
-  width: 100%;
-  background: #ffffff; }
+  background: #ffffff;
+  font-size: 1.8rem; }
   footer .row {
+    padding-top: 5rem;
     padding-bottom: 5rem; }
 
 /* scss/organisms/_next_prev.scss */

@@ -6,14 +6,20 @@ button {
 	font-style: italic;
 	font-weight: $bold;
 	line-height: $big-lh;
+	height: 6.4rem;
+	padding: 0 6rem;
+	border-width: 3px;
+	border-style: solid;
+	color: $white;
 }
 
 button.outline {
-	height: 6.4rem;
-	padding: 0 6rem;
+	border-color: $white;
 	margin: 6rem auto 2rem;
+}
 
-	border: 3px solid $white;
-	
-	color: $white;	
+button.red-btn {
+	border-color: $red;
+	@include linear-gradient-img(45deg,$blue,$red);
+	margin: 2rem 0;
 }

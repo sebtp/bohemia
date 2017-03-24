@@ -47,6 +47,11 @@
   flex-direction: column-reverse;
 }
 
+/* 
+ * Name: xs
+ * Desc: Vertical mobile
+ */
+
 .col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-offset-0, .col-xs-offset-1, .col-xs-offset-2, .col-xs-offset-3, .col-xs-offset-4, .col-xs-offset-5, .col-xs-offset-6, .col-xs-offset-7, .col-xs-offset-8, .col-xs-offset-9, .col-xs-offset-10, .col-xs-offset-11, .col-xs-offset-12 {
   box-sizing: border-box;
   -webkit-box-flex: 0;
@@ -247,6 +252,11 @@
   order: 1;
 }
 
+/* 
+ * Name: sm
+ * Desc: Vertical tablets or landscape mobile
+ */
+
 @media only screen and (min-width: $bp-sm) {
   .container {
     width: 49rem;
@@ -417,6 +427,11 @@
   }
 }
 
+/* 
+ * Name: md
+ * Desc: Lanscape tablets and small desktop
+ */
+
 @media only screen and (min-width: $bp-md) {
   .container {
     width: 65rem;
@@ -586,6 +601,11 @@
     order: 1;
   }
 }
+
+/* 
+ * Name: lg
+ * Desc: Large desktop
+ */
 
 @media only screen and (min-width: $bp-lg) {
   .container {

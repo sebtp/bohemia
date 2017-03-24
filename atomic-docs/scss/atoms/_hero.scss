@@ -1,12 +1,18 @@
 /* scss/atoms/_hero.scss */
 
 .hero {
-	height: 60vh; //same height as a post-item
+	min-height: 66.66666vh; //same height as a post-item
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
 	background-blend-mode: screen;
 	
+	.white-bg {
+		padding: 2rem;
+		font-family: $headline-font;
+		@include fluid-type(font-size, $bp-sm, $bp-lg, $hero-type-min, $hero-type-max);
+		font-weight: $light;
+	}
 }
 
 .single-blog .hero {
