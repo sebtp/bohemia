@@ -5,12 +5,16 @@
   clip-path: url("#clip-polygon-footer");
 }
 
-footer {
+body > footer {
 	
 	background: $white;
 	font-size: $footer-type;
 	.row {
 		padding-top: 5rem;
 		padding-bottom: 5rem;
+	}
+	img {
+		width: 4.4rem;
+		height: auto;
 	}
 }

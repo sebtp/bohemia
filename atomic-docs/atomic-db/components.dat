@@ -28,7 +28,7 @@
         "category": "utilities",
         "description": "Custom grid taken from the HTML5 Boilerplate",
         "backgroundColor": "",
-        "order": 3,
+        "order": 4,
         "has_js": "false"
     },
     {
@@ -36,7 +36,7 @@
         "category": "utilities",
         "description": "Small things to help us make the flow faster",
         "backgroundColor": "",
-        "order": 4,
+        "order": 5,
         "has_js": "false"
     },
     {
@@ -52,7 +52,7 @@
         "category": "utilities",
         "description": "The basis such as <html> and <body>",
         "backgroundColor": "",
-        "order": 2,
+        "order": 3,
         "has_js": "false"
     },
     {
@@ -132,7 +132,7 @@
         "category": "utilities",
         "description": "All the mixins",
         "backgroundColor": "",
-        "order": 5,
+        "order": 2,
         "has_js": "false"
     },
     {
@@ -245,6 +245,46 @@
         "description": "",
         "backgroundColor": "",
         "order": -29,
+        "has_js": "false"
+    },
+    {
+        "component": "intro",
+        "category": "molecules",
+        "description": "",
+        "backgroundColor": "",
+        "order": -30,
+        "has_js": "false"
+    },
+    {
+        "component": "single",
+        "category": "templates",
+        "description": "",
+        "backgroundColor": "",
+        "order": -31,
+        "has_js": "false"
+    },
+    {
+        "component": "author",
+        "category": "molecules",
+        "description": "",
+        "backgroundColor": "",
+        "order": -32,
+        "has_js": "false"
+    },
+    {
+        "component": "form",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -33,
+        "has_js": "false"
+    },
+    {
+        "component": "overview-clients",
+        "category": "templates",
+        "description": "",
+        "backgroundColor": "",
+        "order": -34,
         "has_js": "false"
     }
 ]

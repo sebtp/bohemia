@@ -1,6 +1,8 @@
 /* scss/atoms/_tags.scss */
 
 .tags {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 	li {
 		font-family: $body-font;
 		font-style: italic;
@@ -17,5 +19,12 @@
 				color: $blue;
 			}
 		}
+	}
+}
+
+@media only screen and (min-width: $bp-sm) {
+	.tags {
+		margin-top: 6rem;
+		margin-bottom: 8rem;
 	}
 }

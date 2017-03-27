@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25704",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/404.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -6034,6 +6040,12 @@
 		"oAP": "\/atomic-docs\/components\/atoms\/tree.php",
 		"oF": 0
 		},
+	"\/atomic-docs\/components\/molecules\/author.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/atomic-docs\/components\/molecules\/author.php",
+		"oF": 0
+		},
 	"\/atomic-docs\/components\/molecules\/gallery.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -6044,6 +6056,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/atomic-docs\/components\/molecules\/header.php",
+		"oF": 0
+		},
+	"\/atomic-docs\/components\/molecules\/intro.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/atomic-docs\/components\/molecules\/intro.php",
 		"oF": 0
 		},
 	"\/atomic-docs\/components\/molecules\/menu.php": {
@@ -6076,6 +6094,12 @@
 		"oAP": "\/atomic-docs\/components\/organisms\/footer.php",
 		"oF": 0
 		},
+	"\/atomic-docs\/components\/organisms\/form.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/atomic-docs\/components\/organisms\/form.php",
+		"oF": 0
+		},
 	"\/atomic-docs\/components\/organisms\/next_prev.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -6086,6 +6110,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/atomic-docs\/components\/organisms\/sidebar.php",
+		"oF": 0
+		},
+	"\/atomic-docs\/components\/templates\/overview-clients.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/atomic-docs\/components\/templates\/overview-clients.php",
 		"oF": 0
 		},
 	"\/atomic-docs\/components\/templates\/overview-work.php": {
@@ -6104,6 +6134,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/atomic-docs\/components\/templates\/single-work.php",
+		"oF": 0
+		},
+	"\/atomic-docs\/components\/templates\/single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/atomic-docs\/components\/templates\/single.php",
 		"oF": 0
 		},
 	"\/atomic-docs\/components\/utilities\/base.php": {
@@ -6463,6 +6499,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/atomic-docs\/scss\/molecules\/_author.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/atomic-docs\/css\/_author.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/atomic-docs\/scss\/molecules\/_gallery.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -6485,6 +6534,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/atomic-docs\/css\/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/atomic-docs\/scss\/molecules\/_intro.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/atomic-docs\/css\/_intro.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -6567,6 +6629,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/atomic-docs\/scss\/organisms\/_form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/atomic-docs\/css\/_form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/atomic-docs\/scss\/organisms\/_next_prev.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -6606,6 +6681,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/atomic-docs\/scss\/templates\/_overview-clients.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/atomic-docs\/css\/_overview-clients.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/atomic-docs\/scss\/templates\/_overview-work.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -6641,6 +6729,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/atomic-docs\/css\/_single-work.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/atomic-docs\/scss\/templates\/_single.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/atomic-docs\/css\/_single.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -6983,6 +7084,30 @@
 		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
+	"\/fonts\/Brandon_bld.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Brandon_bld.woff",
+		"oF": 0
+		},
+	"\/fonts\/Brandon_light.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Brandon_light.woff",
+		"oF": 0
+		},
+	"\/fonts\/Brandon_reg.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Brandon_reg.woff",
+		"oF": 0
+		},
+	"\/fonts\/Brandon_thin.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Brandon_thin.woff",
+		"oF": 0
+		},
 	"\/grid-test.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -7028,6 +7153,42 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/hero_about.jpg": {
+		"ft": 16384,
+		"iS": 79843,
+		"oA": 0,
+		"oAP": "\/img\/hero_about.jpg",
+		"oF": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/hero_blog.jpg": {
+		"ft": 16384,
+		"iS": 63718,
+		"oA": 0,
+		"oAP": "\/img\/hero_blog.jpg",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/hero_clients.jpg": {
+		"ft": 16384,
+		"iS": 139150,
+		"oA": 0,
+		"oAP": "\/img\/hero_clients.jpg",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/hero_work.jpg": {
+		"ft": 16384,
+		"iS": 48966,
+		"oA": 0,
+		"oAP": "\/img\/hero_work.jpg",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/img\/lake.jpg": {
 		"ft": 16384,
@@ -7098,16 +7259,34 @@
 		"oAP": "\/overview-blog.html",
 		"oF": 0
 		},
+	"\/overview-clients.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/overview-clients.html",
+		"oF": 0
+		},
 	"\/overview-work.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/overview-work.html",
 		"oF": 0
 		},
+	"\/single-about.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-about.html",
+		"oF": 0
+		},
 	"\/single-blog.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/single-blog.html",
+		"oF": 0
+		},
+	"\/single-contact.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-contact.html",
 		"oF": 0
 		},
 	"\/single-work.html": {

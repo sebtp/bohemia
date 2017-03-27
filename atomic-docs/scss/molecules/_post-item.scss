@@ -196,7 +196,8 @@
 		max-width: 100%;
 		
 		.tags {
-			 @include fluid-type(margin-bottom, $bp-sm, $bp-lg, 2rem, 3rem); 
+			@include fluid-type(margin-top, $bp-sm, $bp-lg, 1rem, 2rem); 
+			@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 2rem, 3rem); 
 		}
 	
 	}

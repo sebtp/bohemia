@@ -10,13 +10,17 @@
 	line-height: $small-lh;
 }
 
-.overview-work h1, 						//PADDING FIX - H1 - overview pages
-.overview-blog h1,
-.overview-about h1{						
-	@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
-	@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
-	line-height: $small-lh;
+.overview-work, 						//PADDING FIX - H1 - overview pages
+.overview-blog,
+.overview-about,
+.overview-clients{
+	h1 {
+		@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
+		@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
+		line-height: $small-lh;
+	}
 }
+
 
 h2 {									//PADDING FIX - H2
 	padding: $h2-pad 0;
@@ -43,19 +47,23 @@ h1, h2, h3, h4, h5, h6, .title {
 	//line-height: $small-lh;
 }
 
-.single-blog main {							// blue-green gradient - Headlines - single-blog 
+.single-blog,
+.overview-blog,
+.overview-clients {							// blue-green gradient - Headlines - single-blog 
 	h1, h2, h3, h4, h5, h6, .title {
 		@include linear-gradient-text(45deg,$blue,$green);
 	}
 }
 
-.single-work main {							// blue-red gradient - Headlines - single-work 
+.single-work, 
+.single-about, 
+.overview-work {							// blue-red gradient - Headlines - single-work 
 	h1, h2, h3, h4, h5, h6, .title {
 		@include linear-gradient-text(45deg,$blue,$red);
 	}	
 }
 
-.single-blog h1 { 						//the small SEO in single-blog	
+.single-blog h1 { 					//the small SEO in single-blog	
 	font-weight: 700;
 	font-size: $body-size;
 	line-height: $intro-lh;
@@ -65,29 +73,37 @@ h1, h2, h3, h4, h5, h6, .title {
 	display: inline-block;
 }
 
-.single-blog h2,						//H2 in single posts
-.single-work h2,
-.single-about h2 {
-	@include fluid-type(font-size, $bp-sm, $bp-lg, $h2-single-min, $h2-single-max);
-	margin: 2rem 0 0;
+.single-blog,					//H2 in single posts
+.single-work,
+.single-about {
+	h2 {
+		@include fluid-type(font-size, $bp-sm, $bp-lg, $h2-single-min, $h2-single-max);
+		margin: 2rem 0 0;
+	}
 }
 
-.single-blog .title, 					//H1 in single-work and single-about, and the Title in the single-blog
+.single-blog .title, 			//H1 in single-work and single-about, and the Title in the single-blog
 .single-work h1,
 .single-about h1 {						
 	@include fluid-type(font-size, $bp-sm, $bp-lg, $h1-single-min, $h1-single-max);
 }
 
-.overview-work h1,
-.overview-blog h1,
-.overview-about h1 {
-	@include fluid-type(font-size, $bp-sm, $bp-lg, $h1-overview-min, $h1-overview-max);
+.overview-work, 					//PADDING FIX - H1 - overview pages
+.overview-blog,
+.overview-about,
+.overview-clients {
+	h1 {
+		@include fluid-type(font-size, $bp-sm, $bp-lg, $h1-overview-min, $h1-overview-max);
+	}
 }
 
-.overview-work h2,
-.overview-blog h2,
-.overview-about h2 {
-	@include fluid-type(font-size, $bp-sm, $bp-lg, $h2-overview-min, $h2-overview-max);
+.overview-work, 					//PADDING FIX - H1 - overview pages
+.overview-blog,
+.overview-about,
+.overview-clients {
+	h2 {
+		@include fluid-type(font-size, $bp-sm, $bp-lg, $h2-overview-min, $h2-overview-max);
+	}
 }
 
 h3 {
@@ -107,33 +123,3 @@ h3 {
 h4 {
 	font-size: $h4-single;
 }
-/*
-.content h4 {
-	font-weight: 700;
-	font-size: 2rem;
-}
-
-article.project h2, h5 {
-	font-family: $headline-font;
-	font-weight: $h-weight;
-	font-size: $h3-single;
-	line-height: $body-lh;
-	@include linear-gradient(45deg,$blue,$red);
-}
-
-article.story h3 {
-	font-family: $headline-font;
-	font-weight: $h-weight;
-	font-size: $h3-single;
-	line-height: $big-lh;
-	padding: $h3-single-pad 0;
-	@include linear-gradient(45deg,$blue,$green);
-	margin-left: -3px;
-}
-
-h6 {
-	font-family: $headline-font;
-	font-weight: 700;
-	font-size: 3rem;
-	line-height: 3.5rem;
-}*/

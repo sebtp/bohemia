@@ -14,14 +14,15 @@
 		<link rel="stylesheet" href="atomic-docs/css/main.css">
 
 		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		
 	</head>
-	<body class="overview-about">
- 		
+	<body class="single-about">
+ 
  		<!-- Clipping SVG for the post-item -->
 		<svg class="clip-svg">
 		  <defs>
 			<clippath id="clip-polygon-post" clipPathUnits="objectBoundingBox">
-			  <polygon points="0 1, 0 0.105, 1 0, 1 0.895" />
+			  <polygon points="0 1, 0 0.15, 1 0, 1 0.85" />
 			  <!-- When changing these, also change the _post-item.scss -->
 			</clippath>
 		  </defs>
@@ -31,23 +32,13 @@
 		<svg class="clip-svg">
 		  <defs>
 			<clippath id="clip-polygon-hero" clipPathUnits="objectBoundingBox">
-			  <polygon points="0 1, 0 0, 1 0, 1 0.8" />
+			  <polygon points="0 1, 0 0, 1 0, 1 0.85" />
 			  <!-- When changing these, also change the _post-item.scss -->
 			</clippath>
 		  </defs>
 		</svg> 
- 		  		 		 		
- 		<!-- Clipping SVG for the Footer -->
-		<svg class="clip-svg" preserveAspectRatio="xMaxYMax meet">
-		  <defs>
-			<clippath id="clip-polygon-footer" clipPathUnits="objectBoundingBox">
-			  <polygon points="0 1, 0 0.55, 1 0, 1 1" />
-			  <!-- When changing these, also change the _post-item.scss -->
-			</clippath>
-		  </defs>
-		</svg> 
-  		  		 		 		
-<!-- 	The hidden menu -->
+		
+ 		<!-- 	The hidden menu -->
 	   	<nav class="menu"> 
 			<div class="menu-container">
 				<div class="menu-content">
@@ -58,6 +49,7 @@
 						<li><a href="overview-work.html">Overview Work</a></li>
 						<li><a href="overview-blog.html">Overview Blog</a></li>
 						<li><a href="overview-about.html">Overview About</a></li>
+						<li><a href="single-contact.html">Contact</a></li>
 					</ul>
 				</div> 
 			</div>
@@ -73,7 +65,7 @@
 						<button id="ham"><span></span><span></span><span></span><span></span></button>
 					</div>
 					<div class="col-md-4">
-						<a class="logo" href="#"><strong>Bohemia</strong> Amsterdam</a> 
+						<a class="logo" href="#"><strong>Bohemia</strong> Amsterdam</a>
 					</div>
 					<div class="col-xs-8 col-md-4">
 						<a class="phone">&#43;31 (0)20 42 33 555</a>
@@ -82,18 +74,70 @@
 			</div>			
 		</header>
 
-<!-- 	The hero image. echo the url instead of: http://lorempixel.com/1920/1080-->
-		<div class="hero container-full" style="background-image: url(../img/hero_about.jpg)">
-			<div class="row middle-xs">
-				<div class="col-xs col-sm-6 col-md-5 col-md-offset-1 col-lg-4">
-					<h1>About us</h1>
-					<div class="white-bg">Is this the part where we tell you we’re 'not your average advertising agency'? Yup. Whether we're laughing at each other from across the office or having beers together on Burger Friday.</div>
-				</div>
-			</div>
-		</div>
+  		
+<!-- 	The hero image. echo the url at PHPHERE-->
+		<div class="hero clip-svg-hero" style="
+			background-image: url('http://lorempixel.com/1920/1080');
+			background-image: url('http://lorempixel.com/1920/1080'), -webkit-linear-gradient(45deg,#0046b4,#f85f69);
+			background-image: url('http://lorempixel.com/1920/1080'), -moz-linear-gradient(45deg,#0046b4,#f85f69);
+			background-image: url('http://lorempixel.com/1920/1080'), -o-linear-gradient(45deg,#0046b4,#f85f69);
+			background-image: url('http://lorempixel.com/1920/1080'), -ms-linear-gradient(45deg,#0046b4,#f85f69);
+			background-image: url('http://lorempixel.com/1920/1080'), linear-gradient(45deg,#0046b4,#f85f69);
+			"></div>
   		
 <!-- 	The main content -->
-		<main class="container-full">
+		<main class="container-fluid relative">
+			<div class="row">
+				<article class="col-xs-12"> 
+					
+				<!-- Header -->
+					<header class="col-xs col-sm-7 col-md-offset-1">
+						<div class="row">
+							<h1>Marco de Boer</h1>
+						</div>
+						<div class="row">
+							<div class="meta">
+								Creative Director
+							</div>
+						</div>						
+					</header>
+
+				<!-- Intro -->
+					<section class="intro col-xs col-sm-7 col-md-offset-1">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+					</section>
+
+				<!-- Content -->
+					<section class="content">
+						<h2>Heading 2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+		 
+						
+					</section>							
+
+				<!-- Content Footer -->
+					<footer class="col-xs col-sm-8 col-md-offset-1 col-md-7">
+						
+					</footer>
+				</article>
+			
+				
+		<!-- 	Sidebar -->
+
+				<aside class="col-xs col-sm-4 col-md-3">
+					<div>
+						<h4>Free download</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+						<button class="red-btn">Download Case-study</button>
+					</div>
+				</aside>
+
+
+			</div>
+		</main>
+		
+<!-- 	Prev/Next -->
+		<section class="container-full">
 			<div class="row">
 				<a href="" class="col-xs-12 col-md-6 post-item">
 					<span></span>
@@ -120,67 +164,10 @@
 							<div class="position">Creative Director & Founder</div>
 						</div>
 					</div>
-				</a>					
-				<a href="" class="col-xs-12 col-md-6 post-item">
-					<span></span>
-					<img src="http://lorempixel.com/1920/1080" alt="">						
-					<div class="row post-item-inner">
-						<div class="col-xs col-sm-11">
-							<h2>Marco de Boer</h2>
-							<div class="quote">
-								“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.”
-							</div>
-							<div class="position">Creative Director & Founder</div>
-						</div>
-					</div>
-				</a>					
-				<a href="" class="col-xs-12 col-md-6 post-item">
-					<span></span>
-					<img src="http://lorempixel.com/1920/1080" alt="">						
-					<div class="row post-item-inner">
-						<div class="col-xs col-sm-11">
-							<h2>Marco de Boer</h2>
-							<div class="quote">
-								“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.”
-							</div>
-							<div class="position">Creative Director & Founder</div>
-						</div>
-					</div>
-				</a>					
-				<a href="" class="col-xs-12 col-md-6 post-item">
-					<span></span>
-					<img src="http://lorempixel.com/1920/1080" alt="">						
-					<div class="row post-item-inner">
-						<div class="col-xs col-sm-11">
-							<h2>Marco de Boer</h2>
-							<div class="quote">
-								“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.”
-							</div>
-							<div class="position">Creative Director & Founder</div>
-						</div>
-					</div>
-				</a>					
-				<a href="" class="col-xs-12 col-md-6 post-item">
-					<span></span>
-					<img src="http://lorempixel.com/1920/1080" alt="">						
-					<div class="row post-item-inner">
-						<div class="col-xs col-sm-11">
-							<h2>Marco de Boer</h2>
-							<div class="quote">
-								“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.”
-							</div>
-							<div class="position">Creative Director & Founder</div>
-						</div>
-					</div>
-				</a>					
-				
+				</a>
 			</div>
-
-			<div class="tree">
-				<img src="../../../../img/lake.jpg" alt="">
-			</div>
-		</main>
-				
+		</section> 
+		
 <!-- 	Footer -->
 		<footer class="container-fluid">
 			<div class="row center-xs end-md">
@@ -201,9 +188,7 @@
 					</div>
 				</div>
 			</div>
-			
 		</footer>
-		
 
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>

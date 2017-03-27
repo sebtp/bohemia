@@ -30,6 +30,12 @@
   visibility: hidden;
 }
 
+.translucent {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
 .clearfix {
   &:before {
     content: " ";
