@@ -1,0 +1,22 @@
+/* scss/organisms/_front-one.scss */
+
+.front-page .one {
+	.bg-img {
+		z-index: -2;
+	}
+	.desc {
+		margin-left: -16.66666667%;
+	}
+	
+	/*
+	 *  Breakpoint: sm
+	 */
+	@media only screen and (min-width:$bp-sm) {
+		.number {
+			@include fluid-type(left, $bp-sm, $bp-xlg, -1.5rem, 8rem);
+			img {
+				@include fluid-type(width, $bp-sm, $bp-lg, 17rem, 26rem);
+			}
+		}	
+	}
+}

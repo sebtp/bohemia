@@ -8,9 +8,10 @@
 	$grey:  #9ca8b7;
 
 // GRID - the media queries take only 16px as base font (from the browser)
-	$bp-sm: 48rem; // 48 * 16 = 768px 
-	$bp-md: 64rem; // 64 * 16 = 1024px
-	$bp-lg: 75rem; // 65 * 16 = 1200px
+	$bp-sm: 48rem;  // 48 * 16 = 768px 
+	$bp-md: 64rem;  // 64 * 16 = 1024px
+	$bp-lg: 75rem;  // 75 * 16 = 1200px
+	$bp-xlg: 100.1rem; // 65 * 16 = 1600px
 
 // FONTS
 	$base-font-size: 62.5%;
@@ -43,6 +44,7 @@
 	$size8: 10.8rem;
 	$size9: 18rem;
 
+
 		// header
 		$header-type-min: 		$size2;
 		$header-type-max: 		$size3;
@@ -68,8 +70,16 @@
 		$h2-overview-max:		$size7;
 		
 		// hero
-		$hero-type-min: $size3;
-		$hero-type-max: $size4;	
+		$hero-type-min: 		$size3;
+		$hero-type-max: 		$size4;	
+
+		//front-page
+		$h1-frontpage-min:		7rem;
+		$h1-frontpage-max:		$size9;
+		
+		$p-frontpage-min:		$size3;
+		$p-frontpage-max:		$size4;
+
 		
 		
 		$small-type: $size1;		// blockquote author,

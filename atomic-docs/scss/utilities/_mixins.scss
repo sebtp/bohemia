@@ -109,3 +109,20 @@
 	-o-animation: $args;
 	animation: $args;
 }
+
+
+/* transform: 
+		<name> 
+		<duration>
+		<timing-function>
+		<delay>
+		<iteration-count>
+		<direction>
+		<fill-mode> */
+	
+@mixin transform ($args...) {
+	-webkit-transform: $args;
+	-moz-transform: $args;
+	-o-transform: $args;
+	transform: $args;
+}

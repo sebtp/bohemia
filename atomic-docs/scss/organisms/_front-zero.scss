@@ -1,0 +1,29 @@
+/* scss/organisms/_front-zero.scss */
+
+.front-page .zero {
+		padding-top: 0;
+		h1 {
+			@include linear-gradient-text(45deg,$blue,$red);
+			@include fluid-type(font-size, 20rem, $bp-xlg, $h1-frontpage-min, $h1-frontpage-max);
+			margin-bottom: 0;
+			padding: $h1-overview-pad-max 0;
+		}
+		.bg-img {
+			top: 0;
+			z-index: -1;
+		}
+		.nr {
+			padding-top: 8rem;
+			img {
+				max-width: 100%;
+			}
+		}
+		/*
+		 *  Breakpoint: sm
+		 */
+		@media only screen and (min-width:$bp-sm) {
+			.nr {
+				padding-top: 0;
+			}	
+		}
+	}

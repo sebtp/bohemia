@@ -286,5 +286,61 @@
         "backgroundColor": "",
         "order": -34,
         "has_js": "false"
+    },
+    {
+        "component": "front-page",
+        "category": "templates",
+        "description": "",
+        "backgroundColor": "",
+        "order": -35,
+        "has_js": "false"
+    },
+    {
+        "component": "front-one",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -36,
+        "has_js": "false"
+    },
+    {
+        "component": "front-two",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -37,
+        "has_js": "false"
+    },
+    {
+        "component": "front-three",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -38,
+        "has_js": "false"
+    },
+    {
+        "component": "front-four",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -39,
+        "has_js": "false"
+    },
+    {
+        "component": "front-five",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -40,
+        "has_js": "false"
+    },
+    {
+        "component": "front-zero",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -41,
+        "has_js": "false"
     }
 ]

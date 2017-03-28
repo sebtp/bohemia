@@ -1,0 +1,28 @@
+/* scss/organisms/_front-two.scss */
+
+.front-page .two {
+	.number {
+		img {
+			mix-blend-mode:multiply;
+			width:9rem;
+		}
+	}
+	.bg-img {
+		z-index: -3;
+	}
+	
+	/*
+	 *  Breakpoint: sm
+	 */
+	@media only screen and (min-width:$bp-sm) {
+		.number {
+			@include fluid-type(right, $bp-sm, $bp-xlg, -4rem, 0rem);
+			img {
+				@include fluid-type(width, $bp-sm, $bp-lg, 25rem, 40rem);
+			}
+		}
+		.desc {
+			margin-left: -33.33333333%;
+		}
+	}
+}

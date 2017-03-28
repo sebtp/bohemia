@@ -1,3 +1,4 @@
+// Changing color of header
 jQuery(document).ready(function($){ 
 	'use strict';
 	if ( $("body").hasClass("single-work") || $("body").hasClass("single-blog")	) { // IF IN SINGLE PAGE
@@ -32,6 +33,9 @@ jQuery(document).ready(function($){
 		$("#ham>span").addClass("blue-bg");
 		$(".phone,.logo").addClass("blue"); 
 	}
+	if ($("body").hasClass("front-page")) {
+		$(".gradient").hide();
+	}
 });
 
 // Hamburger toggle animation
@@ -41,31 +45,13 @@ jQuery(document).ready(function($){
 		event.preventDefault();
 		$('.menu').toggleClass('is-visible');
 		$('#ham').toggleClass('open');
+		$(".gradient").fadeToggle("fast");
 	});
-	$('.menu>span').click(function(event){
+	$('.menu>.veil').click(function(event){
 		event.preventDefault();
 		$('.menu').toggleClass('is-visible');
 		$('#ham').toggleClass('open');
+		$(".gradient").fadeToggle("fast");
 	});
 	
 });
-
-/*// Aside full-width fix
-jQuery(document).ready(function($){
-	'use strict';
-	var bp = 768;
-	
-	//Set initial class based on the bp	
-	if( $(window).innerWidth() > bp ) {
-		$( "aside" ).removeClass("full-width");
-	}	
-
-	//Toggle full-width class on window resize	
-	$(window).resize(function() {
-		if( $(window).innerWidth() < bp ) {
-			$( "aside" ).addClass("full-width");
-		} else {
-			$( "aside" ).removeClass("full-width");
-		}	  
-	});
-});*/
