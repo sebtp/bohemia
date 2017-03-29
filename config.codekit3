@@ -6142,6 +6142,12 @@
 		"oAP": "\/atomic-docs\/components\/organisms\/next_prev.php",
 		"oF": 0
 		},
+	"\/atomic-docs\/components\/organisms\/side-tags.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/atomic-docs\/components\/organisms\/side-tags.php",
+		"oF": 0
+		},
 	"\/atomic-docs\/components\/organisms\/sidebar.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -6788,6 +6794,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/atomic-docs\/scss\/organisms\/_side-tags.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/atomic-docs\/css\/_side-tags.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/atomic-docs\/scss\/organisms\/_sidebar.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -7308,7 +7327,7 @@
 		"oA": 0,
 		"oAP": "\/img\/hero_blog.jpg",
 		"oF": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/hero_clients.jpg": {
@@ -7317,7 +7336,7 @@
 		"oA": 0,
 		"oAP": "\/img\/hero_clients.jpg",
 		"oF": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/hero_clouds.jpg": {
@@ -7338,14 +7357,54 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/hero_one.png": {
+		"ft": 32768,
+		"iS": 492816,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/hero_one.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/hero_two.png": {
+		"ft": 32768,
+		"iS": 721269,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/hero_two.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/img\/hero_work.jpg": {
 		"ft": 16384,
 		"iS": 48966,
 		"oA": 0,
 		"oAP": "\/img\/hero_work.jpg",
 		"oF": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
+		},
+	"\/img\/ic_arrow_down.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/ic_arrow_down.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/ic_arrow_up.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/ic_arrow_up.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/lake.jpg": {
 		"ft": 16384,
@@ -7355,6 +7414,26 @@
 		"oF": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"\/img\/num-1-inner.png": {
+		"ft": 32768,
+		"iS": 6996,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/num-1-inner.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/num-1-inner.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/num-1-inner.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/num-1.png": {
 		"ft": 32768,
@@ -7366,6 +7445,36 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/img\/num-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/num-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/num-2-inner.png": {
+		"ft": 32768,
+		"iS": 21206,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/num-2-inner.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/num-2-inner.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/num-2-inner.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/num-2.png": {
 		"ft": 32768,
 		"iS": 40989,
@@ -7375,6 +7484,36 @@
 		"oF": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/img\/num-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/num-2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/num-3-inner.png": {
+		"ft": 32768,
+		"iS": 19175,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/num-3-inner.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/num-3-inner.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/num-3-inner.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/num-3.png": {
 		"ft": 32768,
@@ -7386,12 +7525,62 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/num-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/num-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/num-4-inner.png": {
+		"ft": 32768,
+		"iS": 14210,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/num-4-inner.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/num-4-inner.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/num-4-inner.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/num-4.png": {
 		"ft": 32768,
 		"iS": 25822,
 		"l": 1,
 		"oA": 0,
 		"oAP": "\/img\/num-4.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/num-4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/num-4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/num-5-inner.png": {
+		"ft": 32768,
+		"iS": 18555,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/img\/num-5-inner.png",
 		"oF": 0,
 		"opt": 0,
 		"q": 100
@@ -7405,6 +7594,16 @@
 		"oF": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/img\/num-5.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/num-5.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/num-all.png": {
 		"ft": 32768,

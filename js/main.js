@@ -6,7 +6,7 @@ jQuery(document).ready(function($){
 		$(".phone,.logo").addClass("white");
 		
 		//CHANGE HEADER COLOR ON SCROLL PAST HEADER IN SINGLE PAGES
-		$(window).scroll(function() {    
+		$(window).scroll(function() {		
 			var scroll = $(window).scrollTop(),
 				vph = $(window).height() / 3 * 2 - 40;
 
@@ -52,6 +52,47 @@ jQuery(document).ready(function($){
 		$('.menu').toggleClass('is-visible');
 		$('#ham').toggleClass('open');
 		$(".gradient").fadeToggle("fast");
+	});	
+});
+
+/* Homepage tags scroll by clicking/click-holding a button.
+ * For a faster animation change the last values in the animate() functions.
+ */
+jQuery(document).ready(function($){
+	'use strict';
+	var timeout;
+	
+	// button down
+	$('.down').click(function(){
+		var pos = $(".scroll-wrapper").scrollTop();
+		$(".scroll-wrapper").animate({ scrollTop: pos + 30 + "px" },100);
 	});
 	
+	$('.down').on('mousedown touchstart', function(){
+		timeout = setInterval(function(){
+			var pos = $(".scroll-wrapper").scrollTop();
+			$(".scroll-wrapper").animate({ scrollTop: pos + 30 + "px" },100);
+		}, 100);
+		return false;
+	});
+	
+	// button up
+	$('.up').click(function(){
+		var pos = $(".scroll-wrapper").scrollTop();
+		$(".scroll-wrapper").animate({ scrollTop: pos - 30 + "px" },100);
+	});
+
+	$('.up').on('mousedown touchstart', function(){
+		timeout = setInterval(function(){
+			var pos = $(".scroll-wrapper").scrollTop();
+			$(".scroll-wrapper").animate({ scrollTop: pos - 30 + "px" },100);
+		}, 100);
+		return false;
+	});
+	
+	//clear timeout
+	$('.up, .down').on('mouseup mouseleave touchend', function(){
+		clearInterval(timeout);
+		return false;
+	});	
 });

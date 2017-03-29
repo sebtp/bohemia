@@ -1,8 +1,36 @@
 /* scss/organisms/_front-five.scss */
 
 .front-page .five {
+	margin-bottom: 15rem;
+	.number {
+		img {
+			width: 8.5rem;
+		}
+		.inner {
+			opacity: .6;
+		}
+	}
 	.bg-img {
 		z-index: -6;
-		bottom: 0;
+		bottom: -10rem;
+	}
+	/*
+	 *  Breakpoint: sm
+	 */
+	@media only screen and (min-width:$bp-sm) {
+		.bg-img {
+			top:auto;
+		}
+		.number {
+			@include fluid-type(left, $bp-sm, $bp-xlg, -1.5rem, 8rem);
+			img {
+				@include fluid-type(width, $bp-sm, $bp-xlg, 32rem, 50rem);
+			}
+		}
+		.desc {
+			p {
+				background: transparent;
+			}	
+		}
 	}
 }

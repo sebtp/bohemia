@@ -1,0 +1,63 @@
+/* scss/organisms/_side-tags.scss */
+
+.front-page main, .tag-overview main {
+	aside {
+		position: fixed;
+		top: 0;
+		right: 0;
+		display: none;
+		padding-top: 4rem;
+		margin: 0;
+		font-style: italic;
+		height: 100%;
+		mix-blend-mode:difference;
+
+		.fixed-wrapper {
+			overflow: hidden;
+			position: relative;
+			height: 100%;
+			width:300px;
+
+			.scroll-wrapper {
+				width: 100%;
+				height: 85%;
+    			margin: 5rem 0;
+				position: absolute;
+				overflow-y:auto;
+				padding-right: 20px; //hide scrollbar
+				
+			}
+			button {
+				position: absolute;
+				z-index: 1;
+				width: 100%;
+				height: 5rem;
+				margin: 0;
+				border: 0;
+				background: transparent;
+				text-align: left;
+				padding: 0;
+				
+				
+				&.down {
+					bottom: 0;
+				}
+				&.up {
+					top: 0;
+				}
+				img {
+					height: 13%;
+				}
+			}
+		}
+
+		a {
+			color: #666;
+			text-decoration: none;
+			@include fluid-type(font-size, $bp-lg, $bp-xlg, $size1, $size3);
+		}
+		li {
+			margin-top: 0.5rem;
+		}
+	}
+}

@@ -4,10 +4,13 @@
 	.bg-img {
 		z-index: -2;
 	}
-	.desc {
-		margin-left: -16.66666667%;
+	.number {
+		margin-left: -1rem;
+		.inner {
+			opacity: .6;
+		}
 	}
-	
+
 	/*
 	 *  Breakpoint: sm
 	 */
@@ -15,8 +18,23 @@
 		.number {
 			@include fluid-type(left, $bp-sm, $bp-xlg, -1.5rem, 8rem);
 			img {
-				@include fluid-type(width, $bp-sm, $bp-lg, 17rem, 26rem);
+				@include fluid-type(width, $bp-sm, $bp-xlg, 17rem, 29rem);
 			}
-		}	
+		}
+		.desc {
+			margin-left: -33.33333333%;
+		}
 	}
+	@media only screen and (min-width:$bp-md) {
+		.desc {
+			margin-left: 0;
+		}
+	}
+	@media only screen and (min-width:$bp-xlg) {
+		.bg-img {
+			top: -16rem;
+		}
+	}
+	
+	
 }

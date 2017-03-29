@@ -6,7 +6,6 @@
 			@include linear-gradient-text(45deg,$blue,$red);
 			@include fluid-type(font-size, 20rem, $bp-xlg, $h1-frontpage-min, $h1-frontpage-max);
 			margin-bottom: 0;
-			padding: $h1-overview-pad-max 0;
 		}
 		.bg-img {
 			top: 0;

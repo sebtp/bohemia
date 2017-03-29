@@ -342,5 +342,13 @@
         "backgroundColor": "",
         "order": -41,
         "has_js": "false"
+    },
+    {
+        "component": "side-tags",
+        "category": "organisms",
+        "description": "The tags sidebar in the Home and Tag overview pages.",
+        "backgroundColor": "",
+        "order": -42,
+        "has_js": "false"
     }
 ]

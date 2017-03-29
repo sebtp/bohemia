@@ -12,7 +12,7 @@
 			width: 100vw;			
 		}
 		/*
-	 *  Breakpoint: base
+	 *	Breakpoint: base
 	 */		
 		.zero, .one, .two, .three, .four, .five {
 			position: relative;
@@ -20,12 +20,15 @@
 			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, 5rem, 10rem);
 			align-content: center; 		//magically aligns everything vertically center 
 			//overflow: hidden;
+			//border-top:1px solid red;
 		}
 		
 		h1, h2 {
 			@include fluid-type(font-size, 20rem, $bp-lg, $h1-frontpage-min, $h1-frontpage-max);
-			@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 3rem, 7rem);
+			//@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 1rem, 3rem);
 			line-height: $small-lh;
+			@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
+			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 		}
 		
 		.desc {
@@ -42,12 +45,17 @@
 		}
 		.number {
 			position: absolute; 
-			top: 6rem;
+			top: 7rem;
 			
 			img {
 				mix-blend-mode:multiply;
 				width:6rem;
 				height: auto;
+			}
+			
+			.inner {
+				position: absolute;
+				top: 0;
 			}
 			
 		}
@@ -56,24 +64,16 @@
 			h2 {
 				@include linear-gradient-text(45deg,$blue,$green);
 			}
-			.number {
-				left: -1.5rem;
-			}
 		}
 		.right {
 			h2 {
 				@include linear-gradient-text(45deg,$blue,$red);
 			}
-			.number {
-				right: -1.5rem;
-			}
 		}
-		
-		
-		
+				
 		
 		/*
-	 	 *  Breakpoint: sm
+	 	 *	Breakpoint: sm
 	 	 */
 		@media only screen and (min-width:$bp-sm) {
 			
@@ -84,27 +84,26 @@
 		}
 
 		/*
-	 *  Breakpoint: md
+	 *	Breakpoint: md
 	 */
 		@media only screen and (min-width:$bp-md) {
 			.zero, .one, .two, .three, .four, .five { 
 				min-height: 80vh;
 			}
 			.bg-img {
-				bottom: 0;
+				top: 0;
 			}
 			.desc p {
 				//font-weight: $thin;
 			}
 			.number {
-				top:auto;
-				margin: auto;
+				top: 14%;
 			}
 
 		}
 		
-		/*
-	 *  Breakpoint: lg
+	/*
+	 *	Breakpoint: lg
 	 */
 		@media only screen and (min-width:$bp-lg) {
 			.zero, .one, .two, .three, .four, .five { 
@@ -115,6 +114,18 @@
 			}			
 			.number {
 				
+			}
+			aside {
+				display: block;
+			}
+		}
+		
+	/*
+	 *	Breakpoint: xlg
+	 */
+		@media only screen and (min-width:$bp-xlg) {
+			.zero, .one, .two, .three, .four, .five { 
+				min-height: 100vh;
 			}
 		}
 	}

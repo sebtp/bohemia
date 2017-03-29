@@ -2,35 +2,58 @@
 
 button {
 	font-family: $body-font;
-	font-size: $body-size;
-	font-style: italic;
+	font-style: italic;	
 	font-weight: $bold;
-	line-height: $big-lh;
-	height: 6.4rem;
-	padding: 0 6rem;
-	border-width: 3px;
-	border-style: solid;
 	color: $white;
-	margin: 2rem 0;
-}
+	
+	line-height: $big-lh;
+	font-size: $small-type;	
+	height: 5rem;
+	padding: 0 3rem;
+	border-width: 4px;
+	border-style: solid;
+	outline: 0;
+	@include transition (all,0.3s,ease);
+	
+	@media only screen and (min-width: $bp-sm) {
+		line-height: $big-lh;
+		font-size: $body-size;	
+		height: 6.4rem;
+		padding: 0 4rem;	
+		margin: 2rem 0;
+	}	
+	&.outline-white {
+		border-color: $white;
+		margin: 6rem auto 2rem;
+	}
+	&.outline-green {
+		@include linear-gradient-border(45deg,$blue,$green);
+		@include linear-gradient-text(45deg,$blue,$green);
+		margin: 6rem auto 2rem;
+	}
+	&.red-btn {
+		border-color: transparent;
+		@include linear-gradient-border(90deg,$blue,$red);
+		@include linear-gradient-img(45deg,$blue,$red);
+		&:hover {
+			@include linear-gradient-img(90deg,$blue,$red);
+		}
+		&:active {
+			@include linear-gradient-img(90deg,$blue,$red);
+			opacity: .8;
+		}
+	}
 
-button.outline-white {
-	border-color: $white;
-	margin: 6rem auto 2rem;
-}
-button.outline-green {
-	@include linear-gradient-border(45deg,$blue,$green);
-	@include linear-gradient-text(45deg,$blue,$green);
-	margin: 6rem auto 2rem;
-}
-button.red-btn {
-	border-color: transparent;
-	@include linear-gradient-border(90deg,$blue,$red);
-	@include linear-gradient-img(45deg,$blue,$red);
-}
-
-button.green-btn {
-	border-color: transparent;
-	@include linear-gradient-border(90deg,$blue,$green);
-	@include linear-gradient-img(45deg,$blue,$green);
+	&.green-btn {
+		border-color: transparent;
+		@include linear-gradient-border(90deg,$blue,$green);
+		@include linear-gradient-img(45deg,$blue,$green);
+		&:hover {
+			@include linear-gradient-img(90deg,$blue,$green);
+		}
+		&:active {
+			@include linear-gradient-img(90deg,$blue,$green);
+			opacity: .8;
+		}
+	}
 }

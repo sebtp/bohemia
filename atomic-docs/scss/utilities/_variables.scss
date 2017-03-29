@@ -21,7 +21,8 @@
 	$body-font: "livory", Times, "Times New Roman", serif;
 
 	// Weight
-	$light: 100;
+	$thin: 100;
+	$light: 200;
 	$regular: 300;
 	$bold: 700;
 
@@ -74,15 +75,15 @@
 		$hero-type-max: 		$size4;	
 
 		//front-page
-		$h1-frontpage-min:		7rem;
+		$h1-frontpage-min:		6rem;
 		$h1-frontpage-max:		$size9;
 		
 		$p-frontpage-min:		$size3;
-		$p-frontpage-max:		$size4;
+		$p-frontpage-max:		3rem;
 
 		
 		
-		$small-type: $size1;		// blockquote author,
+		$small-type: $size1;		// blockquote author, button on mobile
 		$sidebar-type: $size2;		// sidebar, date
 		$header-type: $size4;		// phone, logo
 		$footer-type: $size2;		// footer

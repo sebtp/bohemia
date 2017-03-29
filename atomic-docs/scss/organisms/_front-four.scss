@@ -1,9 +1,15 @@
 /* scss/organisms/_front-four.scss */
 
 .front-page .four {
-	.number img {
-		mix-blend-mode:multiply;
-		width:9rem;
+	.number {
+		right: 1rem;
+		img {
+			mix-blend-mode:multiply;
+			width:10rem;
+		}
+		.inner {
+			mix-blend-mode:overlay;
+		}
 	}
 	.bg-img {
 		z-index: -5;
@@ -14,13 +20,16 @@
 	 */	
 	@media only screen and (min-width:$bp-sm) {
 		.number {
-			@include fluid-type(right, $bp-sm, $bp-xlg, -1.5rem, 8rem);
+			@include fluid-type(right, $bp-sm, $bp-xlg, -1.5rem, 0rem);
 			img {
-				@include fluid-type(width, $bp-sm, $bp-lg, 25rem, 45rem);
+				@include fluid-type(width, $bp-sm, $bp-xlg, 30rem, 55rem);
 			}
 		}
 		.desc {
-			margin-left: -33.33333333%;
+			margin-left: -33.33333333%; 
+			p {
+				background: transparent;
+			}			
 		}
 	}
 }
