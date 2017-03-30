@@ -25,11 +25,23 @@ button {
 	&.outline-white {
 		border-color: $white;
 		margin: 6rem auto 2rem;
+		&:hover {
+			opacity: .7;
+		}
+		&:active {
+			opacity: .5;
+		}
 	}
 	&.outline-green {
 		@include linear-gradient-border(45deg,$blue,$green);
 		@include linear-gradient-text(45deg,$blue,$green);
 		margin: 6rem auto 2rem;
+		&:hover {
+			opacity: .7;
+		}
+		&:active {
+			opacity: .5;
+		}
 	}
 	&.red-btn {
 		border-color: transparent;

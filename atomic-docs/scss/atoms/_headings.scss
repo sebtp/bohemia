@@ -23,7 +23,8 @@
 
 
 h2 {									//PADDING FIX - H2
-	padding: $h2-pad 0;
+	@include fluid-type(padding-top, $bp-sm, $bp-lg, $h2-overview-pad-min, $h2-overview-pad-max);
+	@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h2-overview-pad-min, $h2-overview-pad-max);
 	line-height: $small-lh;
 }
 

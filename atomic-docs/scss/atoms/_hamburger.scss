@@ -22,6 +22,7 @@
 		border-radius: 9px;
 		opacity: 1;
 		left: 0;
+		background: $white;
 		-webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
@@ -41,7 +42,7 @@
 		}
 	}
 	&.open span {
-		background: #46beaf;
+		background: $white;
 		&:nth-child(1) {
 			top: 9px;
 			width: 0%;

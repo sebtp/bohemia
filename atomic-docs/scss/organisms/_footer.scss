@@ -18,3 +18,9 @@ body > footer {
 		height: auto;
 	}
 }
+
+@media only screen and (min-width: $bp-lg) {
+	body.front-page > footer {
+		margin-right: 16.666666666%;
+	}
+}

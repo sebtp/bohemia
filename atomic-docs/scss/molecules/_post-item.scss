@@ -43,15 +43,25 @@
 
 			img {
 				width: 5.4rem;
+				height: auto;
 				opacity: 1;
 				border-radius: 50%;
+				margin-left: 1.5rem; 
 				
 			}
 		}
 
 		.author-inner {
-			font-weight: $bold;
 			padding-left: 3rem;
+			
+			&>div:first-child {
+				font-weight: $bold;
+				//margin-bottom: 0.75rem;
+			}
+			&>div:nth-child(2) {
+				margin-top: -0.25rem;
+				margin-bottom: -0.25rem;
+			}
 		}
 	}
 	
@@ -144,7 +154,9 @@
 .single-work .post-item,
 .overview-work .post-item {
 	
-	color:$white;
+	h2, h3 {
+		@include linear-gradient-text(45deg,$white,$white);		
+	}
 	
 	.client {
 		color:$white;
@@ -189,8 +201,8 @@
 	}*/
 	
 	.post-item-inner {
-		@include fluid-type(padding-left, $bp-sm, $bp-lg, 1rem, 2rem);
-		@include fluid-type(bottom, $bp-sm, $bp-lg, 2rem, 4rem);
+		@include fluid-type(padding-left, $bp-md, $bp-xlg, 2rem, 4rem);
+		@include fluid-type(bottom, $bp-md, $bp-xlg, 2rem, 5rem);
 		position: absolute;
 		word-wrap: break-word;
 		max-width: 100%;
