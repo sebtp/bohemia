@@ -6,7 +6,8 @@
 .post-item {
 	display: block;
 	//height: 120vw;
-	@include fluid-type(height, 10rem, $bp-md, 185vw, 40vw);
+	height: 34rem;
+	@include fluid-type(height, $bp-md, $bp-xxlg, 34rem, 40rem);
 	padding: 0;
 	margin: 0;
 	color: $white;
@@ -14,6 +15,26 @@
 	position: relative;
 	overflow: hidden;
 	transition: all .3s ease-in-out;
+
+	@media only screen and (min-width: $bp-md) {
+		//height: 50vw;
+		//@include fluid-type(height, $bp-md, $bp-xxlg, 36rem, 28rem);
+	}
+
+	@media only screen and (min-width: $bp-lg) {
+		//height: 38vw;
+		//@include fluid-type(height, $bp-md, $bp-xlg, 65vw, 20vw);
+	}
+
+	@media only screen and (min-width: $bp-xlg) {
+
+		//@include fluid-type(height, $bp-xlg, $bp-xxlg, 40vw, 32vw);
+	}
+
+	@media only screen and (min-width: $bp-xxlg) {
+		height:46rem;
+		//@include fluid-type(height, $bp-xxlg, $bp-xxxlg, 34vw, 28vw);
+	}
 
 	&:hover {
 		outline: 0;
@@ -34,8 +55,8 @@
 	}
 
 	.post-item-inner {
-		@include fluid-type(padding-left, $bp-md, $bp-xlg, 1.25rem, 2.5rem);
-		@include fluid-type(bottom, $bp-md, $bp-xlg, 1.5rem, 2.5rem);
+		@include fluid-type(padding-left, $bp-md, $bp-xlg, 2rem, 3rem);
+		@include fluid-type(bottom, $bp-md, $bp-xlg, 2rem, 3rem);
 		position: absolute;
 		word-wrap: break-word;
 		max-width: 100%;
@@ -43,7 +64,7 @@
 		// Titles inside the post-items
 		h2, h3 {
 			// Size
-			@include fluid-type(font-size, 12.5rem, $bp-xxlg, $h2-overview-min, $h2-overview-max);
+			@include fluid-type(font-size, 20rem, $bp-xlg, $h2-overview-min, $h2-overview-max);
 
 			//Padding fix
 			@include fluid-type(padding-top, $bp-sm, $bp-lg, $h2-overview-pad-min, $h2-overview-pad-max);
@@ -56,7 +77,7 @@
 			-moz-hyphens: auto;
 			-ms-hyphens: auto;
 			hyphens: auto;
-			@media only screen and (min-width:$bp-lg) {
+			@media only screen and (min-width:$bp-xxlg) {
 				-ms-word-break: normal;
 				word-break: normal;
 				-webkit-hyphens:none;
@@ -78,17 +99,6 @@
 			}
 		}
 
-	}
-	@media only screen and (min-width: $bp-md) {
-		@include fluid-type(height, $bp-md, $bp-xlg, 65vw, 20vw);
-	}
-
-	@media only screen and (min-width: $bp-xlg) {
-		@include fluid-type(height, $bp-xlg, $bp-xxlg, 40vw, 32vw);
-	}
-
-	@media only screen and (min-width: $bp-xxlg) {
-		@include fluid-type(height, $bp-xxlg, $bp-xxxlg, 34vw, 28vw);
 	}
 
 }

@@ -18,6 +18,15 @@
 		@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 		@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 		line-height: $small-lh;
+
+		@include fluid-type(font-size, $bp-sm, $bp-xlg, $h1-overview-min, $h1-overview-max);
+		//mix-blend-mode:multiply;
+		-ms-word-break: break-word;
+		word-break: break-word;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
 	}
 }
 
@@ -85,29 +94,6 @@ h1, h2, h3, h4, h5, h6, .title {
 	hyphens: auto;
 }
 
-.overview-work, 					//H1 - overview pages
-.overview-blog,
-.overview-about,
-.overview-clients {
-	h1 {
-		@include fluid-type(font-size, $bp-sm, $bp-xlg, $h1-overview-min, $h1-overview-max);
-		//mix-blend-mode:multiply;
-		-ms-word-break: break-word;
-		word-break: break-word;
-		-webkit-hyphens: auto;
-		-moz-hyphens: auto;
-		-ms-hyphens: auto;
-		hyphens: auto;
-		/*@media only screen and (min-width:$bp-sm) {
-			-ms-word-break: normal;
-			word-break: normal;
-			-webkit-hyphens:none;
-			-moz-hyphens:none;
-			-ms-hyphens:none;
-			hyphens:none;
-		}*/
-	}
-}
 
 .single-blog,					//H2 in single posts
 .single-work,

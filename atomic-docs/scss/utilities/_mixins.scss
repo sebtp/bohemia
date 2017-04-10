@@ -1,78 +1,105 @@
 /* scss/utilities/_mixins.scss */
 
+//- Mixin: Fluid Type
+///
+/// Magic calc + vh to allow text to be fluid between minimum
+/// and maximum breakpoints.
+///
+/// @group typography
+/// @param {variable} $prop - Proprierty
+/// @param {variable} $lower-range - Stop scaling smaller at this screen resolution
+/// @param {variable} $upper-range - Stop scaling larger at this screen resolution
+/// @param {variable} $min-size - Minimum size
+/// @param {variable} $max-size - Maximum size
+/// @example
+///   div {
+///     @include fluid-type(height, 20px, 48px);
+///   }
+/// @site http://madebymike.com.au/writing/precise-control-responsive-typography/
 
-// Mixin: Fluid Type
-@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
-  $min-vw-adj: $min-vw * 1.6; //fix for the 16px base font issue
-  $max-vw-adj: $max-vw * 1.6; //fix for the 16px base font issue
-  & {
-    @each $property in $properties {
-      #{$property}: $min-value;
-    }
+// Mixin: Fluid Type based on the vw
+@mixin fluid-type($prop, $lower-range, $upper-range, $min-size, $max-size) {
 
-    @media screen and (min-width: $min-vw) {
-      @each $property in $properties {
-        #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw-adj}) / #{strip-unit($max-vw-adj - $min-vw-adj)}));
-      }
-    }
+  $lower-range: convert(strip-unit($lower-range), rem, px);
+  $upper-range: convert(strip-unit($upper-range), rem, px);
+  $min-size: convert(strip-unit($min-size), rem, px);
+  $max-size: convert(strip-unit($max-size), rem, px);
 
-    @media screen and (min-width: $max-vw) {
-      @each $property in $properties {
-        #{$property}: $max-value;
-      }
-    }
+  #{$prop}: calc(#{$min-size} + #{(($max-size / ($max-size * 0 + 1)) - ($min-size / ($min-size * 0 + 1)))} * ( (100vw - #{$lower-range}) / #{(($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))}));
+
+  @media screen and (max-width: $lower-range) {
+    #{$prop}: convert(strip-unit($min-size), px, rem);
+  }
+  @media screen and (min-width: $upper-range){
+    #{$prop}: convert(strip-unit($max-size), px, rem);
   }
 }
 
 // Mixin: Fluid Type based on the vh
-@mixin fluid-type-vh($properties, $min-vh, $max-vh, $min-value, $max-value) {
-  $min-vh-adj: $min-vh * 1.6; //fix for the 16px base font issue
-  $max-vh-adj: $max-vh * 1.6; //fix for the 16px base font issue
-  & {
-    @each $property in $properties {
-      #{$property}: $min-value;
-    }
+@mixin fluid-type-vh($prop, $lower-range, $upper-range, $min-size, $max-size) {
 
-    @media screen and (min-height: $min-vh) {
-      @each $property in $properties {
-        #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vh - #{$min-vh-adj}) / #{strip-unit($max-vh-adj - $min-vh-adj)}));
-      }
-    }
+  #{$prop}: calc(#{$min-size} + #{(($max-size / ($max-size * 0 + 1)) - ($min-size / ($min-size * 0 + 1)))} * ( (100vh - #{$lower-range}) / #{(($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))}));
 
-    @media screen and (min-height: $max-vh) {
-      @each $property in $properties {
-        #{$property}: $max-value;
-      }
-    }
+  @media screen and (max-width: $lower-range) {
+    #{$prop}: $min-size;
+  }
+  @media screen and (min-width: $upper-range){
+    #{$prop}: $max-size;
   }
 }
 
-// Mixin: Fluid Type REVERSE - Where the first value is bigger than the second one
-@mixin fluid-type-reverse($properties, $min-vw, $max-vw, $max-value, $min-value) {
-  $min-vw-adj: $min-vw * 1.6; //fix for the 16px base font issue
-  $max-vw-adj: $max-vw * 1.6; //fix for the 16px base font issue
-  & {
-    @each $property in $properties {
-      #{$property}: $max-value;
-    }
+// Convert units
+@function convert($value, $currentUnit, $convertUnit){
+   @if $currentUnit == px{
 
-    @media screen and (min-width: $min-vw) {
-      @each $property in $properties {
-      //#{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw-adj}) / #{strip-unit($max-vw-adj - $min-vw-adj)}));
-		#{$property}: calc(#{$max-value} + #{strip-unit($min-value - $max-value)} * ((100vw - #{$min-vw-adj}) / #{strip-unit($max-vw-adj - $min-vw-adj)}));
+      @if $convertUnit == rem{
+        @return $value / 16 + 0rem;
       }
-    }
+      @else if $convertUnit == percent{
+        @return percentage($value / 16);
+      }
 
-    @media screen and (min-width: $max-vw) {
-      @each $property in $properties {
-        #{$property}: $min-value;
+   }@else if $currentUnit == rem{
+
+      @if $convertUnit == px{
+        @return $value * 16 + 0px;
       }
-    }
-  }
+      @else if $convertUnit == percent{
+        @return percentage($value);
+      }
+
+   }@else if $currentUnit == percent{
+
+      @if $convertUnit == px{
+        @return $value * 16 / 100 + 0px;
+      }
+      @else if $convertUnit == rem{
+        @return $value / 100 + 0em;
+      }
+
+   }@else if $currentUnit == pts{
+
+      @if $convertUnit == px{
+        @return $value * 1.3333 +0px;
+      }
+      @else if $convertUnit == rem{
+        @return $value / 12 + 0rem;
+      }
+      @else if $convertUnit == percent{
+        @return percentage($value / 12)
+      }
+
+   }
 }
 
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
 }
 
 // linear gradient - text
@@ -111,7 +138,7 @@
 // linear gradient - border
 @mixin linear-gradient-border($direction, $colors...) {
     -webkit-border-image: -webkit-linear-gradient($direction, $colors);
-    -moz-border-image: -moz-linear-gradient($direction, $colors);  
+    -moz-border-image: -moz-linear-gradient($direction, $colors);
     -o-border-image: -o-linear-gradient($direction, $colors);
     border-image: linear-gradient($direction, $colors);
 	border-image-slice: 1
@@ -132,15 +159,15 @@
 	transition: $args;
 }
 
-/* animation: 
-		<name> 
+/* animation:
+		<name>
 		<duration>
 		<timing-function>
 		<delay>
 		<iteration-count>
 		<direction>
 		<fill-mode> */
-	
+
 @mixin animation ($args...) {
 	-webkit-animation: $args;
 	-moz-animation: $args;
@@ -149,15 +176,15 @@
 }
 
 
-/* transform: 
-		<name> 
+/* transform:
+		<name>
 		<duration>
 		<timing-function>
 		<delay>
 		<iteration-count>
 		<direction>
 		<fill-mode> */
-	
+
 @mixin transform ($args...) {
 	-webkit-transform: $args;
 	-moz-transform: $args;

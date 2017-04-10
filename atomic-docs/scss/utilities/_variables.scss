@@ -13,8 +13,8 @@
 	$bp-sm: 48rem;  // 48 * 16 = 768px
 	$bp-md: 64rem;  // 64 * 16 = 1024px
 	$bp-lg: 75rem;  // 75 * 16 = 1200px
-	$bp-xlg: 100.1rem; // 100 * 16 = 1600px
-	$bp-xxlg: 120.1rem; // 120 * 16 = 1920px
+	$bp-xlg: 100rem; // 100 * 16 = 1600px
+	$bp-xxlg: 120rem; // 120 * 16 = 1920px
 	$bp-xxxlg: 160rem; // 160 * 16 = 2560px
 
 // FONTS
@@ -36,7 +36,7 @@
 	$intro-lh: 1.4;					//
 	$body-lh: 1.5;					//
 
-	$pad-multiplier: 0.3;			// padding fix for the clipping
+	$pad-multiplier: 0.43;			// padding fix for the clipping
 
 	// Sizes
 	$size1: 1rem; 			//16px
@@ -44,8 +44,8 @@
 	$size3: 1.3125rem; 	//21px
 	$size4: 1.5rem; 		//24px
 	$size5: 2.5rem; 		//40px
-	$size6: 3.4375rem; 	//55px
-	$size7: 4.375rem; 	//70px
+	$size6: 3.5rem; 		//56px
+	$size7: 4.25rem; 		//68px
 	$size8: 6.75rem;	 	//108px
 	$size9: 11.25rem; 	//180px
 
@@ -71,7 +71,7 @@
 		$h1-overview-max:		$size9;
 
 		//post-item-title
-		$h2-overview-min:		$size6;
+		$h2-overview-min:		$size7;
 		$h2-overview-max:		$size8;
 
 		// hero
