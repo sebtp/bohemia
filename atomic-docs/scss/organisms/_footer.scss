@@ -9,18 +9,54 @@ body > footer {
 	
 	background: $white;
 	font-size: $footer-type;
-	.row {
-		padding-top: 5rem;
-		padding-bottom: 5rem;
+	//margin-top: -26rem;
+	.container-fluid {
+		width:100%;
+		.row {
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+		}
+		a {
+			text-decoration:none;
+			color:$green;
+			svg {
+				@include transition(all,0.3s,ease);
+				width: 4.4rem;
+				height: auto;
+				fill:$green;
+			}
+			&:hover {
+				svg {
+					fill:$blue;
+				}
+			}
+		}
+		a.email:hover {
+			text-decoration:underline;
+		}
+		@media only screen and (min-width: $bp-md) {
+			.row {
+				padding-top: 14rem;
+			}
+		}
+		
 	}
-	img {
-		width: 4.4rem;
-		height: auto;
-	}
+	@media only screen and (min-width: $bp-md) {
+		margin-top: -26rem;
+	}	
+	
 }
 
-@media only screen and (min-width: $bp-lg) {
-	body.front-page > footer {
-		margin-right: 16.666666666%;
+//@media only screen and (min-width: $bp-lg) {
+//	body.front-page > footer {
+//		padding-right: 17.666666666%;
+//	}
+//}
+
+.clip-svg:nth-of-type(2) {
+	display:none;
+	
+	@media only screen and (min-width:$bp-sm) {
+		display:block;
 	}
 }

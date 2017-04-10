@@ -1,6 +1,133 @@
 /* scss/molecules/_post-item.scss */
 
 //
+// General post-item
+// 
+.post-item {
+	display: block;
+	//height: 120vw;
+	@include fluid-type(height, 16rem, $bp-md, 185vw, 40vw);
+	padding: 0;
+	margin: 0;
+	color: $white;
+	text-decoration: none;
+	position: relative;
+	overflow: hidden;
+	transition: all .3s ease-in-out;
+	
+	&:hover {
+		outline: 0;
+	}
+	
+	&:hover img {
+		opacity:0.2;
+	}
+	
+	img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: cover;
+		opacity: 0;
+		transition: all .3s ease-in-out;
+		
+	}
+	
+	.post-item-inner {
+		@include fluid-type(padding-left, $bp-md, $bp-xlg, 2rem, 4rem);
+		@include fluid-type(bottom, $bp-md, $bp-xlg, 2.5rem, 4rem);
+		position: absolute;
+		word-wrap: break-word;
+		max-width: 100%;
+		
+		// Titles inside the post-items
+		h2, h3 {
+			// Size	
+			@include fluid-type(font-size, 20rem, $bp-xxlg, $h2-overview-min, $h2-overview-max);
+			
+			//Padding fix
+			@include fluid-type(padding-top, $bp-sm, $bp-lg, $h2-overview-pad-min, $h2-overview-pad-max);
+			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h2-overview-pad-min, $h2-overview-pad-max);
+			
+			//Hyphens for mobile
+			-ms-word-break: break-word;
+			word-break: break-word;
+			-webkit-hyphens: auto;
+			-moz-hyphens: auto;
+			-ms-hyphens: auto;
+			hyphens: auto;
+			@media only screen and (min-width:$bp-lg) {
+				-ms-word-break: normal;
+				word-break: normal;
+				-webkit-hyphens:none;
+				-moz-hyphens:none;
+				-ms-hyphens:none;
+				hyphens:none;
+			}
+			
+			//Transition (hover)
+			@include transition(all,0.3s,ease);
+			
+		}
+		
+		.tags, .quote {
+			margin-top:0;
+			@include fluid-type(margin-bottom, $bp-sm, $bp-xxlg, 2rem, 5rem); 
+			ul {
+				margin-left:0;
+			}
+		}
+	
+	}
+	@media only screen and (min-width: $bp-md) {
+		@include fluid-type(height, $bp-md, $bp-xlg, 65vw, 20vw);
+	}
+
+	@media only screen and (min-width: $bp-xlg) {
+		@include fluid-type(height, $bp-xlg, $bp-xxlg, 40vw, 32vw);
+	}
+	
+	@media only screen and (min-width: $bp-xxlg) {
+		@include fluid-type(height, $bp-xxlg, $bp-xxxlg, 34vw, 28vw);
+	}
+	
+}
+
+.isSafari {
+	.post-item {
+		@media only screen and (min-width: $bp-md-s) {
+			height:70vw;
+		}
+
+		@media only screen and (min-width: $bp-lg-s) {
+			height:60vw;
+		}
+	
+		@media only screen and (min-width: $bp-xlg-s) {
+			height:50vw;
+		}
+	
+		@media only screen and (min-width: $bp-xxlg-s) {
+			height:40vw;
+		}
+	
+		@media only screen and (min-width: $bp-xxxlg-s) {
+			height:30vw;
+		}
+	
+		.post-item-inner {
+			h2,h3 {
+				// Size	
+				@include fluid-type(font-size, 32rem, $bp-xxlg-s, $h2-overview-min, $h2-overview-max);
+			}
+		}
+	}
+}
+
+
+
+
+//
 // Blog post-item
 //
 .single-blog .post-item,
@@ -18,28 +145,26 @@
 		height: 100%;
 		@include linear-gradient-img (45deg,$blue,$green);
 		opacity: 0;
-		transition: all .3s ease-in-out;
+		@include transition(all,0.3s,ease);
 	}
 	
- 	h2 {
+ 	h2, h3 {
 		@include linear-gradient-text(45deg,$blue,$green);
-		transition: all .3s ease-in-out;
 	}
 	
 	.tags li {		
 		color:$grey;
-		transition: all .3s ease-in-out;
+		@include transition(all,0.3s,ease);
 	}
 	
 	.author {
 		color:$green;
-		transition: all .3s ease-in-out;
+		@include transition(all,0.3s,ease);
 		
 		.author-wrapper {
 			font-family: $headline-font;
 			font-size: $small-type;
 			font-weight: $regular;
-			margin-top: 3rem;
 
 			img {
 				width: 5.4rem;
@@ -75,9 +200,9 @@
 			opacity: 1;
 		}
 		
-		h2 {
-			@include linear-gradient-text(45deg,$white,$white);
-			transition: all .3s ease-in-out;
+		h2, h3 {
+			color:$white;
+			@include remove-gradient-text();
 		}		
 			
 		.client {
@@ -113,9 +238,9 @@
 		transition: all .3s ease-in-out;
 	}
 	
- 	h2 {
+ 	h2, h3 {
 		color: $white;
-		transition: all .3s ease-in-out;
+		@include remove-gradient-text();
 	}
 	
 	.tags li {		
@@ -126,7 +251,6 @@
 	.quote {
 		color: $white;
 		font-style: italic;
-		margin-bottom: 3rem;
 	}
 	
 	.position {
@@ -139,11 +263,12 @@
 	
 	// on hover
 	&:hover {
-		
 		span {
 			opacity: 1;
 		}
-		
+		img {
+			opacity: 0.6;
+		}
 	}
 
 }
@@ -155,7 +280,8 @@
 .overview-work .post-item {
 	
 	h2, h3 {
-		@include linear-gradient-text(45deg,$white,$white);		
+		color: $white;
+		@include remove-gradient-text();	
 	}
 	
 	.client {
@@ -163,90 +289,6 @@
 	}
 }
 
-//
-// General post-item
-// 
-.post-item {
-	display: block;
-	//height: 120vw;
-	@include fluid-type-reverse(height, 16rem, $bp-md, 185vw, 40vw);
-	padding: 0;
-	margin: 0;
-	color: $white;
-	text-decoration: none;
-	position: relative;
-	overflow: hidden;
-	transition: all .3s ease-in-out;
-	
-	&:hover {
-		outline: 0;
-	}
-	
-	&:hover img {
-		opacity:0.2;
-	}
-	
-	img {
-		width: 100%;
-		height: 100%;
-		display: block;
-		object-fit: cover;
-		opacity: 0;
-		transition: all .3s ease-in-out;
-		
-	}
-	
-	/*&:nth-child(even) {
-		margin-top: -6vh;
-	}*/
-	
-	.post-item-inner {
-		@include fluid-type(padding-left, $bp-md, $bp-xlg, 2rem, 4rem);
-		@include fluid-type(bottom, $bp-md, $bp-xlg, 2rem, 5rem);
-		position: absolute;
-		word-wrap: break-word;
-		max-width: 100%;
-		
-		.tags {
-			@include fluid-type(margin-top, $bp-sm, $bp-lg, 1rem, 2rem); 
-			@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 2rem, 3rem); 
-		}
-	
-	}
-	
-}
-
-.single-work .post-item,
-.single-blog .post-item,
-.single-about .post-item,
-{
-	&:first-child {
-		display: none; // display only the NEXT PROJECT in the Single pages - MOBILE
-	}
-}
-
-
-
-@media only screen and (min-width: $bp-md) {
-	.post-item {
-		@include fluid-type-reverse(height, $bp-md, 100rem, 54vw, 20vw);
-	}
-	
-	.single-work .post-item,
-	.single-blog .post-item,
-	.single-about .post-item {
-		&:first-child {
-			display: block;
-		}
-	}
-	
-}
-
-@media only screen and (min-width: 100rem) {
-	.post-item {
-		height: 32vw;
-	}
-}
 
 
 

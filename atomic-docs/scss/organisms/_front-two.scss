@@ -15,7 +15,7 @@
 	.bg-img {
 		z-index: -3;
 		right: -5rem;
-    	top: 2rem;
+    	top:8rem;
 	}
 	
 
@@ -23,7 +23,7 @@
 		.number {
 			@include fluid-type(right, $bp-sm, $bp-xlg, -6rem, 0rem);
 			img {
-				@include fluid-type(width, $bp-sm, $bp-xlg, 30rem, 47rem);
+				@include fluid-type(width, $bp-sm, $bp-xlg, 26rem, 47rem);
 			}
 		}
 		.desc {
@@ -32,6 +32,10 @@
 				background: transparent;
 			}	
 		}
+		.bg-img {
+			right: auto;
+			@include fluid-type(top, $bp-sm, $bp-md, 6rem, 9rem);
+		}
 	}
 	
 	@media only screen and (min-width:$bp-md) {
@@ -39,8 +43,8 @@
 			top:16rem;
 		}
 		.bg-img {
-			right: auto;
-			//top: -9rem;
+			
+			@include fluid-type(top, $bp-md, $bp-xlg, 16rem, 2rem);
 		}
 	}
 }

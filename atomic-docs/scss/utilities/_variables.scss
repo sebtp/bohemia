@@ -8,13 +8,26 @@
 	$grey:  #9ca8b7;
 
 // GRID - the media queries take only 16px as base font (from the browser)
+	
+	//Chrome REM as *16 all the time
 	$bp-sm: 48rem;  // 48 * 16 = 768px 
 	$bp-md: 64rem;  // 64 * 16 = 1024px
 	$bp-lg: 75rem;  // 75 * 16 = 1200px
-	$bp-xlg: 100.1rem; // 65 * 16 = 1600px
+	$bp-xlg: 100.1rem; // 100 * 16 = 1600px
+	$bp-xxlg: 120.1rem; // 120 * 16 = 1920px
+	$bp-xxxlg: 160rem; // 160 * 16 = 2560px
+	
+	/*
+	$bp-sm: 768px;  // 48 * 16 = 768px 
+	$bp-md: 1024px;  // 64 * 16 = 1024px
+	$bp-lg: 1200px;  // 75 * 16 = 1200px
+	$bp-xlg: 1600px; // 100 * 16 = 1600px
+	$bp-xxlg: 1920px; // 120 * 16 = 1920px
+	$bp-xxxlg: 2560px; // 160 * 16 = 2560px
+	*/
 
 // FONTS
-	$base-font-size: 62.5%;
+	$base-font-size: 100%;
 
 	// Family
 	$headline-font: "brandon-grotesque", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -22,8 +35,8 @@
 
 	// Weight
 	$thin: 100;
-	$light: 200;
-	$regular: 300;
+	$light: 300;
+	$regular: 400;
 	$bold: 700;
 
 	// Line-heights 
@@ -35,15 +48,20 @@
 	$pad-multiplier: 0.43;			// padding fix for the clipping
 
 	// Sizes
-	$size1: 1.6rem;
+	$size1: 1.6rem ;
 	$size2: 1.8rem;
 	$size3: 2.1rem;
-	$size4: 2.8rem;
+	$size4: 2.4rem;
 	$size5: 4.0rem;
 	$size6: 5.5rem;
-	$size7: 9.0rem;
+	$size7: 7.0rem;
 	$size8: 10.8rem;
 	$size9: 18rem;
+	
+	$size6s: 5rem;
+	$size7s: 6rem;
+	$size8s: 9rem;
+	$size9s: 16rem;
 
 
 		// header
@@ -68,7 +86,7 @@
 
 		//post-item-title
 		$h2-overview-min:		$size6;
-		$h2-overview-max:		$size7;
+		$h2-overview-max:		$size8;
 		
 		// hero
 		$hero-type-min: 		$size3;
@@ -76,7 +94,7 @@
 
 		//front-page
 		$h1-frontpage-min:		6rem;
-		$h1-frontpage-max:		$size9;
+		$h1-frontpage-max:		19rem;
 		
 		$p-frontpage-min:		$size3;
 		$p-frontpage-max:		3rem;

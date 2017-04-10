@@ -24,8 +24,31 @@
   }
 }
 
+// Mixin: Fluid Type based on the vh
+@mixin fluid-type-vh($properties, $min-vh, $max-vh, $min-value, $max-value) {
+  $min-vh-adj: $min-vh * 1.6; //fix for the 16px base font issue
+  $max-vh-adj: $max-vh * 1.6; //fix for the 16px base font issue
+  & {
+    @each $property in $properties {
+      #{$property}: $min-value;
+    }
+
+    @media screen and (min-height: $min-vh) {
+      @each $property in $properties {
+        #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vh - #{$min-vh-adj}) / #{strip-unit($max-vh-adj - $min-vh-adj)}));
+      }
+    }
+
+    @media screen and (min-height: $max-vh) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+  }
+}
+
 // Mixin: Fluid Type REVERSE - Where the first value is bigger than the second one
-@mixin fluid-type-reverse($properties, $min-vw, $max-vw, $min-value, $max-value) {
+@mixin fluid-type-reverse($properties, $min-vw, $max-vw, $max-value, $min-value) {
   $min-vw-adj: $min-vw * 1.6; //fix for the 16px base font issue
   $max-vw-adj: $max-vw * 1.6; //fix for the 16px base font issue
   & {
@@ -35,7 +58,8 @@
 
     @media screen and (min-width: $min-vw) {
       @each $property in $properties {
-        #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw-adj}) / #{strip-unit($max-vw-adj - $min-vw-adj)}));
+      //#{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw-adj}) / #{strip-unit($max-vw-adj - $min-vw-adj)}));
+		#{$property}: calc(#{$max-value} + #{strip-unit($min-value - $max-value)} * ((100vw - #{$min-vw-adj}) / #{strip-unit($max-vw-adj - $min-vw-adj)}));
       }
     }
 
@@ -59,8 +83,20 @@
 	background: -ms-linear-gradient($direction, $colors);
 	background: linear-gradient($direction, $colors);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
 	display: inline-block;
+}
+
+//REMOVE linear gradient - text
+@mixin remove-gradient-text() {
+	background: none;
+	-webkit-background-clip: border-box;
+	background-clip: border-box;
+	-webkit-text-fill-color: currentcolor;
+	text-fill-color: currentcolor;
+	//display: inline-block;
 }
 
 // linear gradient - img
@@ -80,6 +116,8 @@
     border-image: linear-gradient($direction, $colors);
 	border-image-slice: 1
 }
+
+
 
 /* transition syntax
 		<name>

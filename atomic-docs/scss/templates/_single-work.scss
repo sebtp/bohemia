@@ -1,13 +1,9 @@
 /* scss/templates/_single-work.scss */
 
-/* LINKED SCSS
- * molecules/_gallery.scss
- 
- */
 .single-work {
 	time {
 		color: $red;
-		background-image: url(../../../../img/dot-red.svg);
+		background-image: url(http://new.bohemiaamsterdam.com/nl/wp-content/themes/bohemia-amsterdam/img/dot-red.svg);
 	}
 	.client {
 		color: $red;
@@ -15,6 +11,13 @@
 	
 	a {
 		color: $red;
+	}
+	footer.tags li {
+		color:$red;
+		@include transition(all,0.3s,ease);
+		&:hover {
+			color:$blue;
+		}
 	}
 }
 

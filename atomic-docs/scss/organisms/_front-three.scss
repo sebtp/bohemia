@@ -11,7 +11,7 @@
 	}
 	.bg-img {
 		z-index: -4;
-		bottom: 0;
+		bottom: 9rem;
 		width: 200vw;
 	}
 	.desc-bg {
@@ -30,6 +30,8 @@
 		}
 		.bg-img {
 			width: 150vw;
+			//top:8rem;
+			
 		}
 		.desc-bg {
 			display: block;
@@ -46,6 +48,8 @@
 	@media only screen and (min-width:$bp-md) {
 		.bg-img {
 			width: 100vw;
+			top:28rem;
+			bottom: 0;
 		}
 		
 	}
@@ -53,7 +57,7 @@
 	@media only screen and (min-width:$bp-xlg) {
 		
 		.bg-img {
-			@include fluid-type(top, $bp-xlg, 160rem, 5rem, -32rem);
+			@include fluid-type(top, $bp-xlg, 160rem, 5rem, -20rem); 
 		}
 		.desc-bg {
 			width: 43%;

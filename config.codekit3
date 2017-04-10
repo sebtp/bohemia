@@ -7425,16 +7425,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/num-1-inner.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/num-1-inner.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/img\/num-1.png": {
 		"ft": 32768,
 		"iS": 11732,
@@ -7444,16 +7434,6 @@
 		"oF": 0,
 		"opt": 1,
 		"q": 100
-		},
-	"\/img\/num-1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/num-1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/img\/num-2-inner.png": {
 		"ft": 32768,
@@ -7465,16 +7445,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/num-2-inner.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/num-2-inner.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/img\/num-2.png": {
 		"ft": 32768,
 		"iS": 40989,
@@ -7484,16 +7454,6 @@
 		"oF": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"\/img\/num-2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/num-2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/img\/num-3-inner.png": {
 		"ft": 32768,
@@ -7505,16 +7465,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/num-3-inner.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/num-3-inner.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/img\/num-3.png": {
 		"ft": 32768,
 		"iS": 36225,
@@ -7524,16 +7474,6 @@
 		"oF": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"\/img\/num-3.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/num-3.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/img\/num-4-inner.png": {
 		"ft": 32768,
@@ -7545,16 +7485,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/num-4-inner.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/num-4-inner.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/img\/num-4.png": {
 		"ft": 32768,
 		"iS": 25822,
@@ -7564,16 +7494,6 @@
 		"oF": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"\/img\/num-4.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/num-4.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/img\/num-5-inner.png": {
 		"ft": 32768,
@@ -7594,16 +7514,6 @@
 		"oF": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"\/img\/num-5.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/num-5.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/img\/num-all.png": {
 		"ft": 32768,
@@ -7716,6 +7626,72 @@
 		"oA": 2,
 		"oAP": "\/template-single.html",
 		"oF": 0
+		},
+	"\/terminal.app\/.github\/issue_template.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/terminal.app\/.github\/issue_template.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/terminal.app\/.github\/pull_request_template.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/terminal.app\/.github\/pull_request_template.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/terminal.app\/Dracula.terminal": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/terminal.app\/Dracula.terminal",
+		"oF": 0
+		},
+	"\/terminal.app\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/terminal.app\/LICENSE",
+		"oF": 0
+		},
+	"\/terminal.app\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/terminal.app\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/tile-wide.png": {
 		"ft": 32768,

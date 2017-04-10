@@ -1,71 +1,84 @@
 /* scss/atoms/_buttons.scss */
 
-button {
+button, a.red-btn, a.green-btn, a.outline-white, a.outline-green {
 	font-family: $body-font;
 	font-style: italic;	
 	font-weight: $bold;
 	color: $white;
-	
-	line-height: $big-lh;
+	text-decoration:none;
+	line-height: 2.7;
 	font-size: $small-type;	
-	height: 5rem;
+	
+	//height: 5rem;
 	padding: 0 3rem;
+	margin: 2rem 0;
+	display: inline-block;
+	
 	border-width: 4px;
 	border-style: solid;
 	outline: 0;
 	@include transition (all,0.3s,ease);
 	
-	@media only screen and (min-width: $bp-sm) {
-		line-height: $big-lh;
+	@media only screen and (min-width: $bp-md) {
+		line-height: 2.9;
 		font-size: $body-size;	
-		height: 6.4rem;
+		//height: 6.4rem;
 		padding: 0 4rem;	
 		margin: 2rem 0;
-	}	
-	&.outline-white {
-		border-color: $white;
-		margin: 6rem auto 2rem;
-		&:hover {
-			opacity: .7;
-		}
-		&:active {
-			opacity: .5;
-		}
 	}
-	&.outline-green {
-		@include linear-gradient-border(45deg,$blue,$green);
-		@include linear-gradient-text(45deg,$blue,$green);
-		margin: 6rem auto 2rem;
-		&:hover {
-			opacity: .7;
-		}
-		&:active {
-			opacity: .5;
-		}
-	}
-	&.red-btn {
-		border-color: transparent;
-		@include linear-gradient-border(90deg,$blue,$red);
-		@include linear-gradient-img(45deg,$blue,$red);
-		&:hover {
-			@include linear-gradient-img(90deg,$blue,$red);
-		}
-		&:active {
-			@include linear-gradient-img(90deg,$blue,$red);
-			opacity: .8;
-		}
-	}
-
-	&.green-btn {
-		border-color: transparent;
-		@include linear-gradient-border(90deg,$blue,$green);
-		@include linear-gradient-img(45deg,$blue,$green);
-		&:hover {
-			@include linear-gradient-img(90deg,$blue,$green);
-		}
-		&:active {
-			@include linear-gradient-img(90deg,$blue,$green);
-			opacity: .8;
-		}
+	&:hover {
+		text-decoration:none;
 	}
 }
+
+.outline-white {
+	border-color: $white;
+	margin: 6rem auto 2rem;
+	&:hover {
+		opacity: .7;
+	}
+	&:active {
+		opacity: .5;
+	}
+}
+
+.outline-green {
+	border-color: transparent;
+	@include linear-gradient-border(45deg,$blue,$green);
+	@include linear-gradient-text(45deg,$blue,$green);
+	margin: 6rem auto 2rem;
+	&:hover {
+		opacity: .7;
+	}
+	&:active {
+		opacity: .5;
+	}
+}
+
+.red-btn {
+	border-color: transparent;
+	@include linear-gradient-border(90deg,$blue,$red);
+	@include linear-gradient-img(45deg,$blue,$red);
+	&:hover {
+		@include linear-gradient-img(90deg,$blue,$red);
+	}
+	&:active {
+		@include linear-gradient-img(90deg,$blue,$red);
+		opacity: .8;
+	}
+}
+
+.green-btn {
+	border-color: transparent;
+	@include linear-gradient-border(90deg,$blue,$green);
+	@include linear-gradient-img(45deg,$blue,$green);
+	&:hover {
+		@include linear-gradient-img(90deg,$blue,$green);
+	}
+	&:active {
+		@include linear-gradient-img(90deg,$blue,$green);
+		opacity: .8;
+	}
+}
+
+//Custom styles for red/green pages >>> single.scss

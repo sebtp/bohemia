@@ -1,17 +1,29 @@
 /* scss/organisms/_side-tags.scss */
 
-.front-page main, .tag-overview main {
+.front-page aside {
+	position: fixed;
+	height: 100%;
+}
+
+.overview-work aside {
+	position: absolute;
+	height: 80vh;
+}
+
+.front-page main, .overview-work main {
 	aside {
-		position: fixed;
 		top: 0;
 		right: 0;
 		display: none;
 		padding-top: 4rem;
 		margin: 0;
 		font-style: italic;
-		height: 100%;
-		mix-blend-mode:difference;
+		
+		//mix-blend-mode:difference;
 
+		@media only screen and (min-width:$bp-lg) {
+			display: block;
+		}
 		.fixed-wrapper {
 			overflow: hidden;
 			position: relative;
@@ -55,9 +67,18 @@
 			color: #666;
 			text-decoration: none;
 			@include fluid-type(font-size, $bp-lg, $bp-xlg, $size1, $size3);
+			&:hover {
+				text-decoration: underline;
+			}
 		}
-		li {
-			margin-top: 0.5rem;
+		ul { 
+			margin-left:0;
+			li {
+				margin-top: 0.5rem;
+				margin-left:0;
+				list-style:none;
+			}
 		}
+		
 	}
 }

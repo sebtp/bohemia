@@ -1,0 +1,34 @@
+/* scss/atoms/_list-item.scss */
+
+section.content ul, section.content ol {
+	margin-bottom:4rem;
+	margin-left: 2rem;
+}
+
+section.content ul {
+	list-style: none;
+	
+	li {
+	    position: relative;
+	}
+
+	li:before {
+	    /*
+	    The desired width gets defined in two places: The element width, and background size.
+	    The height only gets defined once, in background size.
+	    */
+	    position: absolute;
+	    display: block;
+	    content: '\2022'; /* bullet point, for screen readers */
+	    text-indent: -999999px; /* move the bullet point out of sight */
+	    left: -.75em;
+	    width: .3em; /* desired width of the image */
+	    height: 1em; /* unrelated to image height; this is so it gets snipped */
+	    background-repeat: no-repeat;
+	    background-image: url('http://new.bohemiaamsterdam.com/nl/wp-content/themes/bohemia-amsterdam/img/dot-blue.svg');
+	    background-size: .6rem .6rem;
+	    background-position: 0 .6em;
+	}
+}
+
+

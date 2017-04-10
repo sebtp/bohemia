@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 		logo.parent().css("margin-top", "0rem");
     };
 	
-	
+	// Checking what page are we on and adjusting based on it
 	if (body.hasClass("front-page") || body.hasClass("overview-blog")) {
 		
 		//set inital color green

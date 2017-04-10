@@ -2,7 +2,7 @@
 	
 #header {
 	position: fixed;
-	z-index: 9999;
+	z-index: 101;
 	width: 100%;
 	padding-top: 1.5rem;
 	
@@ -18,18 +18,18 @@
 		@include transition (all, 0.3s, ease);
 	}
 
-	.logo, .phone {
+	#logo, #phone {
 		@include fluid-type(font-size, $bp-sm, $bp-lg, $header-type-min, $header-type-max);
 		@include transition (all, 0.3s, ease);
 		text-decoration: none;
 		color: $white;
 	}
-	.phone {
+	#phone {
 		font-family: $headline-font;
 		font-weight: $bold;
 	}
 	
-	.logo {
+	#logo {
 		font-size: $header-type;
 	}
 	

@@ -27,6 +27,27 @@
 }
 
 .elm-loading-icon {
+	//padding-top:0.9rem;
 	width: 1.5em;
 	height: 1.5em;
+	@media only screen and (min-width:$bp-sm) {
+		//padding-top:1.2rem;
+	}
+}
+
+
+//change color based on page 
+.overview-work,
+.overview-about,
+.overview-clients {
+	.elm-loading-icon {
+		fill:$white;
+		color:$white;
+	}
+}
+.overview-blog {
+	.elm-loading-icon {
+		fill:$green;
+		color:$green;
+	}
 }

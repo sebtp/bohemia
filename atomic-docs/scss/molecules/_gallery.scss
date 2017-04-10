@@ -1,16 +1,39 @@
 /* scss/molecules/_gallery.scss */
 
-//.gallery img:nth-child(n+3) { //select all but first 3
-//	padding: 0;
-//	width: 100%;
-//}
-
-.gallery {
+.gallery { // Masonary container
 	margin-top: 7rem;
 	
 	img {
-		padding: 0; 
-		margin: 0.25rem 0;
-		width: 100% !important;
+		//width:100%;
+		//height:auto;
+		//border:0 !important;
 	}
+	
+ 	.gallery-item {
+		width:100%;
+ 		margin-bottom:2rem;
+		//display:inline-block;
+		
+		@media only screen and (min-width:$bp-sm) {
+			width:calc(100% / 2 - 2rem);
+		}
+		
+		@media only screen and (min-width:$bp-md) {
+			width:calc(100% / 3 - 2rem);
+		}
+		
+		img {
+			width:100%;
+			height:auto;
+			border:0 !important;
+		}
+ 	}
+	
+	dl.big-img {
+		position: absolute;
+		width:100%;
+		height:auto;
+	}
+	
+
 }

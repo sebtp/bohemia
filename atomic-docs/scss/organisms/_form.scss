@@ -1,5 +1,12 @@
 /* scss/organisms/_form.scss */
 
+/* The extends are coming from the following files:
+ * @extend inputs.scss
+ * @extend buttons.scss
+ */
+
+//General form styles
+
 .contact-form {
 	margin-top: 8rem;
 	h2 {
@@ -9,159 +16,141 @@
 	}
 }
 
-#mc_embed_signup {
-	
-	width: 90%;
-	max-width: 45rem;
+form, #mc_embed_signup {
 	text-align: left;
-	
-	input[type="radio"] {
-		-webkit-appearance: radio;
+    width:100%; 
+		
+	input.button {					
+		@extend button;
+		@extend .green-btn;	 //this needs to be different based on the type of page
 	}
 	
-	input.type:hover {
-		cursor: text;
+	input[type=submit] {
+		@extend %input-submit;
+		@extend .green-btn;
+		width:100%;
 	}
 	
-	input.button {
-		font-family: $body-font;
-		font-size: $body-size;
-		font-style: italic;
-		font-weight: $bold;
-		line-height: $big-lh;
-		height: 6.4rem;
-		padding: 0 6rem;
-		border-width: 3px;
-		border-style: solid;
-		border-color: transparent;
-		color: $white;
-		@include linear-gradient-border(90deg,$blue,$green);
-		@include linear-gradient-img(45deg,$blue,$green);
-		margin: 6rem auto 2rem;
+	//Labels
+	p, label {
+		@extend %label;
+	}
+	
+	// Input fields
+	input:not([type=submit]):not([type=radio]) { 			
+		@extend %input;
 		&:hover {
-			// ADD HERE HOVER;
-		}
-	}
-	
-	ul {
-		list-style-type: none;
-		li {
-			float: left;
-			margin: 0 0 2rem -1px;
-			width: 33.33333%;
-			position: relative;
-			height: 7rem;
-			
-		}
-		
-		label {
-			
-			display: block;
-			text-align: center;
-			padding: 1.5rem 0;			
-			
-			border-width: 1px;
-			border-style: solid inset;
-			border-color: $blue;
-			
-			cursor: pointer;
-			z-index: 90;
-			@include transition(all,0.3s,ease);
-			&:hover {
-				font-weight: $bold;
-			}
-		}
-		
-		input {
-			display: block;
-			text-align: center;
-			
-			position:absolute;
-			top:0;
-			left:0;
-			right:0;
-			bottom:0;	
-			
-			&[type="radio"] {
-				opacity: 0.011;
-				z-index: 100;
-				&:checked + label {
-					font-weight: $bold;
-					color: $green;
-				}
-			}
-		}
-		&:after {
-			clear: both;
-		}
-	}
-}
-
-#mc_embed_signup label, 
-.post-password-form label {
-	font-family: $headline-font;
-	font-weight: 400;
-	font-size: $form-label-type;
-}
-
-.post-password-form {
-	
-	label {
-		color: $green;
-	}
-	
-	input {
-		&:not([type='submit']):hover {
 			cursor: text;
 		}
-		&[type='submit'] {
-			font-family: $body-font;
-			font-size: $body-size;
-			font-style: italic;
-			font-weight: $bold;
-			line-height: $big-lh;
-			height: 6.4rem;
-			padding: 0 6rem;
-			border-width: 3px;
-			border-style: solid;
-			border-color: transparent;
-			color: $white;
-			@include linear-gradient-border(90deg,$blue,$green);
-			@include linear-gradient-img(45deg,$blue,$green);
-			margin: 6rem auto 2rem;
-			&:hover {
-				// ADD HERE HOVER;
-			}
+		&:focus {
+			@extend %input-type-focus;
 		}
+	}
+	textarea {
+		@extend %textarea;
 	}
 }
 
-#mc_embed_signup input:not([type='radio']), 
-.post-password-form input:not([type='submit']) {
-	display: block;
+
+// Contact form 7 styles
+form {
+	* {
+		@include transition(all,0.3s,ease);
+	}
+	// Radio buttons transformed in buttons
+	.wpcf7-form-control-wrap {
+		@extend %radio-wrapper;
+		.wpcf7-list-item {
+			@extend %radio-button;
+			&:hover {
+				font-weight:$bold;
+			}
+			&.first .wpcf7-list-item-label {
+				border-left-width: 1px;
+			}		
+		}
+		.wpcf7-list-item-label {
+			@extend %radio-label;
+		}
+		
+		input[type=radio] {
+			@extend %radio-input;
+			&:checked ~ .wpcf7-list-item-label {
+				font-weight: $bold;
+				color: $green;				
+			}
+		}
+	}
+	
+	div.wpcf7-response-output {
+		font-family:$headline-font;
+		font-weight:$bold;
+		line-height:$intro-lh;
+		margin:0;
+		padding:0;
+	}
+	div.wpcf7-validation-errors, span.wpcf7-not-valid-tip {
+		font-weight:$bold;
+		border:0;
+		color:$red;
+	}
+	div.wpcf7-mail-sent-ok {
+		border:0;
+		color:$green;
+	}
+	.ajax-loader {
+		display:none !important;
+	}
+}
+
+
+// Mailchimp form styles
+#mc_embed_signup {
+
+	// Radio buttons transformed in buttons
+	ul {
+		@extend %radio-wrapper;
+		li {
+			@extend %radio-button;
+			&:hover {
+				label {
+					font-weight: $bold;
+				}					
+			}
+			&:nth-of-type(1) label {
+				border-left-width: 1px;
+			}
+			label {
+				@extend %radio-label;
+				
+			}
+			input {
+				@extend %radio-input;
+			}	
+		}		
+	}
+	
+	//Error messages
+	div.mce_inline_error { 
+	    margin: .5rem 0 1em 0 !important; 
+		padding:0 !important;
+		font-family:$headline-font;
+		font-size:$small-type;
+	    z-index: 1;
+	    color: $red !important;
+		background-color: $white !important;
+	}
+}
+
+//Space between 
+.mc-field-group, form p {
+	margin-bottom: 1rem;
+}
+
+//Correct the width for the sidebar
+aside #mc_embed_signup {
 	width: 100%;
-	box-sizing: border-box;
-	height: 50px;
-}
-
-#mc_embed_signup input.type, 
-.post-password-form input:not([type='submit']) { 			// the input fields
-	font-family: $headline-font;
-	font-size: $body-size;
-	padding: 0 2rem;
-	height: 6rem;
-	border-width: 1px;
-	border-style: solid;
-	@include linear-gradient-border(45deg,$blue,$green);
-	color: $green;
-}
-
-#mc_embed_signup input.type:focus, 
-.post-password-form input:not([type='submit']):focus {
-	border: 1px solid $green;
-	outline: none;
-}
-
-.mc-field-group {
-	margin-bottom: 15px;
+	input[type=submit] {
+		margin-top:0;
+	}
 }

@@ -6,15 +6,22 @@
 .front-page {
 	main {
 		overflow: hidden;
-		.bg-img {
+		.bg-img, .bg-img-left {
 			position: absolute;
-			z-index: -1;
-			width: 100vw;			
 		}
-		/*
+		.bg-img {
+			z-index: -2;
+			width: 100vw;
+		}
+		.bg-img-left {
+			z-index: -1;
+			width: 50vw;
+			left:0;
+		}
+	/*
 	 *	Breakpoint: base
 	 */		
-		.zero, .one, .two, .three, .four, .five {
+		.zero, .one, .two, .three, .four, .five{
 			position: relative;
 			@include fluid-type(padding-top, $bp-sm, $bp-lg, 5rem, 10rem);
 			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, 5rem, 10rem);
@@ -24,23 +31,23 @@
 		}
 		
 		h1, h2 {
-			@include fluid-type(font-size, 20rem, $bp-lg, $h1-frontpage-min, $h1-frontpage-max);
-			//@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 1rem, 3rem);
+			@include fluid-type(font-size, 20rem, 120rem, $h1-frontpage-min, $h1-frontpage-max);
 			line-height: $small-lh;
 			@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 		}
 		
 		.desc {
-			
-			@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 4rem, 7rem);
 			p {
 				font-family: $headline-font;
 				font-weight: $light;
 				text-align: left;
-				padding: 1.5rem;
-				background: $white;
 				@include fluid-type(font-size, $bp-sm, $bp-lg, $p-frontpage-min, $p-frontpage-max);
+				
+				padding: 1.5rem;
+				@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 1rem, 3rem);
+				
+				background: $white;			
 			}
 		}
 		.number {

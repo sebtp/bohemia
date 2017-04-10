@@ -350,5 +350,53 @@
         "backgroundColor": "",
         "order": -42,
         "has_js": "false"
+    },
+    {
+        "component": "videos",
+        "category": "atoms",
+        "description": "Iframe videos and embedded map",
+        "backgroundColor": "",
+        "order": -43,
+        "has_js": "false"
+    },
+    {
+        "component": "list-item",
+        "category": "atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -44,
+        "has_js": "false"
+    },
+    {
+        "component": "safari-specific",
+        "category": "utilities",
+        "description": "",
+        "backgroundColor": "",
+        "order": -45,
+        "has_js": "false"
+    },
+    {
+        "component": "single-about",
+        "category": "templates",
+        "description": "",
+        "backgroundColor": "",
+        "order": -46,
+        "has_js": "false"
+    },
+    {
+        "component": "links",
+        "category": "atoms",
+        "description": "&lt;a&gt; tags",
+        "backgroundColor": "",
+        "order": -47,
+        "has_js": "false"
+    },
+    {
+        "component": "overview-blog",
+        "category": "templates",
+        "description": "",
+        "backgroundColor": "",
+        "order": -48,
+        "has_js": "false"
     }
 ]

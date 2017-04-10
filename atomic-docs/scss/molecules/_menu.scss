@@ -2,9 +2,9 @@
 
 /* slideout menu */
 
-.menu {
+.menu-wrapper {
 	position: fixed;
-	z-index: 1000;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -85,38 +85,58 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: 100px 70px;
+	padding: 6rem 2rem;
 	overflow: auto;
 	/* smooth scrolling on touch devices */
 	-webkit-overflow-scrolling: touch;
-	
-	li {
-		margin: 0;
-		a {
-			@include fluid-type(font-size, $bp-sm, $bp-lg, $menu-type-min, $menu-type-max);
-			font-family: $headline-font;
-			font-weight: 100;			
-			color: #46beaf;
-			text-decoration: none;
-			text-transform: lowercase;
-			-webkit-transition: all, 0.3s, ease;
-			-moz-transition: all, 0.3s, ease;
-			-o-transition: all, 0.3s, ease;
-			transition: all, 0.3s, ease;
-			&:hover {
-				color: #0046b4;
+	ul {
+		list-style:none;
+		li {
+			margin: 0;
+			a {
+				@include fluid-type(font-size, $bp-sm, $bp-lg, $menu-type-min, $menu-type-max);
+				font-family: $headline-font;
+				font-weight: 100;			
+				color: #46beaf;
+				text-decoration: none;
+				text-transform: lowercase;
+				-webkit-transition: all, 0.3s, ease;
+				-moz-transition: all, 0.3s, ease;
+				-o-transition: all, 0.3s, ease;
+				transition: all, 0.3s, ease;
+				&:hover {
+					color: #0046b4;
+				}
+			}
+			&:first-of-type {
+				margin-top: 0;
+			}
+			&:last-of-type a {
+				color:$red;
+				&:hover {
+					color:$blue;
+				}
 			}
 		}
-		&:first-of-type {
-			margin-top: 0;
+	}
+	
+	
+	@media only screen and (min-width: $bp-sm) {
+		padding: 10rem 7rem;
+		
+		p {
+			font-size: 16px;
+			font-size: 1rem;
+			line-height: 1.6;
 		}
 	}
 }
 
-@media only screen and (min-width: $bp-sm) {
-	.menu-content p {
-		font-size: 16px;
-		font-size: 1rem;
-		line-height: 1.6;
+
+
+@media only screen and (max-height: 56.25rem) {
+	.menu-content li a {
+		@include fluid-type-vh(font-size, 30rem, 56.25rem, 2.2rem, $menu-type-max);
 	}
 }
+

@@ -1,47 +1,86 @@
 /* scss/templates/_single.scss */
 
+article {
+	margin-bottom: 6rem;
+}
 
-
-.content h2, .content h3, .content p, .content blockquote {
+.content {
+	h2, h3, p, blockquote, ul, ol {
 		padding-right: 0.5rem;
 		padding-left: 0.5rem;
 	}
-
+	p {
+		margin-bottom:4rem;
+	}		
+}
 
 @media only screen and (min-width: $bp-sm) {
-	.content h2, .content h3, .content p, .content blockquote {
-		padding-left: 0;
-		margin-right: 33.33333333%;
-		
-	}
-	
-	.content figure img {
-		width: 65%;
+	.content {
+		h2, h3, p:not(.iframe-parent), blockquote, ul, ol {
+			padding-left: 0;
+			margin-right: 33.33333333%;
+		}
+		figure img, .iframe-parent {
+			width: 65%;
+		}
 	}
 }
 
 @media only screen and (min-width: $bp-md) {
-	.content blockquote {
-		padding-right: 1.5rem;
-		padding-left: 8.33333333%;
-		margin-right: 50%;
+	.content {
+		h2, h3, p:not(.iframe-parent), ul, ol {
+			padding-right: 1.5rem;
+			padding-left: 8.33333333%;
+			margin-right: 33.33333333%;
+		}		
+		blockquote {
+			padding-right: 1.5rem;
+			padding-left: 8.33333333%;
+			margin-right: 50%;
+		}
 	}
-	
-	.content h2, .content h3, .content p {
-		padding-right: 1.5rem;
-		padding-left: 8.33333333%;
-		margin-right: 33.33333333%;
-	}
-	
-
 }
 
-
+//Spacing between elements
 figure {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 
 .meta {
-	margin-bottom: 6rem;
+	margin-bottom: 4rem;
 }
+
+//Custom styles for the red/green pages
+
+//Red
+.single-work,
+.single-about {
+	button {
+		@extend .red-btn;
+	}
+	aside {
+		p {
+			color: $red;
+		}
+		svg {
+			fill: $red;
+		}
+	}
+}
+
+//Green
+.single-blog {
+	button {
+		@extend .green-btn;
+	}
+	aside {
+		p {
+			color: $green;
+		}
+		svg {
+			fill: $green;
+		}
+	}	
+}
+	

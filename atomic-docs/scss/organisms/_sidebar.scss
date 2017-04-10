@@ -1,36 +1,56 @@
 /* scss/organisms/_sidebar.scss */
 
+
 aside {
 	position: relative; //on mobile let the aside go to it's correct place
-		
+	@include transition(all,0.3s,ease);
+	margin-bottom: 6rem;
+	
 	p {
 		font-family: $headline-font;
 		font-size: $small-type;
+		margin-bottom:2rem;
 	}
-}
-
-.single-work aside p,
-.single-about aside p {
-	color: $red;
-}
-.single-blog aside p {
-	color: $green;
-}
-
-@media only screen and (min-width: $bp-sm) {
-	aside {
+	ul {
+		margin-left:0;
+		li {
+			list-style:none;
+		}
+	}
+	a {
+		text-decoration:none;
+		svg {
+			@include transition(all,0.3s,ease);
+			width: 6.4rem;
+			height: auto;	
+		}
+		
+		&:hover {
+			text-decoration:none;
+			svg {
+				fill:$blue;
+			}
+		}
+	}
+	&>div {
+		margin-bottom:6rem;
+	}
+	input[type=submit] { 	// making the submit button full width
+		width:100%;
+	}
+	@media only screen and (min-width: $bp-sm) {
 		position: absolute; //on tablet and up get the sidebar on the side
-
-		margin-top:269px;
+		margin-top:330px;
 		padding: 0;
 		right: 0;
 	}
-}
-
-@media only screen and (min-width: $bp-md) {
-	aside {
-		position: absolute;
-		margin-top:269px;
-		right: 8.33333333%;
+	@media only screen and (min-width: $bp-md) {
+		right: 8.7%;
+	}
+	@media only screen and (min-width: $bp-xlg) {
+		right: 10.7%;
 	}
 }
+
+
+//Custom styles for red/green pages >>> single.scss

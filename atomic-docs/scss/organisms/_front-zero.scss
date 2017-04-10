@@ -1,28 +1,48 @@
 /* scss/organisms/_front-zero.scss */
 
 .front-page .zero {
-		padding-top: 0;
-		h1 {
-			@include linear-gradient-text(45deg,$blue,$red);
-			@include fluid-type(font-size, 20rem, $bp-xlg, $h1-frontpage-min, $h1-frontpage-max);
-			margin-bottom: 0;
+	div {
+		overflow:visible;
+	}
+	.proposition {
+		font-family:$headline-font;
+		font-weight:$light;
+		line-height: $big-lh;
+		@include fluid-type(font-size, 20rem, 120rem, $size5, $size6);
+		color:$red;
+		padding-left: 3rem;
+		padding-bottom: 8rem;
+		padding-top: 4rem;
+	}
+	padding-top: 0;
+	h1 {
+		@include linear-gradient-text(45deg,$blue,$red);
+		@include fluid-type(font-size, 20rem, 120rem, $h1-frontpage-min, $h1-frontpage-max);
+		margin-bottom: 0;
+	}
+	.bg-img {
+		top: 0;
+		z-index: -1;
+	}
+	.nr {
+		@include fluid-type(padding-top, $bp-sm, $bp-lg, 4rem, 8rem);
+		@include fluid-type(padding-bottom, $bp-sm, $bp-lg, 4rem, 8rem);
+		img {
+			max-width: 50%;
 		}
-		.bg-img {
-			top: 0;
-			z-index: -1;
-		}
+	}
+	/*
+	 *  Breakpoint: md
+	 */
+	@media only screen and (min-width:$bp-md) {
 		.nr {
-			padding-top: 8rem;
+			//padding-top: 0;
 			img {
 				max-width: 100%;
 			}
 		}
-		/*
-		 *  Breakpoint: sm
-		 */
-		@media only screen and (min-width:$bp-sm) {
-			.nr {
-				padding-top: 0;
-			}	
-		}
+		.proposition {
+			padding-bottom: 0;
+		}	
 	}
+}
