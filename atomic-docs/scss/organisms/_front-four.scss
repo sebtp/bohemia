@@ -2,10 +2,10 @@
 
 .front-page .four {
 	.number {
-		right: 1rem;
+		right: 0.625rem;
 		img {
 			mix-blend-mode:multiply;
-			width:10rem;
+			width:6.25rem;
 		}
 		.inner {
 			mix-blend-mode:overlay;
@@ -14,22 +14,22 @@
 	.bg-img {
 		z-index: -5;
 	}
-	
+
 	/*
 	 *  Breakpoint: sm
-	 */	
+	 */
 	@media only screen and (min-width:$bp-sm) {
 		.number {
-			@include fluid-type(right, $bp-sm, $bp-xlg, -1.5rem, 0rem);
+			@include fluid-type(right, $bp-sm, $bp-xlg, -1rem, 0rem);
 			img {
-				@include fluid-type(width, $bp-sm, $bp-xlg, 30rem, 55rem);
+				@include fluid-type(width, $bp-sm, $bp-xlg, 18.75rem, 34.375rem);
 			}
 		}
 		.desc {
-			margin-left: -33.33333333%; 
+			margin-left: -33.33333333%;
 			p {
 				background: transparent;
-			}			
+			}
 		}
 	}
 }

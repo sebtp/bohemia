@@ -6,33 +6,33 @@
 %label {
 	font-family: $headline-font;
 	font-size: $form-label-type;
-	font-weight: 400;	
+	font-weight: 400;
 	margin:0;
 }
 %textarea, %input {
 	font-family: $headline-font;
 	font-size: $body-size;
 	color: $green;
-	
+
 	width: 100%;
-	
+
 	display: block;
 	box-sizing: border-box;
 	border-width: 1px;
 	border-style: solid;
 	@include linear-gradient-border(45deg,$blue,$green);
-	
+
 	outline: none;
 	cursor: text;
 }
 %textarea {
-	padding: 1rem 2rem;
-	height: 32rem;
+	padding: 0.625rem 1.25rem;
+	height: 20rem;
 }
 
 %input {
-	padding: 0 2rem;
-	height: 6rem;
+	padding: 0 1.25rem;
+	height: 3.75rem;
 }
 
 %input-type-focus {
@@ -48,7 +48,7 @@
 
 %radio-button {
 	float: left;
-	margin: 0 0 1rem 0;
+	margin: 0 0 0.625rem 0;
 	width: 33.33333%;
 	position: relative;
 	//height: 7rem;
@@ -57,20 +57,20 @@
 %radio-label {
 	display: block;
 	text-align: center;
-	padding: 1.5rem 0;	
-	margin: 0;		
-	
+	padding: 1rem 0;	
+	margin: 0;
+
 	border-top-width: 1px;
 	border-right-width: 1px;
 	border-bottom-width: 1px;
-	border-left-width: 0;	
+	border-left-width: 0;
 	border-style: solid inset;
 	border-color: $blue;
-	
+
 	cursor: pointer;
 	z-index: 90;
 	@include transition(all,0.3s,ease);
-	
+
 	&:hover {
 		font-weight: $bold;
 	}
@@ -87,7 +87,7 @@
 	right:0;
 	bottom:0;
 	cursor:pointer;
-	
+
 	&[type="radio"] {
 		cursor:pointer;
 		opacity: 0.011;
@@ -104,5 +104,3 @@
 %input-submit {
 	@extend button;
 }
-
-

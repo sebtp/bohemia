@@ -1,25 +1,25 @@
 /* scss/atoms/_tags.scss */
 
 .tags {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
-	
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+
 	ul {
 		margin-left:0;
 		li {
 			font-family: $body-font;
 			font-style: italic;
-			font-size: 2.1rem;
-			@include fluid-type(font-size, 20rem, $bp-xlg, $size2, $size3);			
+			font-size: $size3;
+			@include fluid-type(font-size, 12.5rem, $bp-xlg, $size2, $size3);
 			color: $white;
-		
+
 			display: inline-block;
-			padding-right: 2rem;
-		
+			padding-right: 1.25rem;
+
 			a {
 				text-decoration: none;
 				@include transition(all,0.3s,ease);
-			
+
 				&:hover {
 					//color: $blue;
 					text-decoration:underline;
@@ -31,7 +31,7 @@
 
 @media only screen and (min-width: $bp-sm) {
 	.tags {
-		margin-top: 6rem;
-		margin-bottom: 8rem;
+		margin-top: 3.75rem;
+		margin-bottom: 5rem;
 	}
 }

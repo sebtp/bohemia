@@ -8,36 +8,36 @@
 //General form styles
 
 .contact-form {
-	margin-top: 8rem;
+	margin-top: 5rem;
 	h2 {
 		font-size: $h1-single-min;
 		padding: $h1-single-pad-min;
-		margin-bottom: 4rem;
+		margin-bottom: 2.5rem;
 	}
 }
 
 form, #mc_embed_signup {
 	text-align: left;
-    width:100%; 
-		
-	input.button {					
+    width:100%;
+
+	input.button {
 		@extend button;
 		@extend .green-btn;	 //this needs to be different based on the type of page
 	}
-	
+
 	input[type=submit] {
 		@extend %input-submit;
 		@extend .green-btn;
 		width:100%;
 	}
-	
+
 	//Labels
 	p, label {
 		@extend %label;
 	}
-	
+
 	// Input fields
-	input:not([type=submit]):not([type=radio]) { 			
+	input:not([type=submit]):not([type=radio]) {
 		@extend %input;
 		&:hover {
 			cursor: text;
@@ -67,21 +67,21 @@ form {
 			}
 			&.first .wpcf7-list-item-label {
 				border-left-width: 1px;
-			}		
+			}
 		}
 		.wpcf7-list-item-label {
 			@extend %radio-label;
 		}
-		
+
 		input[type=radio] {
 			@extend %radio-input;
 			&:checked ~ .wpcf7-list-item-label {
 				font-weight: $bold;
-				color: $green;				
+				color: $green;
 			}
 		}
 	}
-	
+
 	div.wpcf7-response-output {
 		font-family:$headline-font;
 		font-weight:$bold;
@@ -115,24 +115,24 @@ form {
 			&:hover {
 				label {
 					font-weight: $bold;
-				}					
+				}
 			}
 			&:nth-of-type(1) label {
 				border-left-width: 1px;
 			}
 			label {
 				@extend %radio-label;
-				
+
 			}
 			input {
 				@extend %radio-input;
-			}	
-		}		
+			}
+		}
 	}
-	
+
 	//Error messages
-	div.mce_inline_error { 
-	    margin: .5rem 0 1em 0 !important; 
+	div.mce_inline_error {
+	    margin: 0.375rem 0 0.625rem 0 !important;
 		padding:0 !important;
 		font-family:$headline-font;
 		font-size:$small-type;
@@ -142,9 +142,9 @@ form {
 	}
 }
 
-//Space between 
+//Space between
 .mc-field-group, form p {
-	margin-bottom: 1rem;
+	margin-bottom: 0.625rem;
 }
 
 //Correct the width for the sidebar

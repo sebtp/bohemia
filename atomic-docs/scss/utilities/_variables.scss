@@ -8,23 +8,14 @@
 	$grey:  #9ca8b7;
 
 // GRID - the media queries take only 16px as base font (from the browser)
-	
+
 	//Chrome REM as *16 all the time
-	$bp-sm: 48rem;  // 48 * 16 = 768px 
+	$bp-sm: 48rem;  // 48 * 16 = 768px
 	$bp-md: 64rem;  // 64 * 16 = 1024px
 	$bp-lg: 75rem;  // 75 * 16 = 1200px
 	$bp-xlg: 100.1rem; // 100 * 16 = 1600px
 	$bp-xxlg: 120.1rem; // 120 * 16 = 1920px
 	$bp-xxxlg: 160rem; // 160 * 16 = 2560px
-	
-	/*
-	$bp-sm: 768px;  // 48 * 16 = 768px 
-	$bp-md: 1024px;  // 64 * 16 = 1024px
-	$bp-lg: 1200px;  // 75 * 16 = 1200px
-	$bp-xlg: 1600px; // 100 * 16 = 1600px
-	$bp-xxlg: 1920px; // 120 * 16 = 1920px
-	$bp-xxxlg: 2560px; // 160 * 16 = 2560px
-	*/
 
 // FONTS
 	$base-font-size: 100%;
@@ -39,29 +30,24 @@
 	$regular: 400;
 	$bold: 700;
 
-	// Line-heights 
-	$big-lh: 0.8;					// 
-	$small-lh: 0.6;					// 
-	$intro-lh: 1.4;					// 
-	$body-lh: 1.5;					// 
-	
-	$pad-multiplier: 0.43;			// padding fix for the clipping
+	// Line-heights
+	$big-lh: 0.8;					  //
+	$small-lh: 0.6;					//
+	$intro-lh: 1.4;					//
+	$body-lh: 1.5;					//
+
+	$pad-multiplier: 0.3;			// padding fix for the clipping
 
 	// Sizes
-	$size1: 1.6rem ;
-	$size2: 1.8rem;
-	$size3: 2.1rem;
-	$size4: 2.4rem;
-	$size5: 4.0rem;
-	$size6: 5.5rem;
-	$size7: 7.0rem;
-	$size8: 10.8rem;
-	$size9: 18rem;
-	
-	$size6s: 5rem;
-	$size7s: 6rem;
-	$size8s: 9rem;
-	$size9s: 16rem;
+	$size1: 1rem; 			//16px
+	$size2: 1.125rem; 	//18px
+	$size3: 1.3125rem; 	//21px
+	$size4: 1.5rem; 		//24px
+	$size5: 2.5rem; 		//40px
+	$size6: 3.4375rem; 	//55px
+	$size7: 4.375rem; 	//70px
+	$size8: 6.75rem;	 	//108px
+	$size9: 11.25rem; 	//180px
 
 
 		// header
@@ -87,26 +73,26 @@
 		//post-item-title
 		$h2-overview-min:		$size6;
 		$h2-overview-max:		$size8;
-		
+
 		// hero
 		$hero-type-min: 		$size3;
-		$hero-type-max: 		$size4;	
+		$hero-type-max: 		$size4;
 
 		//front-page
-		$h1-frontpage-min:		6rem;
-		$h1-frontpage-max:		19rem;
-		
-		$p-frontpage-min:		$size3;
-		$p-frontpage-max:		3rem;
+		$h1-frontpage-min:		4rem;
+		$h1-frontpage-max:		12rem;
 
-		
-		
+		$p-frontpage-min:		$size3;
+		$p-frontpage-max:		2rem;
+
+
+
 		$small-type: $size1;		// blockquote author, button on mobile
 		$sidebar-type: $size2;		// sidebar, date
 		$header-type: $size4;		// phone, logo
 		$footer-type: $size2;		// footer
 		$body-size: $size3;			// body
-		$h2-single: $size6; 		// H2, blockquote, 
+		$h2-single: $size6; 		// H2, blockquote,
 		$h3-single: $size5;			// H3
 		$h4-single: $size5;			// H4
 		$intro-single: $size4;		// intro
@@ -126,4 +112,3 @@
 	$h2-pad: $h2-single * $pad-multiplier;
 	$h3-pad: $h3-single * $pad-multiplier;
 	$h4-pad: $h4-single * $pad-multiplier;
-

@@ -1,17 +1,17 @@
 /* scss/templates/_single.scss */
 
 article {
-	margin-bottom: 6rem;
+	margin-bottom: 3.75rem;
 }
 
 .content {
 	h2, h3, p, blockquote, ul, ol {
-		padding-right: 0.5rem;
-		padding-left: 0.5rem;
+		padding-right: 0.3125rem;
+		padding-left: 0.3125rem;
 	}
 	p {
-		margin-bottom:4rem;
-	}		
+		margin-bottom:0.3125rem;
+	}
 }
 
 @media only screen and (min-width: $bp-sm) {
@@ -29,12 +29,12 @@ article {
 @media only screen and (min-width: $bp-md) {
 	.content {
 		h2, h3, p:not(.iframe-parent), ul, ol {
-			padding-right: 1.5rem;
+			padding-right: 0.3125rem;
 			padding-left: 8.33333333%;
 			margin-right: 33.33333333%;
-		}		
+		}
 		blockquote {
-			padding-right: 1.5rem;
+			padding-right: 0.3125rem;
 			padding-left: 8.33333333%;
 			margin-right: 50%;
 		}
@@ -43,12 +43,12 @@ article {
 
 //Spacing between elements
 figure {
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	margin-top: 3.125rem;
+	margin-bottom: 3.125rem;
 }
 
 .meta {
-	margin-bottom: 4rem;
+	margin-bottom: 2.5rem;
 }
 
 //Custom styles for the red/green pages
@@ -81,6 +81,5 @@ figure {
 		svg {
 			fill: $green;
 		}
-	}	
+	}
 }
-	

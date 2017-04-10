@@ -3,7 +3,7 @@
 .front-page .three {
 	.number {
 		img {
-			width: 9rem;
+			width: 5.625rem;
 		}
 		.inner {
 			opacity: .7;
@@ -11,27 +11,27 @@
 	}
 	.bg-img {
 		z-index: -4;
-		bottom: 9rem;
+		bottom: 5.625rem;
 		width: 200vw;
 	}
 	.desc-bg {
 		display: none;
 	}
-	
+
 	/*
 	 *  Breakpoint: sm
 	 */
 	@media only screen and (min-width:$bp-sm) {
 		.number {
-			left: -1.5rem;
+			left: -1rem;
 			img {
-				@include fluid-type(width, $bp-sm, $bp-xlg, 30rem, 48rem);
+				@include fluid-type(width, $bp-sm, $bp-xlg, 18.75rem, 30rem);
 			}
 		}
 		.bg-img {
 			width: 150vw;
 			//top:8rem;
-			
+
 		}
 		.desc-bg {
 			display: block;
@@ -44,27 +44,27 @@
 			@include transform(skewX(-2deg));
 		}
 	}
-	
+
 	@media only screen and (min-width:$bp-md) {
 		.bg-img {
 			width: 100vw;
-			top:28rem;
+			top:17.5rem;
 			bottom: 0;
 		}
-		
+
 	}
-	
+
 	@media only screen and (min-width:$bp-xlg) {
-		
+
 		.bg-img {
-			@include fluid-type(top, $bp-xlg, 160rem, 5rem, -20rem); 
+			@include fluid-type(top, $bp-xlg, 100rem, 3.125rem, -12.5rem);
 		}
 		.desc-bg {
 			width: 43%;
-		}		
+		}
 	}
-	
-	
-	
-	
+
+
+
+
 }

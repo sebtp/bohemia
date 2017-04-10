@@ -1,13 +1,13 @@
 /* scss/atoms/_list-item.scss */
 
 section.content ul, section.content ol {
-	margin-bottom:4rem;
-	margin-left: 2rem;
+	margin-bottom:2.5rem;
+	margin-left: 1.25rem;
 }
 
 section.content ul {
 	list-style: none;
-	
+
 	li {
 	    position: relative;
 	}
@@ -21,14 +21,12 @@ section.content ul {
 	    display: block;
 	    content: '\2022'; /* bullet point, for screen readers */
 	    text-indent: -999999px; /* move the bullet point out of sight */
-	    left: -.75em;
-	    width: .3em; /* desired width of the image */
-	    height: 1em; /* unrelated to image height; this is so it gets snipped */
+	    left: -1rem;
+	    width: 0.375rem; /* desired width of the image */
+	    height: 1.25rem; /* unrelated to image height; this is so it gets snipped */
 	    background-repeat: no-repeat;
 	    background-image: url('http://new.bohemiaamsterdam.com/nl/wp-content/themes/bohemia-amsterdam/img/dot-blue.svg');
-	    background-size: .6rem .6rem;
-	    background-position: 0 .6em;
+	    background-size: 0.375rem 0.375rem;
+	    background-position: 0 0.75rem;
 	}
 }
-
-

@@ -4,12 +4,12 @@
 aside {
 	position: relative; //on mobile let the aside go to it's correct place
 	@include transition(all,0.3s,ease);
-	margin-bottom: 6rem;
-	
+	margin-bottom: 3.75rem;
+
 	p {
 		font-family: $headline-font;
 		font-size: $small-type;
-		margin-bottom:2rem;
+		margin-bottom:1.25rem;
 	}
 	ul {
 		margin-left:0;
@@ -21,10 +21,10 @@ aside {
 		text-decoration:none;
 		svg {
 			@include transition(all,0.3s,ease);
-			width: 6.4rem;
-			height: auto;	
+			width: 4rem;
+			height: auto;
 		}
-		
+
 		&:hover {
 			text-decoration:none;
 			svg {
@@ -33,14 +33,14 @@ aside {
 		}
 	}
 	&>div {
-		margin-bottom:6rem;
+		margin-bottom:3.75rem;
 	}
 	input[type=submit] { 	// making the submit button full width
 		width:100%;
 	}
 	@media only screen and (min-width: $bp-sm) {
 		position: absolute; //on tablet and up get the sidebar on the side
-		margin-top:330px;
+		margin-top:20.625rem;
 		padding: 0;
 		right: 0;
 	}

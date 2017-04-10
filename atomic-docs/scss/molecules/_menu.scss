@@ -71,7 +71,7 @@
 
 @media only screen and (min-width: $bp-sm) {
 	.menu-container {
-		width: 440px;
+		width: 27.5rem;
 	}
 }
 
@@ -85,7 +85,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: 6rem 2rem;
+	padding: 3.75rem 1.25rem;
 	overflow: auto;
 	/* smooth scrolling on touch devices */
 	-webkit-overflow-scrolling: touch;
@@ -96,7 +96,7 @@
 			a {
 				@include fluid-type(font-size, $bp-sm, $bp-lg, $menu-type-min, $menu-type-max);
 				font-family: $headline-font;
-				font-weight: 100;			
+				font-weight: 100;
 				color: #46beaf;
 				text-decoration: none;
 				text-transform: lowercase;
@@ -119,11 +119,11 @@
 			}
 		}
 	}
-	
-	
+
+
 	@media only screen and (min-width: $bp-sm) {
-		padding: 10rem 7rem;
-		
+		padding: 6.25rem 4.375rem;
+
 		p {
 			font-size: 16px;
 			font-size: 1rem;
@@ -134,9 +134,8 @@
 
 
 
-@media only screen and (max-height: 56.25rem) {
+@media only screen and (max-height: 35.125rem) {
 	.menu-content li a {
-		@include fluid-type-vh(font-size, 30rem, 56.25rem, 2.2rem, $menu-type-max);
+		@include fluid-type-vh(font-size, 18.75rem, 35.125rem, 1.375rem, $menu-type-max);
 	}
 }
-

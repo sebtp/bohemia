@@ -4,7 +4,7 @@
 
 .single-blog .title, 					//PADDING FIX - H1/title - single posts
 .single-work h1 {
-	margin-top: 4rem;
+	margin-top: 2.5rem;
 	@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-single-pad-min, $h1-single-pad-max);
 	@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-single-pad-min, $h1-single-pad-max);
 	line-height: $small-lh;
@@ -55,18 +55,18 @@ h1, h2, h3, h4, h5, h6, .title {
 	}
 }
 
-.single-work, 
-.single-about, 
+.single-work,
+.single-about,
 .overview-work,
 .overview-about,
 .overview-clients  {							// blue-red gradient - Headlines
 	h1, h2, h3, h4, h5, h6, .title {
 		@include linear-gradient-text(45deg,$blue,$red);
-	}	
+	}
 }
 
-.single-blog h1 { 					//the small SEO in single-blog	
-	font-weight: 700;
+.single-blog h1 { 					//the small SEO in single-blog
+	font-weight: $bold;
 	font-size: $body-size;
 	line-height: $intro-lh;
 	color: $green;
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6, .title {
 
 .single-blog .title, 				//H1 in single-work and single-about, and the Title in the single-blog
 .single-work h1,
-.single-about h1 {						
+.single-about h1 {
 	@include fluid-type(font-size, $bp-sm, $bp-xlg, $h1-single-min, $h1-single-max);
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
@@ -114,8 +114,8 @@ h1, h2, h3, h4, h5, h6, .title {
 .single-about {
 	h2 {
 		@include fluid-type(font-size, $bp-sm, $bp-xlg, $h2-single-min, $h2-single-max);
-		margin: 2rem 0 0;
-		
+		margin: 1.25rem 0 0;
+
 	}
 }
 
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6, .title {
 	}
 }*/
 
-h3 {	
+h3 {
 	font-weight: $thin;
 	font-size: $h3-single;
 	line-height: $big-lh;
@@ -138,7 +138,7 @@ h3 {
 .single-about {
 	.post-item h3 {
 		@include fluid-type(font-size, $bp-md, $bp-xlg, $h2-overview-min, $h2-overview-max);
-	}	
+	}
 }*/
 
 h4 {

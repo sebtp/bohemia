@@ -1,7 +1,7 @@
 /* scss/atoms/_load-button.scss */
 
 .elm-wrapper {
-	margin: 1em auto;
+	margin: 0.625rem auto;
 	text-align: center;
 }
 
@@ -28,15 +28,15 @@
 
 .elm-loading-icon {
 	//padding-top:0.9rem;
-	width: 1.5em;
-	height: 1.5em;
+	width: 1rem;
+	height: 1rem;
 	@media only screen and (min-width:$bp-sm) {
 		//padding-top:1.2rem;
 	}
 }
 
 
-//change color based on page 
+//change color based on page
 .overview-work,
 .overview-about,
 .overview-clients {

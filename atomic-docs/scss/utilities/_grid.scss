@@ -6,14 +6,14 @@
 }
 
 .container-fluid {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  max-width: 143rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-width: 89.375rem;
 }
 
 .container-full {
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .row {
@@ -30,8 +30,8 @@
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -1.5rem;
-  margin-left: -1.5rem;
+  margin-right: -1rem;
+  margin-left: -1rem;
   &.reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -47,7 +47,7 @@
   flex-direction: column-reverse;
 }
 
-/* 
+/*
  * Name: xs
  * Desc: Vertical mobile
  */
@@ -57,8 +57,8 @@
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .col-xs {
@@ -252,22 +252,22 @@
   order: 1;
 }
 
-/* 
+/*
  * Name: sm
  * Desc: Vertical tablets or landscape mobile
  */
 
 @media only screen and (min-width: $bp-sm) {
   .container {
-    width: 49rem;
+    width: 30.625rem;
   }
   .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-offset-0, .col-sm-offset-1, .col-sm-offset-2, .col-sm-offset-3, .col-sm-offset-4, .col-sm-offset-5, .col-sm-offset-6, .col-sm-offset-7, .col-sm-offset-8, .col-sm-offset-9, .col-sm-offset-10, .col-sm-offset-11, .col-sm-offset-12 {
     box-sizing: border-box;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .col-sm {
     -webkit-box-flex: 1;
@@ -427,22 +427,22 @@
   }
 }
 
-/* 
+/*
  * Name: md
  * Desc: Lanscape tablets and small desktop
  */
 
 @media only screen and (min-width: $bp-md) {
   .container {
-    width: 65rem;
+    width: 40.625rem;
   }
   .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-offset-0, .col-md-offset-1, .col-md-offset-2, .col-md-offset-3, .col-md-offset-4, .col-md-offset-5, .col-md-offset-6, .col-md-offset-7, .col-md-offset-8, .col-md-offset-9, .col-md-offset-10, .col-md-offset-11, .col-md-offset-12 {
     box-sizing: border-box;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .col-md {
     -webkit-box-flex: 1;
@@ -602,23 +602,23 @@
   }
 }
 
-/* 
+/*
  * Name: lg
  * Desc: Large desktop
  */
 
 @media only screen and (min-width: $bp-lg) {
   .container {
-	width: 96%;  
-    max-width: 143rem;
+	width: 96%;
+    max-width: 89.375rem;
   }
   .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-offset-0, .col-lg-offset-1, .col-lg-offset-2, .col-lg-offset-3, .col-lg-offset-4, .col-lg-offset-5, .col-lg-offset-6, .col-lg-offset-7, .col-lg-offset-8, .col-lg-offset-9, .col-lg-offset-10, .col-lg-offset-11, .col-lg-offset-12 {
     box-sizing: border-box;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .col-lg {
     -webkit-box-flex: 1;
@@ -777,24 +777,24 @@
     order: 1;
   }
 }
-	
-/* 
+
+/*
  * Name: xlg
  * Desc: Extra Large desktop
  */
 
 @media only screen and (min-width: $bp-xlg) {
   .container {
-	width: 96%;  
-    max-width: 143rem;
+	width: 96%;
+    max-width: 89.375rem;
   }
   .col-xlg, .col-xlg-1, .col-xlg-2, .col-xlg-3, .col-xlg-4, .col-xlg-5, .col-xlg-6, .col-xlg-7, .col-xlg-8, .col-xlg-9, .col-xlg-10, .col-xlg-11, .col-xlg-12, .col-xlg-offset-0, .col-xlg-offset-1, .col-xlg-offset-2, .col-xlg-offset-3, .col-xlg-offset-4, .col-xlg-offset-5, .col-xlg-offset-6, .col-xlg-offset-7, .col-xlg-offset-8, .col-xlg-offset-9, .col-xlg-offset-10, .col-xlg-offset-11, .col-xlg-offset-12 {
     box-sizing: border-box;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .col-xlg {
     -webkit-box-flex: 1;
@@ -954,23 +954,23 @@
   }
 }
 
-/* 
+/*
  * Name: xxlg
  * Desc: Super Extra Large desktops
  */
 
 @media only screen and (min-width: $bp-xxlg) {
   .container {
-	width: 96%;  
-    max-width: 143rem;
+	width: 96%;
+    max-width: 89.375rem;
   }
   .col-xxlg, .col-xxlg-1, .col-xxlg-2, .col-xxlg-3, .col-xxlg-4, .col-xxlg-5, .col-xxlg-6, .col-xxlg-7, .col-xxlg-8, .col-xxlg-9, .col-xxlg-10, .col-xxlg-11, .col-xxlg-12, .col-xxlg-offset-0, .col-xxlg-offset-1, .col-xxlg-offset-2, .col-xxlg-offset-3, .col-xxlg-offset-4, .col-xxlg-offset-5, .col-xxlg-offset-6, .col-xxlg-offset-7, .col-xxlg-offset-8, .col-xxlg-offset-9, .col-xxlg-offset-10, .col-xxlg-offset-11, .col-xxlg-offset-12 {
     box-sizing: border-box;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .col-xxlg {
     -webkit-box-flex: 1;
@@ -1130,23 +1130,23 @@
   }
 }
 
-/* 
+/*
  * Name: xxxlg
  * Desc: Super Duper Extra Large desktops
  */
 
 @media only screen and (min-width: $bp-xxxlg) {
   .container {
-	width: 96%;  
-    max-width: 143rem;
+	width: 96%;
+    max-width: 89.375rem;
   }
   .col-xxxlg, .col-xxxlg-1, .col-xxxlg-2, .col-xxxlg-3, .col-xxxlg-4, .col-xxxlg-5, .col-xxxlg-6, .col-xxxlg-7, .col-xxxlg-8, .col-xxxlg-9, .col-xxxlg-10, .col-xxxlg-11, .col-xxxlg-12, .col-xxxlg-offset-0, .col-xxxlg-offset-1, .col-xxxlg-offset-2, .col-xxxlg-offset-3, .col-xxxlg-offset-4, .col-xxxlg-offset-5, .col-xxxlg-offset-6, .col-xxxlg-offset-7, .col-xxxlg-offset-8, .col-xxxlg-offset-9, .col-xxxlg-offset-10, .col-xxxlg-offset-11, .col-xxxlg-offset-12 {
     box-sizing: border-box;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .col-xxxlg {
     -webkit-box-flex: 1;

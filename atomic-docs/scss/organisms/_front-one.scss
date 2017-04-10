@@ -5,7 +5,7 @@
 		z-index: -2;
 	}
 	.number {
-		margin-left: -1rem;
+		margin-left: -0.625rem;
 		.inner {
 			opacity: .6;
 		}
@@ -16,9 +16,9 @@
 	 */
 	@media only screen and (min-width:$bp-sm) {
 		.number {
-			@include fluid-type(left, $bp-sm, $bp-xlg, -1.5rem, 8rem);
+			@include fluid-type(left, $bp-sm, $bp-xlg, -1rem, 5rem);
 			img {
-				@include fluid-type(width, $bp-sm, $bp-xlg, 17rem, 29rem);
+				@include fluid-type(width, $bp-sm, $bp-xlg, 10.625rem, 18.125rem);
 			}
 		}
 		.desc {
@@ -32,9 +32,9 @@
 	}
 	@media only screen and (min-width:$bp-xlg) {
 		.bg-img {
-			top: -16rem;
+			top: -10rem;
 		}
 	}
-	
-	
+
+
 }

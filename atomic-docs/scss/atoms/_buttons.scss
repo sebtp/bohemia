@@ -2,29 +2,29 @@
 
 button, a.red-btn, a.green-btn, a.outline-white, a.outline-green {
 	font-family: $body-font;
-	font-style: italic;	
+	font-style: italic;
 	font-weight: $bold;
 	color: $white;
 	text-decoration:none;
 	line-height: 2.7;
-	font-size: $small-type;	
-	
+	font-size: $small-type;
+
 	//height: 5rem;
-	padding: 0 3rem;
-	margin: 2rem 0;
+	padding: 0 2rem;
+	margin: 1.25rem 0;
 	display: inline-block;
-	
+
 	border-width: 4px;
 	border-style: solid;
 	outline: 0;
 	@include transition (all,0.3s,ease);
-	
+
 	@media only screen and (min-width: $bp-md) {
 		line-height: 2.9;
-		font-size: $body-size;	
+		font-size: $body-size;
 		//height: 6.4rem;
-		padding: 0 4rem;	
-		margin: 2rem 0;
+		padding: 0 2.5rem;
+		margin: 1.25rem 0;
 	}
 	&:hover {
 		text-decoration:none;
@@ -33,7 +33,7 @@ button, a.red-btn, a.green-btn, a.outline-white, a.outline-green {
 
 .outline-white {
 	border-color: $white;
-	margin: 6rem auto 2rem;
+	margin: 3.75rem auto 1.25rem;
 	&:hover {
 		opacity: .7;
 	}
@@ -46,7 +46,7 @@ button, a.red-btn, a.green-btn, a.outline-white, a.outline-green {
 	border-color: transparent;
 	@include linear-gradient-border(45deg,$blue,$green);
 	@include linear-gradient-text(45deg,$blue,$green);
-	margin: 6rem auto 2rem;
+	margin: 3.75rem auto 1.25rem;
 	&:hover {
 		opacity: .7;
 	}

@@ -20,52 +20,52 @@
 		}
 	/*
 	 *	Breakpoint: base
-	 */		
+	 */
 		.zero, .one, .two, .three, .four, .five{
 			position: relative;
-			@include fluid-type(padding-top, $bp-sm, $bp-lg, 5rem, 10rem);
-			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, 5rem, 10rem);
-			align-content: center; 		//magically aligns everything vertically center 
+			@include fluid-type(padding-top, $bp-sm, $bp-lg, 3.125rem, 6.25rem);
+			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, 3.125rem, 6.25rem);
+			align-content: center; 		//magically aligns everything vertically center
 			//overflow: hidden;
 			//border-top:1px solid red;
 		}
-		
+
 		h1, h2 {
-			@include fluid-type(font-size, 20rem, 120rem, $h1-frontpage-min, $h1-frontpage-max);
+			@include fluid-type(font-size, 12.5rem, 75rem, $h1-frontpage-min, $h1-frontpage-max);
 			line-height: $small-lh;
 			@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 		}
-		
+
 		.desc {
 			p {
 				font-family: $headline-font;
 				font-weight: $light;
 				text-align: left;
 				@include fluid-type(font-size, $bp-sm, $bp-lg, $p-frontpage-min, $p-frontpage-max);
-				
-				padding: 1.5rem;
-				@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 1rem, 3rem);
-				
-				background: $white;			
+
+				padding: 1rem;
+				@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 0.625rem, 1.875rem);
+
+				background: $white;
 			}
 		}
 		.number {
-			position: absolute; 
-			top: 7rem;
-			
+			position: absolute;
+			top: 4.375rem;
+
 			img {
 				mix-blend-mode:multiply;
-				width:6rem;
+				width:3.75rem;
 				height: auto;
 			}
-			
+
 			.inner {
 				position: absolute;
 				top: 0;
 				left: 0;
 			}
-			
+
 		}
 
 		.left {
@@ -78,15 +78,15 @@
 				@include linear-gradient-text(45deg,$blue,$red);
 			}
 		}
-				
-		
+
+
 		/*
 	 	 *	Breakpoint: sm
 	 	 */
 		@media only screen and (min-width:$bp-sm) {
-			
+
 			.desc p {
-				padding: 2.3rem 3rem;
+				padding: 1.5rem 1.875rem;
 			}
 
 		}
@@ -95,7 +95,7 @@
 	 *	Breakpoint: md
 	 */
 		@media only screen and (min-width:$bp-md) {
-			.zero, .one, .two, .three, .four, .five { 
+			.zero, .one, .two, .three, .four, .five {
 				min-height: 80vh;
 			}
 			.bg-img {
@@ -109,34 +109,33 @@
 			}
 
 		}
-		
+
 	/*
 	 *	Breakpoint: lg
 	 */
 		@media only screen and (min-width:$bp-lg) {
-			.zero, .one, .two, .three, .four, .five { 
+			.zero, .one, .two, .three, .four, .five {
 				min-height: 90vh;
 			}
 			.desc {
 				margin-left: 0;
-			}			
+			}
 			.number {
-				
+
 			}
 			aside {
 				display: block;
 			}
 		}
-		
+
 	/*
 	 *	Breakpoint: xlg
 	 */
 		@media only screen and (min-width:$bp-xlg) {
-			.zero, .one, .two, .three, .four, .five { 
+			.zero, .one, .two, .three, .four, .five {
 				min-height: 100vh;
 			}
 		}
 	}
-	
-}
 
+}

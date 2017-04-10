@@ -1,10 +1,10 @@
 /* scss/organisms/_front-five.scss */
 
 .front-page .five {
-	margin-bottom: 15rem;
+	margin-bottom: 9.375rem;
 	.number {
 		img {
-			width: 8.5rem;
+			width: 5.3125rem;
 		}
 		.inner {
 			opacity: .6;
@@ -12,7 +12,7 @@
 	}
 	.bg-img {
 		z-index: -6;
-		bottom: -10rem;
+		bottom: -6.25rem;
 	}
 	/*
 	 *  Breakpoint: sm
@@ -22,15 +22,15 @@
 			top:auto;
 		}
 		.number {
-			@include fluid-type(left, $bp-sm, $bp-xlg, -7rem, 8rem);
+			@include fluid-type(left, $bp-sm, $bp-xlg, -4.375rem, 5rem);
 			img {
-				@include fluid-type(width, $bp-sm, $bp-xlg, 32rem, 50rem);
+				@include fluid-type(width, $bp-sm, $bp-xlg, 20rem, 31.25rem);
 			}
 		}
 		.desc {
 			p {
 				background: transparent;
-			}	
+			}
 		}
 	}
 }
