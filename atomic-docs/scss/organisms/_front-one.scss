@@ -6,8 +6,11 @@
 	}
 	.number {
 		margin-left: -0.625rem;
-		.inner {
+		.outer {
 			opacity: .6;
+		}
+		.inner {
+			opacity: .5;
 		}
 	}
 

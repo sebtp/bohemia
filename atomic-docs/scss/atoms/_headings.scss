@@ -30,7 +30,6 @@
 	}
 }
 
-
 h2 {									//PADDING FIX - H2
 	@include fluid-type(padding-top, $bp-sm, $bp-lg, $h2-overview-pad-min, $h2-overview-pad-max);
 	@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h2-overview-pad-min, $h2-overview-pad-max);
@@ -57,6 +56,34 @@ h1, h2, h3, h4, h5, h6, .title {
 
 }
 
+// Remove gradient on IE
+body.ie {
+	&.single-blog,
+	&.overview-blog {
+		h1, h2, h3, h4, h5, h6, .title {
+			background:none;
+			color:$green;
+		}
+	}
+	&.single-work,
+	&.single-about {
+		h1, h2, h3, h4, h5, h6, .title {
+			background:none;
+			color:$red;
+		}
+	}
+	&.overview-work,
+	&.overview-about,
+	&.overview-clients  {
+		&>.hero {
+			h1, h2, h3, h4, h5, h6, .title {
+				background:none;
+				color:$red;
+			}
+		}
+	}
+}
+
 .single-blog,
 .overview-blog {								// blue-green gradient - Headlines
 	h1, h2, h3, h4, h5, h6, .title {
@@ -73,6 +100,8 @@ h1, h2, h3, h4, h5, h6, .title {
 		@include linear-gradient-text(45deg,$blue,$red);
 	}
 }
+
+
 
 .single-blog h1 { 					//the small SEO in single-blog
 	font-weight: $bold;
@@ -100,8 +129,8 @@ h1, h2, h3, h4, h5, h6, .title {
 .single-about {
 	h2 {
 		@include fluid-type(font-size, $bp-sm, $bp-xlg, $h2-single-min, $h2-single-max);
-		margin: 1.25rem 0 0;
-
+		padding-top: $h2-pad;
+		padding-bottom: $h2-pad;
 	}
 }
 

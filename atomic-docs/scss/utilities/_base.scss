@@ -9,7 +9,7 @@ html {
 	font-size: $base-font-size;	// sets the base font to 10px for easier math
 }
 
-body { 
+body {
 	font-size: $body-size;	// sets the default sizing to make sure nothing is actually 10px
 	font-family: $body-font;
 	color: $blue;
@@ -31,3 +31,6 @@ a, a img {
 	@include transition(all,0.3s,ease);
 }
 
+.wf-loading body {
+  visibility: hidden;
+}

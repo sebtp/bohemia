@@ -5,6 +5,9 @@
 		img {
 			width: 5.625rem;
 		}
+		.outer {
+			opacity: .8;
+		}
 		.inner {
 			opacity: .7;
 		}
@@ -48,7 +51,7 @@
 	@media only screen and (min-width:$bp-md) {
 		.bg-img {
 			width: 100vw;
-			top:17.5rem;
+			top:11rem;
 			bottom: 0;
 		}
 
@@ -57,14 +60,10 @@
 	@media only screen and (min-width:$bp-xlg) {
 
 		.bg-img {
-			@include fluid-type(top, $bp-xlg, 100rem, 3.125rem, -12.5rem);
+			@include fluid-type(top, $bp-xlg, 100rem, 3rem, -16rem);
 		}
 		.desc-bg {
 			width: 43%;
 		}
 	}
-
-
-
-
 }

@@ -48,3 +48,15 @@
 		}
 	}
 }
+
+body.ie,
+body.edge {
+	&.front-page .two .number {
+		.outer {
+
+		}
+		.inner {
+			opacity:0.6;
+		}
+	}
+}

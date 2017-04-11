@@ -40,23 +40,44 @@ body > footer {
 			}
 		}
 
-	}
-	@media only screen and (min-width: $bp-md) {
-		margin-top: -16.25rem;
-	}
+	 }
+  	@media only screen and (min-width: $bp-md) {
+  		margin-top: -16.25rem;
+  	}
+
+    .svg-container {
+  		display: block;
+  		position: relative;
+  		width: 100%;
+  		height:100%;
+  		vertical-align: bottom;
+  		overflow: hidden;
+  	}
+
+  	.svg-single {
+  		position: absolute;
+  		display: inline-block;
+  		top:-1px;
+  	}
 
 }
 
-//@media only screen and (min-width: $bp-lg) {
-//	body.front-page > footer {
-//		padding-right: 17.666666666%;
-//	}
-//}
+.svg-footer {
+	width: 102%;
+	background-image: url(http://new.bohemiaamsterdam.com/nl/wp-content/themes/bohemia-amsterdam/img/hero-poly-up.svg);
+	background-size: cover;
+	height: 0;
+	padding: 0; /* reset */
+	margin: -0.5% -1% 0 -1%;
+	padding-bottom: 12%;
+}
 
-.clip-svg:nth-of-type(2) {
-	display:none;
-
-	@media only screen and (min-width:$bp-sm) {
-		display:block;
-	}
+body.ie > footer,
+body.edge > footer {
+  margin-top:0;
+  &> .row > .container-fluid > .row {
+    @media only screen and (min-width: $bp-md) {
+      text-align: right;
+    }
+  }
 }

@@ -33,3 +33,15 @@
 		}
 	}
 }
+
+body.ie,
+body.edge {
+	&.front-page .four .number {
+		.outer {
+
+		}
+		.inner {
+			opacity:0.6;
+		}
+	}
+}

@@ -9,10 +9,11 @@
 
 .contact-form {
 	margin-top: 5rem;
-	h2 {
-		font-size: $h1-single-min;
-		padding: $h1-single-pad-min;
-		margin-bottom: 2.5rem;
+	h3 {
+		@include fluid-type(font-size, 12.5rem, 75rem, $h2-overview-min, $h2-overview-max);
+		@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
+		@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
+		//margin-bottom: 2.5rem;
 	}
 }
 
