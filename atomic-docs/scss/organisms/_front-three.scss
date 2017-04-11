@@ -6,15 +6,16 @@
 			width: 5.625rem;
 		}
 		.outer {
-			opacity: .8;
+			opacity: .5;
 		}
 		.inner {
-			opacity: .7;
+			opacity: .4;
 		}
 	}
 	.bg-img {
 		z-index: -4;
-		bottom: 5.625rem;
+		//bottom: 5.625rem;
+		top:0;
 		width: 200vw;
 	}
 	.desc-bg {
@@ -29,6 +30,12 @@
 			left: -1rem;
 			img {
 				@include fluid-type(width, $bp-sm, $bp-xlg, 18.75rem, 30rem);
+			}
+			.outer {
+				opacity: .8;
+			}
+			.inner {
+				opacity: .7;
 			}
 		}
 		.bg-img {

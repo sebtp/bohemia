@@ -9,7 +9,9 @@ body > footer {
 
 	background: $white;
 	font-size: $footer-type;
-	//margin-top: -16.25rem;
+  @include fluid-type(margin-top, 24rem, $bp-xlg, -2.5rem, -16rem);
+  padding-top: 5rem;
+
 	.container-fluid {
 		width:100%;
 		.row {
@@ -42,7 +44,8 @@ body > footer {
 
 	 }
   	@media only screen and (min-width: $bp-md) {
-  		margin-top: -16.25rem;
+  		//margin-top: -16.25rem;
+      padding-top: 0;
   	}
 
     .svg-container {

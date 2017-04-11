@@ -23,6 +23,12 @@
 			img {
 				@include fluid-type(width, $bp-sm, $bp-xlg, 10.625rem, 18.125rem);
 			}
+			.outer {
+				opacity: .5;
+			}
+			.inner {
+				opacity: .4;
+			}
 		}
 		.desc {
 			margin-left: -33.33333333%;

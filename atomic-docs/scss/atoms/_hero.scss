@@ -1,7 +1,7 @@
 /* scss/atoms/_hero.scss */
 
 .hero {
-	min-height: 80vh; //same height as a post-item
+	//min-height: 70vh; //same height as a post-item
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
@@ -13,8 +13,8 @@
 	}
 
 	&>div:first-child {
+		min-height: 70vh;
 		padding-top: 5rem;
-		min-height: 80vh;
 		@include transition(all, 0.3s, ease);
 	}
 

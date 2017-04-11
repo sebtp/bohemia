@@ -9,6 +9,9 @@
 		.bg-img, .bg-img-left {
 			position: absolute;
 		}
+		.bg-img:not(:first-child) {
+			padding-left: 1rem;
+		}
 		.bg-img {
 			z-index: -2;
 			width: 100vw;

@@ -5,7 +5,7 @@
 	padding-bottom: 56.25% !important;
 	margin-top:3.125rem !important;
 	margin-bottom:3.125rem !important;
-	width:62.9% !important;
+	width: 100% !important;
 
 	iframe {
 		position: absolute;
@@ -16,5 +16,6 @@
 
 	@media only screen and (min-width:$bp-sm) {
 		padding-bottom: 36% !important;
+		width:64% !important;
 	}
 }

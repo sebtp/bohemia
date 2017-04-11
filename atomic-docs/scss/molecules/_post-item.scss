@@ -38,7 +38,7 @@
 	}
 
 	.post-item-inner {
-		@include fluid-type(padding-left, $bp-md, $bp-xlg, 2rem, 3rem);
+		@include fluid-type(padding-left, $bp-md, $bp-xlg, 1rem, 3rem);
 		@include fluid-type(bottom, $bp-md, $bp-xlg, 2rem, 3rem);
 		position: absolute;
 		word-wrap: break-word;

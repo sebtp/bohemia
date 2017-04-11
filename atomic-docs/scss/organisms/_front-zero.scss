@@ -8,17 +8,24 @@
 		font-family:$headline-font;
 		font-weight:$light;
 		line-height: $big-lh;
-		@include fluid-type(font-size, 12.5rem, 75rem, $size5, $size6);
+		@include fluid-type(font-size, $bp-sm, $bp-xxlg, 3rem, 6rem);
 		color:$red;
-		padding-left: 1.875rem;
-		padding-bottom: 5rem;
-		padding-top: 2.5rem;
+		@include linear-gradient-text(45deg,$blue,$red);
+		@include fluid-type(padding-bottom, $bp-sm, $bp-xxlg, 0rem, 8rem);
+		//padding-bottom: 8rem;
+		padding-top: 4rem;
+	}
+	.arrow {
+		@include fluid-type(width, $bp-sm, $bp-xxlg, 1.5rem, 2.5rem);
+		@include fluid-type(height, $bp-sm, $bp-xxlg, 3rem, 8rem);
 	}
 	padding-top: 0;
 	h1 {
-		@include linear-gradient-text(45deg,$blue,$red);
-		@include fluid-type(font-size, 12.5rem, 75rem, $h1-frontpage-min, $h1-frontpage-max);
+		//@include linear-gradient-text(45deg,$blue,$red);
+		@include fluid-type(font-size, $bp-sm, $bp-xxxlg, 2.25rem, 5rem);
 		margin-bottom: 0;
+		color:$red;
+		text-align: center;
 	}
 	.bg-img {
 		top: 0;
@@ -26,11 +33,21 @@
 	}
 	.nr {
 		@include fluid-type(padding-top, $bp-sm, $bp-lg, 2.5rem, 5rem);
-		@include fluid-type(padding-bottom, $bp-sm, $bp-lg, 2.5rem, 5rem);
+
 		img {
 			max-width: 50%;
 		}
 	}
+
+	/*
+	 *  Breakpoint: sm
+	 */
+	@media only screen and (min-width:$bp-sm) {
+		.nr {
+			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, 2.5rem, 5rem);
+		}
+	}
+
 	/*
 	 *  Breakpoint: md
 	 */
@@ -43,6 +60,7 @@
 		}
 		.proposition {
 			padding-bottom: 0;
+			padding-left: 3rem;
 		}
 	}
 }

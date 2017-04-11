@@ -3,7 +3,8 @@
 //setting paddings for all headings - this will fix the clipping issue coming from the gradient
 
 .single-blog .title, 					//PADDING FIX - H1/title - single posts
-.single-work h1 {
+.single-work h1,
+.single-about h1 {
 	margin-top: 2.5rem;
 	@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-single-pad-min, $h1-single-pad-max);
 	@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-single-pad-min, $h1-single-pad-max);
@@ -70,6 +71,11 @@ body.ie {
 		h1, h2, h3, h4, h5, h6, .title {
 			background:none;
 			color:$red;
+		}
+		.post-item {
+			h3 {
+				color:$white;
+			}
 		}
 	}
 	&.overview-work,

@@ -6,13 +6,19 @@
 		img {
 			width: 5.3125rem;
 		}
-		.inner {
+		.outer {
 			opacity: .6;
+		}
+		.inner {
+			opacity: .4;
 		}
 	}
 	.bg-img {
 		z-index: -6;
 		bottom: -6.25rem;
+	}
+	.bg-img-left {
+		opacity: .3;
 	}
 	/*
 	 *  Breakpoint: sm
@@ -20,11 +26,18 @@
 	@media only screen and (min-width:$bp-sm) {
 		.bg-img {
 			top:auto;
+			opacity: 1;
 		}
 		.number {
 			@include fluid-type(left, $bp-sm, $bp-xlg, -4.375rem, 5rem);
 			img {
 				@include fluid-type(width, $bp-sm, $bp-xlg, 20rem, 31.25rem);
+			}
+			.outer {
+				opacity: .8;
+			}
+			.inner {
+				opacity: .6;
 			}
 		}
 		.desc {

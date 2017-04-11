@@ -52,7 +52,7 @@ aside {
 	}
 }
 
-body.ie > aside {
+body.ie aside {
 	width:100%;
 	@media only screen and (min-width: $bp-sm) {
 		width:25%;
