@@ -47,9 +47,13 @@
 
 }
 
-@media only screen and (min-height: 47rem) {
+@media only screen and (min-height: $bp-sm) {
 	.hero > div {
 		padding-top: 0;
+	}
+
+	.hero > div:first-child {
+		min-height: 85vh;
 	}
 }
 
