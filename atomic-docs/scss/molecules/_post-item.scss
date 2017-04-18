@@ -6,7 +6,7 @@
 .post-item {
 	display: block;
 	height: 34rem;
-	@include fluid-type(height, $bp-md, $bp-xxlg, 34rem, 40rem);
+	@include fluid-type(height, $bp-md, $bp-xxlg, 37rem, 43rem);
 	padding: 0;
 	margin: 0;
 	color: $white;
