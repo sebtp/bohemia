@@ -16,7 +16,7 @@ article {
 
 @media only screen and (min-width: $bp-sm) {
 	.content {
-		h2, h3, p:not(.iframe-parent), blockquote, ul, ol {
+		h2, h3, p:not(.iframe-parent), blockquote, ul, ol, input, label {
 			padding-left: 0;
 			margin-right: 33.33333333%;
 		}
@@ -28,14 +28,14 @@ article {
 
 @media only screen and (min-width: $bp-md) {
 	.content {
-		h2, h3, p:not(.iframe-parent), ul, ol {
-			padding-right: 0.3125rem;
-			padding-left: 8.33333333%;
+		h2, h3, p:not(.iframe-parent), ul, ol, input, label {
+			padding-right: 1rem;
+			margin-left: 8.33333333%;
 			margin-right: 33.33333333%;
 		}
 		blockquote {
-			padding-right: 0.3125rem;
-			padding-left: 8.33333333%;
+			padding-right: 1rem;
+			margin-left: 8.33333333%;
 			margin-right: 50%;
 		}
 	}

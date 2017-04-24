@@ -1,7 +1,8 @@
 /* scss/molecules/_author.scss */
 .author-blog {
 	color: $green;
-	margin: 0 auto 5rem;
+
+	border-top: 1px solid #eee;
 
 	.author-wrapper {
 		font-family: $headline-font;
@@ -33,6 +34,7 @@
 		}
 
 	@media only screen and (min-width: $bp-sm) {
+		margin-right: 1rem;
 		.author-inner {
 			padding-left: 2.5rem;
 

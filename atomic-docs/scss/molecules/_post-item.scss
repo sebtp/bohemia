@@ -34,7 +34,6 @@
 		object-fit: cover;
 		opacity: 0;
 		transition: all .3s ease-in-out;
-
 	}
 
 	.post-item-inner {
@@ -94,6 +93,7 @@
 .single-blog .post-item,
 .overview-blog .post-item{
 
+	background-color: $white;
 	//static
 	&>img {
 		mix-blend-mode: screen;

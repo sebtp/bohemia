@@ -5,6 +5,7 @@ aside {
 	position: relative; //on mobile let the aside go to it's correct place
 	@include transition(all,0.3s,ease);
 	margin-bottom: 3.75rem;
+	//z-index: -1;
 
 	p {
 		font-family: $headline-font;
@@ -40,7 +41,7 @@ aside {
 	}
 	@media only screen and (min-width: $bp-sm) {
 		position: absolute; //on tablet and up get the sidebar on the side
-		margin-top:20.625rem;
+		//margin-top:20.625rem;
 		padding: 0;
 		right: 0;
 	}
@@ -62,5 +63,10 @@ body.ie aside {
 	}
 }
 
+.initial-mt {
+	@media only screen and (min-width: $bp-sm) {
+		padding-top:425px;
+	}
+}
 
 //Custom styles for red/green pages >>> single.scss

@@ -61,6 +61,7 @@ button, a.red-btn, a.green-btn, a.outline-white, a.outline-green {
 	border-color: transparent;
 	@include linear-gradient-border(90deg,$blue,$red);
 	@include linear-gradient-img(45deg,$blue,$red);
+	color:$white !important;
 	&:hover {
 		@include linear-gradient-img(90deg,$blue,$red);
 	}
@@ -74,6 +75,7 @@ button, a.red-btn, a.green-btn, a.outline-white, a.outline-green {
 	border-color: transparent;
 	@include linear-gradient-border(90deg,$blue,$green);
 	@include linear-gradient-img(45deg,$blue,$green);
+	color:$white !important;
 	&:hover {
 		@include linear-gradient-img(90deg,$blue,$green);
 	}

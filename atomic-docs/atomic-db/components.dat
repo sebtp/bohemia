@@ -398,5 +398,13 @@
         "backgroundColor": "",
         "order": -48,
         "has_js": "false"
+    },
+    {
+        "component": "accordion",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -49,
+        "has_js": "false"
     }
 ]
