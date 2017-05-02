@@ -7,15 +7,20 @@ a {
 	}
 }
 
-//change color based on page 
-.single-work, 
-.single-about {
-	a {
+//change color based on page
+.single-work,
+.single-about,
+.front-page .two,
+.front-page .four {
+	a, a:visited {
 		color: $red;
 	}
 }
-.single-blog {
-	a {
+.single-blog,
+.front-page .one,
+.front-page .three,
+.front-page .five {
+	a, a:visited {
 		color: $green;
 	}
 }

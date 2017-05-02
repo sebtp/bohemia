@@ -23,7 +23,7 @@
 		.number {
 			@include fluid-type(right, $bp-sm, $bp-xlg, -3.75rem, 0rem);
 			img {
-				@include fluid-type(width, $bp-sm, $bp-xlg, 16.25rem, 29.375rem);
+				@include fluid-type(width, $bp-sm, $bp-xxxlg, 15.25rem, 29.375rem);
 			}
 		}
 		.desc {

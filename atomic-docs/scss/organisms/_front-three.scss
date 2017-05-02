@@ -14,8 +14,8 @@
 	}
 	.bg-img {
 		z-index: -4;
-		//bottom: 5.625rem;
-		top:0;
+		bottom: 5.625rem;
+		top:-10rem;
 		width: 200vw;
 	}
 	.desc-bg {
@@ -29,7 +29,7 @@
 		.number {
 			left: -1rem;
 			img {
-				@include fluid-type(width, $bp-sm, $bp-xlg, 18.75rem, 30rem);
+				@include fluid-type(width, $bp-sm, $bp-xxxlg, 17rem, 30rem);
 			}
 			.outer {
 				opacity: .8;
@@ -40,7 +40,7 @@
 		}
 		.bg-img {
 			width: 150vw;
-			//top:8rem;
+			top:-4rem;
 
 		}
 		.desc-bg {
@@ -58,7 +58,7 @@
 	@media only screen and (min-width:$bp-md) {
 		.bg-img {
 			width: 100vw;
-			top:11rem;
+			@include fluid-type(top, $bp-md, $bp-xlg, 8rem, 2rem);
 			bottom: 0;
 		}
 
@@ -67,7 +67,7 @@
 	@media only screen and (min-width:$bp-xlg) {
 
 		.bg-img {
-			@include fluid-type(top, $bp-xlg, 100rem, 3rem, -16rem);
+			@include fluid-type(top, $bp-xlg, $bp-xxxlg, 2rem, -19rem);
 		}
 		.desc-bg {
 			width: 43%;

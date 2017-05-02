@@ -21,7 +21,7 @@
 		.number {
 			@include fluid-type(left, $bp-sm, $bp-xlg, -1rem, 5rem);
 			img {
-				@include fluid-type(width, $bp-sm, $bp-xlg, 10.625rem, 18.125rem);
+				@include fluid-type(width, $bp-sm, $bp-xxxlg, 10.625rem, 21.125rem);
 			}
 			.outer {
 				opacity: .5;

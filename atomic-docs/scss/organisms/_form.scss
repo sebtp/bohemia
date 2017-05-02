@@ -38,13 +38,16 @@ form, #mc_embed_signup {
 	}
 
 	// Input fields
-	input:not([type=submit]):not([type=radio]) {
+	input:not([type=submit]):not([type=radio]):not([type=checkbox]) {
 		@extend %input;
 		&:hover {
 			cursor: text;
 		}
 		&:focus {
 			@extend %input-type-focus;
+		}
+		&.wpcf7-not-valid {
+			border-color: $red;
 		}
 	}
 	textarea {
@@ -54,34 +57,39 @@ form, #mc_embed_signup {
 
 
 // Contact form 7 styles
+.screen-reader-response {
+ 	display: none;
+}
 form {
 	* {
 		@include transition(all,0.3s,ease);
 	}
 	// Radio buttons transformed in buttons
-	.wpcf7-form-control-wrap {
-		@extend %radio-wrapper;
-		.wpcf7-list-item {
-			@extend %radio-button;
-			&:hover {
-				font-weight:$bold;
+	//.radio-selector {
+		.wpcf7-form-control-wrap {
+			@extend %radio-wrapper;
+			.wpcf7-list-item {
+				@extend %radio-button;
+				&:hover {
+					font-weight:$bold;
+				}
+				&.first .wpcf7-list-item-label {
+					border-left-width: 1px;
+				}
 			}
-			&.first .wpcf7-list-item-label {
-				border-left-width: 1px;
+			.wpcf7-list-item-label {
+				@extend %radio-label;
 			}
-		}
-		.wpcf7-list-item-label {
-			@extend %radio-label;
-		}
 
-		input[type=radio] {
-			@extend %radio-input;
-			&:checked ~ .wpcf7-list-item-label {
-				font-weight: $bold;
-				color: $green;
+			input[type=checkbox], input[type=radio]  {
+				@extend %radio-input;
+				&:checked ~ .wpcf7-list-item-label {
+					font-weight: $bold;
+					color: $green;
+				}
 			}
 		}
-	}
+	//}
 
 	div.wpcf7-response-output {
 		font-family:$headline-font;
@@ -92,10 +100,12 @@ form {
 	}
 	div.wpcf7-validation-errors, span.wpcf7-not-valid-tip {
 		font-weight:$bold;
+		font-size: 0.85rem;
 		border:0;
 		color:$red;
 	}
 	div.wpcf7-mail-sent-ok {
+		font-size: 0.85rem;
 		border:0;
 		color:$green;
 	}
@@ -109,24 +119,26 @@ form {
 #mc_embed_signup {
 
 	// Radio buttons transformed in buttons
-	ul {
-		@extend %radio-wrapper;
-		li {
-			@extend %radio-button;
-			&:hover {
-				label {
-					font-weight: $bold;
+	.radio-selector {
+		ul {
+			@extend %radio-wrapper;
+			li {
+				@extend %radio-button;
+				&:hover {
+					label {
+						font-weight: $bold;
+					}
 				}
-			}
-			&:nth-of-type(1) label {
-				border-left-width: 1px;
-			}
-			label {
-				@extend %radio-label;
+				&:nth-of-type(1) label {
+					border-left-width: 1px;
+				}
+				label {
+					@extend %radio-label;
 
-			}
-			input {
-				@extend %radio-input;
+				}
+				input {
+					@extend %radio-input;
+				}
 			}
 		}
 	}
@@ -149,9 +161,10 @@ form {
 }
 
 //Correct the width for the sidebar
-aside #mc_embed_signup {
+aside form {
 	width: 100%;
 	input[type=submit] {
-		margin-top:0;
+		margin-top:0  !important;
+		margin-bottom:0 !important;
 	}
 }

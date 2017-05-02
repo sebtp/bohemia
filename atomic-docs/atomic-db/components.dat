@@ -406,5 +406,13 @@
         "backgroundColor": "",
         "order": -49,
         "has_js": "false"
+    },
+    {
+        "component": "toggle",
+        "category": "atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -50,
+        "has_js": "false"
     }
 ]

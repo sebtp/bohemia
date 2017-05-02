@@ -5,6 +5,7 @@
 
 .front-page {
 	main {
+		p:empty { display:none; }
 		overflow: hidden;
 		.bg-img, .bg-img-left {
 			position: absolute;
@@ -34,7 +35,7 @@
 		}
 
 		h1, h2 {
-			@include fluid-type(font-size, 12.5rem, 75rem, $h1-frontpage-min, $h1-frontpage-max);
+			@include fluid-type(font-size, 12.5rem, 160rem, 4rem, 11.25rem);
 			line-height: $small-lh;
 			@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
@@ -59,10 +60,11 @@
 				font-family: $headline-font;
 				font-weight: $light;
 				text-align: left;
-				@include fluid-type(font-size, $bp-sm, $bp-lg, $p-frontpage-min, $p-frontpage-max);
+				@include fluid-type(font-size, $bp-sm, $bp-xxxlg, $size3, 2rem);
 
 				padding: 1rem;
-				@include fluid-type(margin-bottom, $bp-sm, $bp-lg, 0.625rem, 1.875rem);
+				@include fluid-type(margin-bottom, $bp-sm, $bp-xxxlg, 0.625rem, 3rem);
+				@include fluid-type(margin-top, $bp-lg, $bp-xxxlg, 0rem, 3rem);
 
 				background: $white;
 			}
@@ -113,7 +115,7 @@
 	 */
 		@media only screen and (min-width:$bp-md) {
 			.zero, .one, .two, .three, .four, .five {
-				min-height: 80vh;
+				min-height: 60vh;
 			}
 			.bg-img {
 				top: 0;
@@ -132,7 +134,7 @@
 	 */
 		@media only screen and (min-width:$bp-lg) {
 			.zero, .one, .two, .three, .four, .five {
-				min-height: 90vh;
+				min-height: 70vh;
 			}
 			.desc {
 				margin-left: 0;
@@ -183,7 +185,7 @@ body.edge {
 			@include fluid-type(font-size, 12.5rem, 75rem, $h1-frontpage-min, 10rem);
 		}
 		.desc p {
-			@include fluid-type(font-size, $bp-sm, $bp-lg, $p-frontpage-min, 1.75rem);
+			@include fluid-type(font-size, $bp-sm, $bp-lg, $size3, 1.75rem);
 		}
 		.zero h1 {
 			word-wrap: break-word;

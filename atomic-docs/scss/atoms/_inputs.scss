@@ -8,6 +8,7 @@
 	font-size: $form-label-type;
 	font-weight: 400;
 	margin:0;
+	color: $blue;
 }
 %textarea, %input {
 	font-family: $headline-font;
@@ -20,7 +21,8 @@
 	box-sizing: border-box;
 	border-width: 1px;
 	border-style: solid;
-	@include linear-gradient-border(45deg,$blue,$green);
+	border-color: $blue;
+	//@include linear-gradient-border(45deg,$blue,$green);
 
 	outline: none;
 	cursor: text;
@@ -51,13 +53,14 @@
 	margin: 0 0 0.625rem 0;
 	width: 33.33333%;
 	position: relative;
+	color: $blue;
 	//height: 7rem;
 }
 
 %radio-label {
 	display: block;
 	text-align: center;
-	padding: 1rem 0;	
+	padding: 1rem 0;
 	margin: 0;
 
 	border-top-width: 1px;
@@ -88,7 +91,7 @@
 	bottom:0;
 	cursor:pointer;
 
-	&[type="radio"] {
+	&[type="checkbox"], &[type="radio"] {
 		cursor:pointer;
 		opacity: 0.011;
 		z-index: 100;
