@@ -93,11 +93,11 @@
 		list-style:none;
 		li {
 			margin: 0;
-			a {
+			a, a:visited  {
 				@include fluid-type(font-size, $bp-sm, $bp-lg, $menu-type-min, $menu-type-max);
 				font-family: $headline-font;
 				font-weight: 100;
-				color: #46beaf;
+				color: $green;
 				text-decoration: none;
 				text-transform: lowercase;
 				-webkit-transition: all, 0.3s, ease;
@@ -105,7 +105,7 @@
 				-o-transition: all, 0.3s, ease;
 				transition: all, 0.3s, ease;
 				&:hover {
-					color: #0046b4;
+					color: $blue;
 				}
 			}
 			&:first-of-type {
