@@ -21,7 +21,7 @@
 		.number {
 			@include fluid-type(left, $bp-sm, $bp-xlg, -1rem, 5rem);
 			img {
-				@include fluid-type(width, $bp-sm, $bp-xxxlg, 10.625rem, 21.125rem);
+				@include fluid-type(width, $bp-sm, $bp-xxxlg, 9rem, 20rem);
 			}
 			.outer {
 				opacity: .5;
@@ -41,7 +41,7 @@
 	}
 	@media only screen and (min-width:$bp-xlg) {
 		.bg-img {
-			top: -10rem;
+			//top: -10rem;
 		}
 	}
 

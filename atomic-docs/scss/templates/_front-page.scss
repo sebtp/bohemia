@@ -1,7 +1,4 @@
 /* scss/templates/_front-page.scss */
-.front-page main * {
-	@include transition(all,0.3s,ease);
-}
 
 .front-page {
 	main {
@@ -14,7 +11,7 @@
 			padding-left: 1rem;
 		}
 		.bg-img {
-			z-index: -2;
+			//z-index: -2;
 			width: 100vw;
 		}
 		.bg-img-left {
@@ -22,37 +19,34 @@
 			width: 50vw;
 			left:0;
 		}
+		a {
+			margin-top:0;
+			margin-bottom: 0;
+		}
 	/*
 	 *	Breakpoint: base
 	 */
 		.zero, .one, .two, .three, .four, .five{
 			position: relative;
-			@include fluid-type(padding-top, $bp-sm, $bp-lg, 3.125rem, 6.25rem);
-			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, 3.125rem, 6.25rem);
+			//@include fluid-type(padding-top, $bp-sm, $bp-lg, 3.125rem, 6.25rem);
+			@include fluid-type(padding-bottom, 12.5rem, $bp-xxxlg, 4rem, 8rem);
 			align-content: center; 		//magically aligns everything vertically center
 			//overflow: hidden;
 			//border-top:1px solid red;
 		}
 
 		h1, h2 {
-			@include fluid-type(font-size, 12.5rem, 160rem, 4rem, 11.25rem);
+			@include fluid-type(font-size, 12.5rem, $bp-xxxlg, 2.6rem, 8rem);
 			line-height: $small-lh;
-			@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
+			text-align: left;
+			//@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
-			-ms-word-break: break-word;
-			word-break: break-word;
-			-webkit-hyphens: auto;
-			-moz-hyphens: auto;
-			-ms-hyphens: auto;
-			hyphens: auto;
-			@media only screen and (min-width:$bp-xxlg) {
-				-ms-word-break: normal;
-				word-break: normal;
-				-webkit-hyphens:none;
-				-moz-hyphens:none;
-				-ms-hyphens:none;
-				hyphens:none;
-			}
+			-ms-word-break: normal;
+			word-break: normal;
+			-webkit-hyphens:none;
+			-moz-hyphens:none;
+			-ms-hyphens:none;
+			hyphens:none;
 		}
 
 		.desc {
@@ -63,7 +57,7 @@
 				@include fluid-type(font-size, $bp-sm, $bp-xxxlg, $size3, 2rem);
 
 				padding: 1rem;
-				@include fluid-type(margin-bottom, $bp-sm, $bp-xxxlg, 0.625rem, 3rem);
+				//@include fluid-type(margin-bottom, $bp-sm, $bp-xxxlg, 0.625rem, 3rem);
 				@include fluid-type(margin-top, $bp-lg, $bp-xxxlg, 0rem, 3rem);
 
 				background: $white;
@@ -71,10 +65,10 @@
 		}
 		.number {
 			position: absolute;
-			top: 4.375rem;
+			//top: 4.375rem;
 
 			img {
-				mix-blend-mode:multiply;
+				//mix-blend-mode:multiply;
 				width:3.75rem;
 				height: auto;
 			}
@@ -103,7 +97,9 @@
 	 	 *	Breakpoint: sm
 	 	 */
 		@media only screen and (min-width:$bp-sm) {
-
+			.zero, .one, .two, .three, .four, .five {
+				min-height: 28rem;
+			}		
 			.desc p {
 				padding: 1.5rem 1.875rem;
 			}
@@ -118,13 +114,13 @@
 				min-height: 60vh;
 			}
 			.bg-img {
-				top: 0;
+				//top: 0;
 			}
 			.desc p {
 				//font-weight: $thin;
 			}
 			.number {
-				top: 14%;
+				//top: 14%;
 			}
 
 		}
@@ -155,7 +151,7 @@
 	 */
 		@media only screen and (min-width:$bp-xlg) {
 			.zero, .one, .two, .three, .four, .five {
-				min-height: 100vh;
+				//min-height: 100vh;
 			}
 		}
 	}

@@ -4,11 +4,12 @@
 	.number {
 		right: 0.625rem;
 		img {
-			mix-blend-mode:multiply;
+			//mix-blend-mode:multiply;
 			width:6.25rem;
 		}
 		.inner {
-			mix-blend-mode:overlay;
+			opacity: .4;
+			//mix-blend-mode:overlay;
 		}
 	}
 	.bg-img {

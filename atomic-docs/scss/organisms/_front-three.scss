@@ -14,9 +14,8 @@
 	}
 	.bg-img {
 		z-index: -4;
-		bottom: 5.625rem;
-		top:-10rem;
-		width: 200vw;
+		bottom: -2rem;
+		width: 100vw;
 	}
 	.desc-bg {
 		display: none;
@@ -39,16 +38,17 @@
 			}
 		}
 		.bg-img {
-			width: 150vw;
-			top:-4rem;
+			//width: 150vw;
+			//top:-4rem;
 
 		}
 		.desc-bg {
 			display: block;
 			position: absolute;
-			height: 100%;
+			height: 85%;
 			width: 50%;
-			bottom: 0;
+			//bottom: 0;
+			top:0;
 			background: $white;
 			z-index: -1;
 			@include transform(skewX(-2deg));
@@ -58,8 +58,8 @@
 	@media only screen and (min-width:$bp-md) {
 		.bg-img {
 			width: 100vw;
-			@include fluid-type(top, $bp-md, $bp-xlg, 8rem, 2rem);
-			bottom: 0;
+			//@include fluid-type(top, $bp-md, $bp-xlg, 8rem, 2rem);
+			//bottom: 0;
 		}
 
 	}
@@ -67,7 +67,7 @@
 	@media only screen and (min-width:$bp-xlg) {
 
 		.bg-img {
-			@include fluid-type(top, $bp-xlg, $bp-xxxlg, 2rem, -19rem);
+			//@include fluid-type(top, $bp-xlg, $bp-xxxlg, 2rem, -19rem);
 		}
 		.desc-bg {
 			width: 43%;

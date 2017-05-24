@@ -66,7 +66,7 @@
 		a {
 			color: #666;
 			text-decoration: none;
-			@include fluid-type(font-size, $bp-lg, $bp-xlg, $size1, $size3);
+			@include fluid-type(font-size, $bp-lg, $bp-xxlg, $size1, $size3);
 			&:hover {
 				text-decoration: underline;
 			}
