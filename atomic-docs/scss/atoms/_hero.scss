@@ -22,7 +22,7 @@
 	}
 
 	&>div:first-child {
-		min-height: 66vh;
+		min-height: 50vh;
 		padding-top: 2rem;
 		@include transition(all, 0.3s, ease);
 		@media only screen and (min-height: $bp-sm) {

@@ -3,47 +3,47 @@
 .front-page .one {
 	.bg-img {
 		z-index: -2;
-	}
-	.number {
-		margin-left: -0.625rem;
-		.outer {
-			opacity: .6;
-		}
-		.inner {
-			opacity: .5;
-		}
+		top:-6rem;
+		left:0;
+		width:63vw;
 	}
 
 	/*
 	 *  Breakpoint: sm
 	 */
 	@media only screen and (min-width:$bp-sm) {
-		.number {
-			@include fluid-type(left, $bp-sm, $bp-xlg, -1rem, 5rem);
-			img {
-				@include fluid-type(width, $bp-sm, $bp-xxxlg, 9rem, 20rem);
-			}
-			.outer {
-				opacity: .5;
-			}
-			.inner {
-				opacity: .4;
-			}
+
+		.bg-img {
+			top:-12rem;
+			width:45vw;
 		}
 		.desc {
 			margin-left: -33.33333333%;
 		}
 	}
+
+	/*
+	 *  Breakpoint: md
+	 */
 	@media only screen and (min-width:$bp-md) {
 		.desc {
 			margin-left: 0;
 		}
 	}
-	@media only screen and (min-width:$bp-xlg) {
+
+	/*
+	 *  Breakpoint: lg
+	 */
+	@media only screen and (min-width:$bp-lg) {
 		.bg-img {
-			//top: -10rem;
+			left:-5rem;
 		}
 	}
 
+	@media only screen and (min-width:$bp-xlg) {
+		.bg-img {
+			width: 38vw;
+		}
+	}
 
 }

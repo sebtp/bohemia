@@ -4,21 +4,26 @@
 	main {
 		p:empty { display:none; }
 		overflow: hidden;
-		.bg-img, .bg-img-left {
+		.bg-img, .bg-img-left, .bg-img-top {
 			position: absolute;
 		}
 		.bg-img:not(:first-child) {
-			padding-left: 1rem;
+			//padding-left: 1rem;
 		}
 		.bg-img {
 			//z-index: -2;
+			//width: 100vw;
+		}
+		.bg-img-top {
+			top: 0;
+			z-index: -7;
 			width: 100vw;
 		}
-		.bg-img-left {
-			z-index: -1;
-			width: 50vw;
-			left:0;
-		}
+		// .bg-img-left {
+		// 	z-index: -1;
+		// 	width: 50vw;
+		// 	left:0;
+		// }
 		a {
 			margin-top:0;
 			margin-bottom: 0;
@@ -26,21 +31,22 @@
 	/*
 	 *	Breakpoint: base
 	 */
+
 		.zero, .one, .two, .three, .four, .five{
 			position: relative;
 			//@include fluid-type(padding-top, $bp-sm, $bp-lg, 3.125rem, 6.25rem);
-			@include fluid-type(padding-bottom, 12.5rem, $bp-xxxlg, 4rem, 8rem);
+			//@include fluid-type(padding-bottom, 12.5rem, $bp-xxxlg, 4rem, 8rem);
 			align-content: center; 		//magically aligns everything vertically center
 			//overflow: hidden;
 			//border-top:1px solid red;
 		}
 
 		h1, h2 {
-			@include fluid-type(font-size, 12.5rem, $bp-xxxlg, 2.6rem, 8rem);
+			@include fluid-type(font-size, 12.5rem, $bp-xxxlg, 2.6rem, 5rem);
 			line-height: $small-lh;
 			text-align: left;
 			//@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
-			@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
+			//@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 			-ms-word-break: normal;
 			word-break: normal;
 			-webkit-hyphens:none;
@@ -97,9 +103,9 @@
 	 	 *	Breakpoint: sm
 	 	 */
 		@media only screen and (min-width:$bp-sm) {
-			.zero, .one, .two, .three, .four, .five {
-				min-height: 28rem;
-			}		
+			.one, .two, .three, .four, .five {
+				//min-height: 28rem;
+			}
 			.desc p {
 				padding: 1.5rem 1.875rem;
 			}
@@ -111,7 +117,7 @@
 	 */
 		@media only screen and (min-width:$bp-md) {
 			.zero, .one, .two, .three, .four, .five {
-				min-height: 60vh;
+				//min-height: 60vh;
 			}
 			.bg-img {
 				//top: 0;
@@ -130,7 +136,7 @@
 	 */
 		@media only screen and (min-width:$bp-lg) {
 			.zero, .one, .two, .three, .four, .five {
-				min-height: 70vh;
+				//min-height: 70vh;
 			}
 			.desc {
 				margin-left: 0;

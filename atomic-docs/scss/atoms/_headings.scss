@@ -132,7 +132,7 @@ body.ie {
 .single-blog .title, 				//H1 in single-work and single-about, and the Title in the single-blog
 .single-work h1,
 .single-about h1 {
-	@include fluid-type(font-size, $bp-sm, $bp-xlg, $h1-single-min, $h1-single-max);
+	@include fluid-type(font-size, 12.5rem, $bp-xxxlg, 3.5rem, 6rem);
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
@@ -144,7 +144,7 @@ body.ie {
 .single-work,
 .single-about {
 	h2 {
-		@include fluid-type(font-size, $bp-sm, $bp-xlg, $h2-single-min, $h2-single-max);
+		@include fluid-type(font-size, 12.5rem, $bp-xxxlg, 3rem, 5rem);
 		padding-top: $h2-pad;
 		padding-bottom: $h2-pad;
 	}

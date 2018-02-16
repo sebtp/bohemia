@@ -1,30 +1,23 @@
 /* scss/organisms/_front-four.scss */
 
 .front-page .four {
-	.number {
-		right: 0.625rem;
-		img {
-			//mix-blend-mode:multiply;
-			width:6.25rem;
-		}
-		.inner {
-			opacity: .4;
-			//mix-blend-mode:overlay;
-		}
-	}
+	margin-bottom: 4rem;
+
 	.bg-img {
 		z-index: -5;
+		width: 87vw;
+		top: -3rem;
+		opacity: .8;
 	}
 
 	/*
 	 *  Breakpoint: sm
 	 */
 	@media only screen and (min-width:$bp-sm) {
-		.number {
-			@include fluid-type(right, $bp-sm, $bp-xlg, -1rem, 0rem);
-			img {
-				@include fluid-type(width, $bp-sm, $bp-xxxlg, 17.75rem, 34.375rem);
-			}
+		.bg-img {
+			width: 64vw;
+	    top: -12rem;
+	    left: -13rem;
 		}
 		.desc {
 			margin-left: -33.33333333%;
@@ -33,16 +26,16 @@
 			}
 		}
 	}
-}
 
-body.ie,
-body.edge {
-	&.front-page .four .number {
-		.outer {
-
+	@media only screen and (min-width:$bp-xlg) {
+		.bg-img {
+			width: 54vw;
 		}
-		.inner {
-			opacity:0.6;
+	}
+
+	@media only screen and (min-width:$bp-xxlg) {
+		.bg-img {
+			width: 44vw;
 		}
 	}
 }

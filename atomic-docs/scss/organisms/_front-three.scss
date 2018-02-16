@@ -1,76 +1,35 @@
 /* scss/organisms/_front-three.scss */
 
 .front-page .three {
-	.number {
-		img {
-			width: 5.625rem;
-		}
-		.outer {
-			opacity: .5;
-		}
-		.inner {
-			opacity: .4;
-		}
-	}
-	.bg-img {
-		z-index: -4;
-		bottom: -2rem;
-		width: 100vw;
-	}
-	.desc-bg {
-		display: none;
-	}
+	// .bg-img {
+	// 	z-index: -4;
+	// 	bottom: -2rem;
+	// 	width: 100vw;
+	// }
 
 	/*
 	 *  Breakpoint: sm
 	 */
 	@media only screen and (min-width:$bp-sm) {
-		.number {
-			left: -1rem;
-			img {
-				@include fluid-type(width, $bp-sm, $bp-xxxlg, 17rem, 30rem);
-			}
-			.outer {
-				opacity: .8;
-			}
-			.inner {
-				opacity: .7;
-			}
-		}
 		.bg-img {
 			//width: 150vw;
 			//top:-4rem;
 
 		}
-		.desc-bg {
-			display: block;
-			position: absolute;
-			height: 85%;
-			width: 50%;
-			//bottom: 0;
-			top:0;
-			background: $white;
-			z-index: -1;
-			@include transform(skewX(-2deg));
-		}
 	}
-
+	/*
+	 *  Breakpoint: md
+	 */
 	@media only screen and (min-width:$bp-md) {
-		.bg-img {
-			width: 100vw;
-			//@include fluid-type(top, $bp-md, $bp-xlg, 8rem, 2rem);
-			//bottom: 0;
-		}
-
+		// .bg-img {
+		// 	width: 100vw;
+		// }
 	}
 
+	/*
+	 *  Breakpoint: xlg
+	 */
 	@media only screen and (min-width:$bp-xlg) {
 
-		.bg-img {
-			//@include fluid-type(top, $bp-xlg, $bp-xxxlg, 2rem, -19rem);
-		}
-		.desc-bg {
-			width: 43%;
-		}
 	}
 }

@@ -8,9 +8,8 @@
 //General form styles
 
 .contact-form {
-	//margin-top: 5rem;
 	h3 {
-		@include fluid-type(font-size, 12.5rem, $bp-xxxlg, 2.6rem, 8rem);
+		@include fluid-type(font-size, 12.5rem, $bp-xxxlg, 2.6rem, 4rem);
 		@include fluid-type(padding-top, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 		@include fluid-type(padding-bottom, $bp-sm, $bp-lg, $h1-overview-pad-min, $h1-overview-pad-max);
 		//margin-bottom: 2.5rem;

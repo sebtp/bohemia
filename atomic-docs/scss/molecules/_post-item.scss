@@ -46,7 +46,7 @@
 		// Titles inside the post-items
 		h2, h3 {
 			// Size
-			@include fluid-type(font-size, 20rem, $bp-xlg, $h2-overview-min, $h2-overview-max);
+			@include fluid-type(font-size, 12.5rem, $bp-xxxlg, 2.6rem, 5rem);
 			line-height: $small-lh;
 
 			//Padding fix
